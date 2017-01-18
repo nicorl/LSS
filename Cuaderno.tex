@@ -267,7 +267,7 @@ La esencia del \textit{failure mode and effects analysis} es el estudio del ries
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=90mm]{imagenes/RiskMatrix.png}
-	\caption{Risk Matrix}
+	\caption{Risk Matrix en FMEA PRN}
 	\label{fig:RiskMatrix}
 \end{figure}
 
@@ -375,7 +375,7 @@ Lo suyo es seleccionar aleatoriamente un gran grupo de clientes y aplicar un mé
 
 \subsection{Requisitos del cliente}
 
-Usamos QFD para traducir los requisitos del cliente en características del producto y oportunidades de mejora. Una de las aplicaciones mas importantes de Six Sigma es diseñar y rediseñar procesos y productos, para conseguir el menor coste posible.
+Usamos QFD (Quality Functions Deployment) para traducir los requisitos del cliente en características del producto y oportunidades de mejora. Una de las aplicaciones mas importantes de Six Sigma es diseñar y rediseñar procesos y productos, para conseguir el menor coste posible.
 
 QFD (o \textit{House of Quality}) tiene de input VOC. La matriz QFD muestra el enlace entre VOC y los requisitos técnicos resultantes.
 
@@ -385,5 +385,148 @@ QFD (o \textit{House of Quality}) tiene de input VOC. La matriz QFD muestra el e
 	\caption{Ejemplo de un QFD}
 	\label{fig:ExampleQFD}
 \end{figure}
+
+QFD puede ser aplicado para mejorar calidad. En la matriz, los What's, se traducen por \textit{must have} o por \textit{expected to have}. QFD ayuda a la calidad de cliente conducida.
+
+\section{Project Management Basics}
+
+\subsection{Project Charter}
+
+Describir y definir elementos de un Project Charter, desarrollar el problema que incluya datos base o el estado actual para ser mejorado y las metas del proyecto.
+
+Un \textit{charter} es un documento de declaración con el propósito del proyecto.
+Permite tener a los equipos de desarrollo alineados con la dirección de la empresa. Debe incluir: 
+
+\begin{itemize}
+	\item Problem statement. Qué necesita ser mejorado.
+	\item Purpose. Establece metas y objetivos del proyecto.
+	\item Benefits. Por qué irá mejor la empresa cuando se consiga el objetivo.
+	\item Scope. Limitaciones: tiempo, presupuesto, recursos, ..
+	\item Results. Define el criterio y métricas para el éxito del proyecto.
+\end{itemize}
+
+\textit{Project Planning} Nos acerca a la monitorización del como y cuándo un proyecto será llevado a cabo. Necesario: información de los procesos, comunicación, negociación de recursos, incremental y modular planificacion, asegurar hitos medibles y facilitating top management involvement.
+
+\subsection{Project Scope}
+
+Usando SIPOC, brainstorming, diagrama de pareto, podemos definir y documentar el alcance del proyecto. Normalmente el alcance está basado en el \textit{Problem Statement}.
+
+\subsection{Project Metrics}
+
+Una planificación de proyecto sin la actuación de medición es poco menos que un papel absurdo. La medición clave (key metric) enlazan directamente las mediciones con las metas. Si vamos en contra del tiempo: \textit{Percentage of work accomplished on time}, \textit{Percentage of work accomplished on budget}, \textit{disponibilidad de recursos}...
+
+KPI (Key process indicators) es un valor medible que demuestra la efectividad de una compañía consiguiendo sus objetivos claves de negocio.
+
+\subsection{Project Planning Tools}
+
+Gannt, CPM (Critical Path Method), PERT para planificar proyectos.
+Las herramientas difieren según el tamaño y alcance del proyecto. La documentación se mantiene viva durante el desarrollo de todo el proyecto.
+
+\subsection{Project Documentation}
+
+Metas y objetivos. Sponsors y accionistas. Planificación y calendario. Hitos. Presupuesto. Límites. Roles y responsabilidades. Métricas para evaluar el proyecto.
+
+Además del \textit{Project Charter} y el \textit{Project Management Plan} planes adicionales pueden ser utilizados para cada actividad.
+
+\subsection{Project Risk Analysis}
+
+El análisis de riesgo de un proyecto se incluye durante la fase de planificación. Identificar riesgos, asociar impacto y posibles planes para minimizar el riesgo. El análisis de riesgo hay que revisarlo y actualizarlo utilizando SWOT (strengths-weaknesses-opportunities-threats), RPN, FMEA, formula for expected profit.
+Un buen análisis de riesgos necesita de que las grupos apropiados estén presentes.
+
+Aspectos de riesgo a considerar incluyen el impacto potencial en: conocer las metas establecidas, el calendario planificado, fuentes identificadas, seguridad, productividad, servicio, confiabilidad, conocer los requerimientos y expectativas del cliente.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=90mm]{imagenes/RiskMatrix2.png}
+	\caption{Matriz de riesgo}
+	\label{fig:RiskMatrix}
+\end{figure}
+
+A través de cosas que ya han pasado antes, riesgos, brainstorming se determinan los Project Risks. Después de identificarlos, minimizarlos y verificar las actuaciones que los pueden desencadenar son cosas que tienen que estar en el ciclo de vida del proyecto. 
+
+Si un riesgo existente es: proveedor clave que no entrega a tiempo, la mitigation activity es buscar un nuevo proveedor.
+Si un riesgo existente es: un cajero automático, la mitigation activity es: codigo de 6-10 cifras, bloqueo a los 3 intentos.
+
+\subsection{Project Closure}
+
+Revisar con los miembros y sponsors los objetivos logrados con el proyecto, asegurar que la documentación está completa y guardada apropiadamente. Identificaar lecciones aprendidas e informar a otras partes de la organización sobre oportunidades de mejora.
+
+Project Closure no es negociacion, es un paso final para conocer que metas y objetivos se cumplen, que la documentación está OK, y hacer una reunión para cerrar.
+
+Project charter es una excelente herramienta para medir el progreso de un proyecto, con su alcance, metas, objetivos y una cronología.
+
+\section{Management and Planning Tools}
+
+\subsection{Activity Network Diagram}
+Es como el PERT, muestra dependencias entre tareas y caminos (en serie o en paralelo). Al igual que PERT o Critical Path Analysis, provee una visión global con nivel de detalle adecuado a la necesidad del proyecto.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{imagenes/AND.png}
+	\caption{Activity Network Diagram}
+	\label{fig:ANDDiagram}
+\end{figure}
+
+\subsection{Advanced Quality Planning} 
+
+Se basa en la idea de que las planificaciones solidas previenen sorpresas y salvan recursos útiles de ser malgastados. AQP es un proceso donde primero miramos los parámetros de que vamos a hacer. ¿tenemos suficiente material disponible? ¿tenemos la gente necesaria para hacer el trabajo?¿tenemos las herramientas necesarias para el trabajo? También se llama APQP. 
+Es el priemr paso del PDSA (Plan Do Study Act). Esto ayuda a que todos los inputs tengan el output deseado.
+
+\subsection{Affinity Diagram}
+
+Son usados para producri muchas respuestas a preguntas abiertas. ¿cuales son las maneras de reducir ciclo al proceso? Luego intentar asociar entre sí, en diferentes grandes grupos, dichas respuestas. Luego le damos nombre a la agrupación.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{imagenes/AffinityDiagram.png}
+	\caption{Affinity Diagram}
+	\label{fig:AffinityDiagram}
+\end{figure}
+
+\subsection{Auditing}
+
+Evaluación de procesos o proyectos contra planes y metas. Esta comprobación de auditoría de calidad es comúnmente establecida en organizaciones a través de sistemas de gestión de la calidad (AS9001, ISO 9001, ISO/TS 16949).
+
+\textit{Audit planning}: preparación para el que va a er auditado, un calendario de auditoria y una notificación de auditoría.
+
+\textit{Audit performance}: evidencias, observaciones, entrevistas.
+
+\textit{Audit report}: resumen con el alcance, actividades, resultados, findings (acciones correctivas), oportunidades de mejora.
+
+\textit{Audit closure}: actividades de seguimiento para asegurar que los planes en accion son implementados de manera efectiva.
+
+Tipos: first-party, second-party, third-party, internal (mas usada en Six Sigma) y external.
+
+Habitualmente están basadas en productos, sistemas, proveedores, cumplimiento normativo.
+
+Be pleasant, you are not a cop. Be prepared. Be factual in what you observe, hiding things doesn't help to improve. Ask questions for clarity. Record your observations. Deja que te guie el auditor interno.
+
+\subsection{Benchmarking}
+
+Consiste en mirar un sistema y aplicar los conceptos de ese, sobre otro. La idea es hacer un win/win entre organizaciones. Pasos básicos: Flowchart del proceso actual. Identificar areas de mejora. Ideas brainstorm. Investigar como otros hacen el proceso. Desarrollar planes de aplicación de ideas. Prueba piloto. Iniciar el nuevo proceso. Evaluar el nuevo proceso.
+
+\subsection{FishBone Ishikawa}
+
+Muestra factores envueltos en una situación. Crearlo a partir del 5W's (What, Why, When, Where, Who), 1H (How) y 6M's (Man, Machine, Methods, Materials, Measurement, Mother Nature, Money, Management).
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{imagenes/FishBone.png}
+	\caption{FishBone}
+	\label{fig:FishBone}
+\end{figure}
+
+\subsection{Check Sheets}
+
+Usadas para observar o revisar un proceso, durante su ejecución. Pasos básicos en hacer un check sheet: Identificar y agregar las causas o condiciones que han de ser recogidas. Decidir quien recoge la información, sobre cuantos periodos, y de que manera se recoge. Crear un check sheet que trabajará en la operación donde será usada. Recoger datos como diseños para asegurar consistencia y precisión de la información.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{imagenes/CheckSheet.png}
+	\caption{CheckSheet}
+	\label{fig:CheckSheet}
+\end{figure}
+
+\subsection{Customer Feedback}
 
 \end{document}
