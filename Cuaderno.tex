@@ -268,7 +268,7 @@ La esencia del \textit{failure mode and effects analysis} es el estudio del ries
 	\centering
 	\includegraphics[width=90mm]{imagenes/RiskMatrix.png}
 	\caption{Risk Matrix en FMEA PRN}
-	\label{fig:RiskMatrix}
+	\label{kMatrix}
 \end{figure}
 
 FMEA es una herramienta front-end. Un producto/proceso de éxito requiere anticiparse a los problemas y para ello hace falta tener jerarquizados cuales atacar antes, y/ como atacarlos. \textbf{Mirar Effective FMEAS}. El documento de gestión FMEA se tiene que ir controlando por versiones, incluyendo y quitando cosas, ya que es un documento vivo. Beneficios del FMEA: evaluación a todos los clientes (internos y externos), ayuda en la evaluación de requerimientos y alternativas, ayuda a centrarse en donde pueden aparecer los problemas criticos y como paliarlos/evitarlos/controlarlos, desarrollo de una lista de actuaciones priorizada, ayuda para evaluar el propósito del proceso.
@@ -439,7 +439,7 @@ Aspectos de riesgo a considerar incluyen el impacto potencial en: conocer las me
 	\centering
 	\includegraphics[width=90mm]{imagenes/RiskMatrix2.png}
 	\caption{Matriz de riesgo}
-	\label{fig:RiskMatrix}
+	\label{fig:RiskMatrix2}
 \end{figure}
 
 A través de cosas que ya han pasado antes, riesgos, brainstorming se determinan los Project Risks. Después de identificarlos, minimizarlos y verificar las actuaciones que los pueden desencadenar son cosas que tienen que estar en el ciclo de vida del proyecto. 
@@ -666,6 +666,49 @@ Es una ayuda para decidir entre diferentes opciones. Para conseguir el criterio 
 
 Diagrama de árbol para ilustrar problemas, anticiparse a ellos y listar soluciones posibles.
 
-\subsection{PERT-CPM}
+\subsection{Risk Priority Number}
+
+Calculado de los datos FMEA: severidad, ocurrencia y detección. RPN = S x D x O. RPN ayuda a determinar el potencial riesgo y a ayudar al project team para priorizar los items sobre los que trabajar primero.
+
+\subsection{Sampling Plan}
+
+Hacer muestreos en base a factores: velocidad de la linea, tecnología disponible, numero de personas disponible, expectativa del consumidor, ... 
+Consiste en coger un numero de muestras aleatorio que representen al conjunto del lote de fabricación.
+Juran dijo que la inspección 100\% es solo el 80\% de efectiva.
+
+\subsection{Diagrama SIPOC}
+
+Definir procesos y sus limites. Identificar los outputs de los procesos, incluyendo datos, servicios, productos, informació, registros... Ve a la columna de customers, para saber quien recibe qué output. Vuelve a la columna de Suppliers para identificar cuales son los internos y cuales los externos y cuales son sus inputs.
+
+\subsection{Tree Diagram}
+
+Ayuda a romper el topic genereal en un numero de actividades que contribuyen entre sí. El Team project debe dar entre 2 y 5 topics que contribuyan con el topic general, y la idea es ponerlos en línea horizontal. Se continua la rama del arbol hasta que no sea práctico. Se revisa el arbol consiguiendo seguridad de que trabajar cada item puede mejorar el topic. Por lo que el arbol resultante provee actividades específicas que contribuyen al topic general.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{imagenes/TreeDiagram.png}
+	\caption{Tree Diagram}
+	\label{fig:TreeDiagram}
+\end{figure}
+
+\subsection{Tool Review}
+
+La fase de definición se centra en determinar el alcance de las mejoras del proyecto y de los recursos y calendario necesitado para ejecutar el proyecto. Hay mucha herramientas para ayudar en la definición y gestión del proyecto, incluyendo Gantt. Las herramientas y el nivel de detalle debe ser basado en el tamaño del proyecto.
+
+\section{Resultados de negocios para Proyectos}
+
+Los resultados de negocios pueden ser mostrados de muchas maneras y en muchos niveles de detalle. Las medidas de los resultados de proyectos deben ser identificadas durante la fase inicial y redefinidas mientras el proyecto avance. Las \textit{performance measures (medidas de desempeño)} estan relacionadas con el negocio, proyectos o procesos y son expresadas a través de \textit{balanced scorecard} o \textit{rendimiento de metas establecidas}.
+
+Por un lado, las \textit{balanced scorecard} requiere que la organización evalúe su actuación en 5 areas princiaples: financiera, cliente, procesos internos, aprendizaje y crecimiento. Así se consigue alinear la visión de la empresa con las metas, asegurando que ningún area sobresalga del resto.
+
+Por otro lado, el rendimiento de las metas establecidas consiste en establecer metas, y revisar la consecución de las mismas a lo largo del tiempo. Siempre deben ser cuantificables. Ejemplo: Incrementar facturación 10\% más sobre el año anterior.
+
+Para medir, se utiliza \textit{Cost performance index (CPI)}, que consiste en establecer un ratio entre el coste/beneficio entre los escenarios actual/futuro. \textit{Schedule performance index (SPI)} mide la eficiencia del calendario también por ratio: objetivos logrados vs planificados.
+	
+\subsection{Process Performance}
+
+Calcular las métricas \textit{de rendimiento del proceso} como: Defectos por Unidad (DPU), Rolled Throughput Yield (RTY), coste de mala calidad (COPQ), defectos por millón de oportunidades (DPMO), niveles sigma, indices de capacidad de proceso. A través de estas métricas, conduce la toma de decisiones de los proyectos.
+
+
 
 \end{document}
