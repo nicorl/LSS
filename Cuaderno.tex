@@ -3,6 +3,9 @@
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage{vmargin}
+\usepackage{fancyhdr}
+
+%\cfoot{\textit{\thepage}} 
 
 \setpapersize{A4}
 \setmargins{2.5cm}       % margen izquierdo
@@ -19,6 +22,7 @@
 \author{Nicolás Rodríguez Lucena}
 
 \begin{document}
+
 
 \maketitle
 
@@ -299,7 +303,7 @@ Pasos del FMEA: 1. Lista los pasos claves de un proceso 2. brainstorm de porque 
 	\caption{Report final de un FMEA}
 	\label{fig:FMEAPrePos}
 \end{figure}
-
+\pagebreak[4]
 \part{Definición}
 
 Preguntas críticas de la fase de definición: donde estamos? cual es el problema? donde queremos estar? como vamos a llegar allí? como sabremos que hemos llegado a ese punto?
@@ -841,7 +845,7 @@ Esta herramienta complementa NGT. Las ideas consolidadas son numeradas por letra
 \subsection{Team Communication}
 
 Identifica y usa métodos apropiados de comunicación.
-
+\pagebreak[4]
 \part{Medición}
  
 \section{Process Analysis and Documentation}
@@ -866,7 +870,7 @@ Pasos para crear un flowchart:
 	\item Determinar los límites del proceso (sus inputs y sus outputs)
 	\item Determinar los pasos del proceso a través de brainstorming, walking the process.
 	\item Construir la secuencia del proceso.
-	\item Dibujar el flowchart
+	\item Dibujar el flowchart.
 	\item Verificar que le flowchart está correctamente construido.
 \end{enumerate}
 
@@ -876,6 +880,230 @@ Errores comunes en el diseño de flowcharts: representación del equipo para el 
 
 \subsection{Written procedures and Work Instructions} 
 
+Los procedimientos son escritos para describir: que ocurre durante el proceso, porqué se hace (razón de negocio), dónde se hace (localización) y cuando es realizado (disparador).
 
+Las instrucciones de trabajo explican: quién hace qué (personal con determinadas skills), y cómo es hecho (los pasos). 
+
+Cuando no hay un procedimiento interno especifico para una actividad particular y no se requiere de su estandarización, es aceptable que la actividad se conduzca a través de un método. Un método es un proceso no-escrito que debe ser seguido.
+
+Para determinar cuales procesos han de ser documentados, la organización debe considerar: 
+
+\begin{itemize}
+	\item Efecto en calidad
+	\item Riesgo de la insatisfacción del cliente
+	\item Riesgo económico
+	\item Efectividad y eficiencia
+	\item Competencia del personal
+	\item Complejidad del proceso
+\end{itemize}
+
+Las instrucciones de trabajo pueden ser documentadas como: Instrucciones escritas, checklists, flowcharts, fotografías, dibujos, videos, pantallas electrónicas.
+
+\subsection{Process Inputs and Outputs}
+
+Cada proceso tiene inputs, outputs y loops de feedbacks. El feedback hace falta para mejorar el proceso. Ejemplos de \textbf{inputs}: necesidades, ideas, expectativas, requerimientos, información, datos, documentos, recursos. Ejemplos de \textbf{outputs}: diseños, decisiones, resultados, medidas, productos, servicios, propuestas, soluciones, autorizaciones, actuaciones.
+
+A la hora de hacer un Chart para un proceso hay que tener en cuenta: Primero identificar Inputs/outputs. El mapa global de procesos debe incluir al SIPOC (Suppliers, inputs, processes, outputs, customers). 
+
+Los pinputs son medidos y las variaciones controladas a través de su respuesta y = f(x). Los efectos de las variaciones se determinan a través de \textit{Fishbone Diagram} con las categorías Measurement, Material, Personnel, Environment, Methods y Machines.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{imagenes/Cause-and-effectDiagram.png}
+	\caption{Cause-and-effect Diagram}
+	\label{fig:CauseandeffectDiagram}
+\end{figure}
+
+Para poder generar el diagrama \ref{fig:CauseandeffectDiagram} es recomendable hacer \textbf{Brainstorming}, para priorizar, utilizar \textit{Multivoting} o \textit{nominal group technique} (NGT).
+
+La convergencia tiene que lograrse, la idea para alentar a la participación es decir cosas como: he probado dos refrigerantes diferentes y el resultado en superficie en cuanto a defectos, es el mismo. También vale: hemos encontrado que el fabricante recomienda una humedad relativa del 55 al 60\%.
+
+Ejemplo: datos sobre inspecciones finales.
+
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline Código defecto & Descripción & Ocurrencias & Criticalidad & Peso & Puntuacion ponderada \\ 
+	\hline A & Arañazos & 15 & Menor & 10 & 150 \\ 
+	\hline B & Manchas & 17 & Menor & 10 & 170 \\ 
+	\hline C & Mancha en etiqueta & 12 & Menor & 10 & 120 \\ 
+	\hline D & Abolladura & 14 & Mayor & 25 & 350 \\ 
+	\hline E & Unidad no funcional & 6 & Critico & 100 & 500 \\ 
+	\hline F & LED roto & 7 & Critico & 100 & 700\\ 
+	\hline G & Falta de tornillo & 3 & Mayor & 25 & 75 \\ 
+	\hline 
+\end{tabular} 
+
+Siempre se ordenan de mayor a menor a la hora de representarlos, salvo la sección Otros, que suele ser la misma. Tanto para representar el numero absoluto como para representar el peso. Fijándonos en la figura \ref{fig:ParetoPlot} tenemos el primer item en un caso Manchas, y en otro LED roto. 
+Si ploteamos Pareto en relación 80:20 tenemos:
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=180mm]{imagenes/ParetoPlot.png}
+	\caption{Pareto Plot}
+	\label{fig:ParetoPlot}
+\end{figure}
+
+\textit{Measles charts} son utiles para productos largos, como automóviles, y donde las oportunidades de defectos son altas.
+
+\subsection{Relationship Diagram}
+
+El diagrama de relaciones es utilizado para mostrar el grado de relación entre variables, causas y efectos. Consiste en poner diferentes defectos y ver como acciones que se pueden controlar o no, afectan a ello.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{imagenes/RelationshipMatrix.png}
+	\caption{Relationship Matrix}
+	\label{fig:RelationshipMatrix}
+\end{figure}
+
+\section{Probability and Statistics}
+
+\subsection{Basic Probability Concepts}
+
+\textbf{Complementation Rule}: La probabilidad de que el evento A no ocurra es: 1 - la probabilidad de que ocurra. 
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=80mm]{imagenes/DiagramaVenn.png}
+	\caption{Diagrama Venn}
+	\label{fig:DiagramaVenn}
+\end{figure}
+
+\textbf{Probabilidad condicional}: La probabilidad de que un evento se de, cuando otro evento se ha dado. $P(B\mid A) = P(A \& B)/P(A)$
+
+La probabilidad de sacar un 4 tirando un dado es 1/6. Y de sacar un 6 también 1/6. Por lo tanto, la probabilidad de sacar un 4 o un 6 es: 1/6 + 1/6 = 1/3.
+
+En una organización hay dos máquinas de inyección cy la probabilidad de funcionamiento es del 0.8, la probabilidad de que la producción semanal salga es: \newline 
+$P(A \bigcup B) = P(A) + P(B) - P(A \bigcap B)$, al no ser eventos mutuamente exclusivos \newline $P(A \bigcup B) = 0.8 + 0.8 - (0.8 * 0.8) = 1.6 - 0.64 = 0.96$. \newline Si fueran mutuamente exclusivos, $P(A \bigcup B) = P(A) + P(B)$
+
+\textbf{Ley multiplicativa}: en eventos dependientes.
+
+Una producción de 50 unidades, tiene 10 defectuosas. Tres son muestreadas aleatoriamente. ¿cual es la probabilidad de que las tres sean defectuosas?
+La probabilidad sería 10/50 para la primera, 9/49 para la segunda y 8/48 para la tercera, ya que las tres tienen que ser defectuosas: 0.6\%.
+
+\textbf{Ley multiplicativa}: en eventos independientes.
+
+Un ensamble necesita 2 componentes, la probabilidad de que A funcione es 0.7, y la de B es 0.8. Cual es la probabilidad de que el ensamblaje funcione? $P(A \bigcap B) = 0.7*0.8 = 0.56$
+
+\textbf{Permutaciones y combinaciones}. \newline La permutación es una disposición ordenada de \textit{n} objetos distintos. Ocurre cuando AB es diferente de BA. El número de formas de ordenar la disposición: \textit{r}. Se designa nPr.
+\begin{equation}
+nPr = \frac{n!}{(n-r)!}
+\end{equation}
+
+Este caso vale para: la palabra \textit{sigma} tiene 5 letras. ¿De cuantas maneras diferentes se pueden combinar las 5 letras? 5P5 = 5! = 120.
+
+El número distinto de combinaciones de \textit{n} objetos tomados \textit{r} cada vez. Esto ocurre cuando AB es igual que BA. nCr
+
+nCr = $\frac{n!}{r!(n-r)!}$
+Este caso vale para: Tienes 10 personas y quieres enviar a 3 a formarse para un puesto. ¿cuántas combinaciones posibles hay? 10C3. $\frac{10!}{(10-3)!3!} = 120$
+
+\subsection{Teoría del límite central}
+
+CLT no es más que el error medio cuadrático. Se basa en
+
+\begin{enumerate}
+	\item La media de la distribución de muestra es igual a la media de la población.
+	\item La varianza de la distribución es igual a la varianza de la población.
+	\item La población original se distribuye bajo campana.
+\end{enumerate}
+
+Es aplicable para SPC control charts, X, R.
+
+\begin{tabular}{|c|c|c|}
+	\hline  & Sample & Population \\ 
+	\hline Size & n & N \\ 
+	\hline Mean & x & $\mu$ \\ 
+	\hline Standar dev & s & $\sigma$ \\ 
+	\hline 
+\end{tabular} 
+
+\section{Statistical Distributions}
+
+\begin{tabular}{|c|c|c|c|}
+	\hline Nombre & Formula & Media & Varianza \\ 
+	\hline Normal & $P(x)=\frac{e^\frac{-(x-\mu)^2}{2\sigma^2}}{\sigma \sqrt{2 \pi}} $  & $\mu$ & $\sigma^2$ \\ 
+	\hline Exponential & $P(x)=\lambda e^{-\lambda x} $ & $1/\lambda$ & $1/\lambda^2$ \\ 
+	\hline Binomial & $P(x)= \frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}) $ & np & np(1-p) \\ 
+	\hline Poisson & $P(x)= \frac{e^{-\lambda}\lambda^x}{x!}$ & $\lambda$ & $\lambda$ \\ 
+	\hline Hipergeometrica & * & $\frac{nd}{N}$ & $\frac{nd(N-d)(N-n)}{N^3-N^2}$ \\ 
+	\hline 
+\end{tabular} 
+
+\subsection{Binomial}
+
+Se aplica para distribuciones que tienen dos estados: Bueno/malo, aceptado/rechazado, conformidad/no conformidad, éxito/fallo.
+
+Ejemplo: Se cogen 5 muestras, de un conjunto donde el 10\% tienen defectos, cual es la probabilidad de que la muestra elegida al azar tenga un defecto? 
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=90mm]{imagenes/BinomialDistribution.png}
+	\caption{Binomial Distribution}
+	\label{fig:BinomialDistribution}
+\end{figure}
+
+Se sustituye en \ref{fig:BinomialDistribution}, x = 5, n = 1, p = 0.1. BINOMIDST en Excel.
+
+Tirar una moneda vale para esto. Tirar una moneda 60 veces, ¿cual es la desviación estándar? $\sigma = \sqrt{np(1-p)} = 3.872$ 
+
+\subsection{Poisson}
+
+Representa la distribución de una probabilidad discreta: número de defectos en una unidad de ensamblaje. Numero de defectos en una superficie pintada, Número de bugs en código de software.
+
+Se habla de DPO (\textit{Defects per opportunity}) o DPMO (\textit{Defects per million opportunities}).
+
+\begin{equation}
+P(x)= \frac{e^{-\lambda}\lambda^x}{x!}
+\end{equation}
+
+El número de defectos en una unidad de ensamblaje tiene una distribución de Poisson con $\lambda = 5$. Encuentra la probabilidad de que la segunda unidad producida  tenga menos de dos defectos.
+
+\begin{equation}
+P(x < 2) = P(x=0)+P(x=1)
+\end{equation}
+
+\begin{equation}
+P(x = 0) = \frac{e^{-5}5^0}{0!} \approx 0.006
+\end{equation}
+
+\begin{equation}
+P(x = 1) = \frac{e^{-5}5^1}{1!} \approx 0.034
+\end{equation}
+
+\begin{equation}
+P(x < 2) = 0.006 + 0.034 = 0.04
+\end{equation}
+
+Un un proceso de una máquina de ensambles tiene un ratio de defecto del 10\%. Cual es la probabilidad de que 50 unidades tengan 5 defectuosas? n = 50, p = 0.1 $\longrightarrow \lambda = 50*0.1 = 5$, x = 5 (uds defectuosas).
+
+\begin{equation}
+P(x) = \frac{e^{-\lambda}\lambda^x}{x!} = \frac{e^{-5}5^5}{5!} = 0.175 \approx 18\%
+\end{equation} 
+
+\subsection{Distribuciones normales}
+
+Distribuciones continuas, estilo peso, masa, tiempo. 
+
+Ejemplo: un restaurante de pisa procesa pizzas bajo una distribución normal. Una muestra aleatoria muestra 30 minutos de proceso y 5 minutos de desviación standard. Estima el porcentaje de pedidos entre los 20 y los 30 minutos.
+
+Buscar el valor Z, Z es el numero de desviaciones estandards que una medida se desvía de la media y se calcula tal que
+
+\begin{equation}
+Z = \frac{x - \mu}{\sigma} \longrightarrow Z(20) = \frac{(20-30)}{5} = -2
+\end{equation}
+
+\begin{equation}
+Z = \frac{x - \mu}{\sigma} \longrightarrow Z(35) = \frac{(35-30)}{5} = 1
+\end{equation}
+
+Área a la derecha de -2 = 0.97724 \newline
+Área a la derecha de +1 = 0.15865 \newline
+Diferencia entre ambos= 0.8186 $\longrightarrow$ 82\% de los pedidos son procesados entre los 20 y los 35 minutos.
+
+\pagebreak[4]
+\part{Glosario}
+
+Una relación de palabras y traducciones Español - Inglés de cara al examen:
+
+Skills - Habilidades. Relativas al conocimiento o técnica.
 
 \end{document}
