@@ -1099,6 +1099,83 @@ Z = \frac{x - \mu}{\sigma} \longrightarrow Z(35) = \frac{(35-30)}{5} = 1
 Área a la derecha de +1 = 0.15865 \newline
 Diferencia entre ambos= 0.8186 $\longrightarrow$ 82\% de los pedidos son procesados entre los 20 y los 35 minutos.
 
+
+\subsection{Distribución Chi-cuadrado}
+
+Si $w, x, y$ y $z$ son variables aleatorias de distribución normal standar la variable $f = w^2 + x^2 + y^2 + z^2$ tiene una distribución $\chi^2$
+La distribución $\chi^2$ se aplica para test de proporcionalidad, conforme los grados de libertad de $\chi^2$ aumentan, se aproxima a una distribución normal. Propiedades 
+
+\begin{itemize}
+	\item $\chi^2$ no es negativo,
+	\item $\chi^2$ no es simétrico,
+	\item Hay muchas distribuciones $\chi^2$, una para cada grado de libertad,
+	\item Los grados de libertad cuando se trabaja una población individual es $(n-1)$.
+\end{itemize}
+
+
+\subsubsection{Grados de libertad}
+
+La cantidad de información que los datos pueden proveerte y que tu puedes aplicar para estimar valores de parámetros desconocidos y calcular sus variaciones.
+
+\subsubsection{t-Distribution}
+
+Si $x$ es una variable aleatoria con una distribucion normal y $y$ es una variable con una distribución $\chi^2$, entonces la variable definida es
+
+\begin{equation}
+ t = \frac{x}{\sqrt{\frac{y}{k}}}
+\end{equation}
+
+siendo k los grados de libertad de $\chi^2$. Cuando $k \longrightarrow \infty, t$, se aproxima a una distribución normal.
+
+Propiedades importantes de la Student's t-distribution:
+\begin{itemize}
+	\item es diferente para diferentes tamaños de muestra,
+	\item generalmente tiene forma de campana, aunque no siempre,
+	\item la media es cero,
+	\item la distribución es simétrica respecto de la media,
+	\item La varianza es mayor que 1, y se aproxima a 1,
+	\item La population standard deviation es desconocida,
+	\item La población es esencialmente normal.
+\end{itemize}
+
+Doce paquetes seleccionados aleatoriamente pesan: 7.3, 7.9, 7.1, 7.3, 7.4, 7.3, 7.0, 7.3, 7.7, 7.3, 7.1, 7.8 y según anuncia el paquete, es 7.5. 
+
+Media: 7.375, EMC (desviacion estandar) $\sigma^2 = 0.2832$
+
+\subsection{F-Distribution}
+
+F-Distribution es el ratio de dos distribuciones $\chi^2$ con grados de libertad $v_1$ y $v_2$ respectivamente, comúnmente se usa para ANOVA.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{imagenes/F-Distribution.png}
+	\caption{F-Distribution}
+	\label{fig:F-Distribution}
+\end{figure}
+
+\section{Collecting and Summarizing Data}
+
+\subsection{Tipos de datos y escalas de medida}
+
+\begin{itemize}
+	\item Nominal: los valores de la escala no son numéricos. Ej: color de ojos.
+	\item Ordinal: Los intervalos entre valores son indeterminados. Ej: crítico, grave, medio, leve.
+	\item Intervalo: Intervalos dentro de una misma escala. Ej: 40ºC y 20ºC, -10ºC y -30ºC.
+	\item Ratio: Relacion entre dos valores. Ej: 10/5 = 64/32.
+\end{itemize}
+
+\subsection{Muestreo y recolección de datos}
+
+Métodos: entrevistas cara a cara, encuestas, grupos de interés, mystery shopping, feedback del cliente, captación automática/manual de datos.
+
+\subsubsection{Técnicas para asegurar la precisión de los datos y la integridad}
+
+Causas comunes de errores de las técnicas: unidades de medida no definidas, ilegibilidad de caracteres escritos a mano, inadecuados sistemas de medida-discriminación, pérdida de precisión, sesgo emocional que distorsiona datos, inadecuado uso de técnicas de validación de datos, múltiples puntos de entrada de datos (inconsistencia), pobres instrucciones que generan entrada errónea de datos, terminología ambigua.
+
+Minimizar errores: utilizar 5W1H (what, where, who, when, why and how), calendario de calibración para equipos de recogida de datos, R\&R (repitibilidad y reproducibilidad), metadatos interesantes (hora, quien graba el dato, equipo utilizado), usar test adecuados para quitar valores outliers, training para la recolección, transformación análisis e interpretación de los datos.
+
+\textbf{Tipo de muestreo}: random, sequential (test destructivos), stratified (aleatorio pero atendiendo a una característica: diferente máquina, diferente lote, diferente proceso).
+218
 \pagebreak[4]
 \part{Glosario}
 
