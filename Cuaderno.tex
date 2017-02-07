@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{vmargin}
 \usepackage{fancyhdr}
+\usepackage{float}
 
 %\cfoot{\textit{\thepage}} 
 
@@ -1175,12 +1176,252 @@ Causas comunes de errores de las técnicas: unidades de medida no definidas, ile
 Minimizar errores: utilizar 5W1H (what, where, who, when, why and how), calendario de calibración para equipos de recogida de datos, R\&R (repitibilidad y reproducibilidad), metadatos interesantes (hora, quien graba el dato, equipo utilizado), usar test adecuados para quitar valores outliers, training para la recolección, transformación análisis e interpretación de los datos.
 
 \textbf{Tipo de muestreo}: random, sequential (test destructivos), stratified (aleatorio pero atendiendo a una característica: diferente máquina, diferente lote, diferente proceso).
-218
+
+Random y stratified sampling son aplicables a muchos sectores.
+
+Cuando los datos se meten a mano, lo suyo es generar una codificación-decodificación para evitar errores humanos.
+
+\subsubsection{Check Sheets}
+
+Se usan para revisar un proceso durante su ejecución. En ellas se precategoriza los potenciales resultados que se pueden obtener.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{imagenes/CheckSheet.png}
+	\caption{CheckSheet}
+\end{figure}
+
+Como elaborar una Check Sheet:
+
+\begin{enumerate}
+	\item Identifica las causas o condiciones de lo que va a ser recogido.
+	\item Decide quien recogerá los datos, con que periodicidad y cómo.
+	\item Crea una check sheet que funcione donde debe ser usada.
+	\item Recoge los datos como diseño de asegurar consistencia y precisión de la información.
+\end{enumerate}
+
+\subsection{Estadísticas descriptivas}
+
+\textit{Descriptiva}: presentar datos para facilitar el entendimiento.
+
+\textit{Inferential}: analiza datos de una muestra para inferir propiedades de la población. 
+
+Dispersión: 
+\begin{equation}
+s = \sqrt{\frac{\Sigma(x_i-x_{media})^2}{n-1}}
+\end{equation}
+
+Desviación estándar:
+\begin{equation}
+\sigma = \sqrt{\frac{\Sigma(x-\mu)^2}{N}}
+\end{equation}
+
+\subsubsection{Cumulative Frequency Distribution}
+
+Representar la frecuencia y la frecuencia acumulada.
+
+\subsection{Métodos gráficos}
+
+\begin{tabular}{p{2cm}|p{2.5cm}|p{3cm}|p{5cm}|p{2.5cm}}
+	\hline Nombre & Propósito & Aplicación & Interpretación & Facilidad de uso \\ 
+	\hline Tally (registros) & Cantidad de \textbf{Defectos} por tipo de clase y/o intervalo & Usado para contar defectos por tipo, clase o categoría. & La concentración y propagación de la marca de registro indican aproximadamente la forma de distribución. Las marcas de cinco registros están tachadas como un grupo para contar fácilmente. Los grupos aislados de marcas de registro indican distribución desigual.. & Fácil de crear e interpretar.  \\ 
+    \hline Distribución por frecuencia & Vista pictórica del numero de datos, su localización y su amplitud & Especialmente útil para muchos datos & La concentración de datos es vista como un pico, y los demás datos dan sentido a la amplitud de la curva. Unimodal, bimodal, multimodal (uno, dos, varios picos) & No es fácil de crear, pero sí fácil de interpretar. \\
+    \hline (Stem-and-leaf Plot) Plot de tallo y hojas & Da información numérica y la distribución de la frecuencia & Útil para identificar rapidamente datos repetitivos en intervalos de clase. & Si los valores de datos no están justamente distribuidos, errores de medida o condiciones de medida pueden ser presentadas & Fácil de crear, difícil de interpretar. \\
+    \hline Box-and-whisker Plot & Vista pictórica de mínimo, máximo, media, rango de cuartil. & Da más info pero mas difícil de interpretar. Valores fuera de limite fácilmente identificables. & Si la localización de la linea central de la caja está justo en el medio, los datos están distribuidos de manera Normal, sino, los datos estarán sesgados.  &  Fácil de crear e interpretar. \\
+    \hline Scatter Diagram & Detectar correlación y asociación entre dos variables, causa efecto. & Usada para conocer la raíz de los problemas, hacer predicciones a través de la regresión & Para tener correlación, la relación debe ser lineal. Relaciones no lineales existen entre variables. Si aumenta izq a derecha, la relación es positiva. Si los datos no tienen inclinación, no están correlados. & Fácil de crear e interpretar. \\
+    \hline run chart & Da un indicador visual de cualquier patrón no aleatorio & utilizado cuando se hace falta feedback a tiempo real & patrones como cluster, mixture, trend, oscilaciones son dibujados con los datos. p-valor identifica la significancia. p-valor inferior a 0.05 es mucha significancia & Fácil de crear e interpretar. \\
+	\hline 
+\end{tabular} 
+
+\subsubsection{Stem-and-Leaf Plot}
+
+Utilizado cuando los datos están agrupados.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=120mm]{imagenes/Histograma.png}
+	\caption{Histograma y stem-and-leaf plot}
+	\label{fig:Histogramaystemandleafplot}
+\end{figure}
+
+Tres columnas: \textit{the leaves}: cada valor representa un dígito de una observación. Sgeún \ref{fig:Histogramaystemandleafplot}, el número leaf para cada observación sería: 1,3,7,4,3,2. \textit{the stem}: representa el dígito inmediatamente a la izquierda del dígito leaf en \ref{fig:Histogramaystemandleafplot}, según el rango, acumula los valores a representar. \textit{Counts} Si el valor mediano de la muestra está incluido en una columna, el valor se encierra entre paréntesis. 
+
+\subsubsection{Box Plots}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=120mm]{imagenes/Box-plot.png}
+	\caption{Box-plot}
+	\label{fig:Box-plot}
+\end{figure}
+
+\subsubsection{The Run Chart}
+
+Es utilizada para identificar patrones en procesos. Todas las observaciones individuales se plotean en orden. Se pueden utilizar tendencias, oscilaciones, agrupaciones, ... 
+
+La falta de firmeza en un proceso puede causar oscilación, el \textit{p-value} de la imagen es 0,78. Eso implica que no hay tendencia.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=120mm]{imagenes/Run-Chart-Analysis.png}
+	\caption{Run Chart Analysis}
+	\label{fig:Run-Chart-Analysis}
+\end{figure}
+
+El Run Chart es herramienta potente para enseñar como de estable está siendo un proceso.
+
+\subsubsection{Scatter Diagrams}
+
+Herramienta visual para ver relaciones entre dos variables, causa efecto y demás. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=120mm]{imagenes/ScatterPlot.png}
+	\caption{Scatter Plot}
+	\label{fig:ScatterPlot}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=150mm]{imagenes/ScatterDiagramsExamples.png}
+	\caption{Scatter Diagrams Examples}
+	\label{fig:ScatterDiagramsExamples}
+\end{figure}
+
+\subsubsection{Normal Probability Plots}
+
+Sirve para comprobar si los datos vienen de una distribución normal. Hay varios tests para comprobar la normalidad:
+
+\begin{itemize}
+	\item Anderson-Darling test, basado en ECDF.
+	\item El test Ryan-Joiner.
+	\item El test Shapiro-Wilk, similar al Ryan-Joiner.
+	\item El test Kolmogorov-Smirnov, basado en ECDF.
+\end{itemize}
+
+\subsubsection{Weibull Plots}
+
+Es utilizada para la confianza de los datos cuando la distribución es desconocida. Puede ser utilizada para estimar la forma $\beta$ y el \textit{mean time between failures (MTBF)} o ratio de fallo.
+
+\begin{equation}
+P(x) = \alpha \beta (x-\gamma)^{\beta - 1}e^{-\alpha(x-\gamma)^\beta}
+\end{equation}
+
+Siendo $\alpha$ parámetro de escala, $\beta$ parámetro de forma y $\gamma$ parámetro de localización.
+
+Las distribuciones Weibull con $\beta < 1$ tienen ratio decreciente con el tiempo, por ejemplo, mortalidad infantil. Los que tienen 1 o cercano a uno, la vida útil o fallo aleatorio, y con $\beta > 1$ tiene ratios de fallo que se incrementan con el tiempo.
+
+\section{Measurement System Analysis}
+
+El MSA es un area de estudios estadísticos que explora la variación de los datos en función de la \textit{Calibración}, \textit{Estabilidad}, \textit{Repetitividad}, \textit{Reproducibilidad}, \textit{Linealidad}, \textit{Sesgo}, \textit{Precisión} y \textit{Accuracy} (que es como precisión también).
+
+Repetitividad: variación en el equipo de medida expresado en desviaciones estándar. 
+
+
+Reproducibilidad: variación de la medida por el equipo de medición expresado en desviaciones estándar. 
+
+GR\&R study
+\begin{enumerate}
+	\item Planifica el estudio en detalle comunicando a supervisor, asegurando el equipamiento para el estudio. Equipo calibrado y muestras en buenas condiciones... 
+	\item Seleccionar e identificar las muestras. Cubrir el mayor espectro posible al seleccionarlas. 
+	\item El siguiente paso es crear una tabla para anotar resultados de los experimentos.
+	\item Cada medidor/tasador (persona) es llamado uno a uno y mide lo que se le pide según la hoja de experimentos.
+	\item Se hacen las medias y el rango de las partes de cada uno. De entre todas las partes diferentes, se saca la media y el rango promedio. Esto tiene sentido para ver que con el mismo equipo de medida se están haciendo mediciones en torno a cierto valor y a cierto rango.
+\end{enumerate}
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=150mm]{imagenes/GageRR.png}
+	\caption{Gage R\&R}
+	\label{fig:GageRR}
+\end{figure}
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=150mm]{imagenes/GageRRReport.png}
+	\caption{Gage R\&R Report}
+	\label{fig:GageRRReport}
+\end{figure}
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=150mm]{imagenes/Fuentesvariacionmedicion.png}
+	\caption{Fuentes de variación de medición}
+	\label{fig:Fuentesvariacionmedicion}
+\end{figure}
+
+Errores comunes durante la actuación del GR\&R:
+\begin{itemize}
+	\item No se seleccionan las muestras que pueden dar amplitud de resultados
+	\item No se siguen un orden aleatorio a la hora de medir, sino que se sigue un orden.
+	\item Utilizar appraisers (medidores) inexpertos o que habitualmente no miden lo que se está experimentando.
+	\item Alterar las muestras durante le estudio (que se caigan al suelo, por ejemplo).
+	\item Que el experimentador no esté presente durante el estudio R\&R.
+	\item Publicar resultados con los nombres de las personas.
+	\item Asumir que los resultados GR\&R son válidos para siempre.
+	\item Asumir que la actuación GR\&R en una parte o pieza de un equipo es la misma para otro (equipo) del mismo tipo. Si cambia pieza, máquina que la fabrica, equipos utilizados para medir, o personas diferentes midiendo, el GR\&R es diferente.
+\end{itemize}
+
+
+\textbf{**** Este tema se queda incompleto ****} \newline 
+\textbf{Hay que volver a él cuando termine con el resto} \newline
+\textbf{***************************************} \newline
+
+\pagebreak
+\section{Process and Performance Capability}
+
+\subsection{Process Performance Vs Process Specifitacions}
+
+Define y distingue entre límites naturales de proceso y límites de especificación, calcular la metrología de la actuación del proceso.
+
+Los límites de proceso naturales son calculados de la variación del proceso. Esto se hace a posteriori, cuando las causas especiales se han quitado y el proceso consigue una estabilidad estadística. Las especificaciones, son las expectativas de la ingeniería o del punto de vista del cliente. Cuando la variación del proceso es significativamente inferior a la amplitud de la especificación, es un proceso \textit{capable} (posible).
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=90mm]{imagenes/Controllimitversusspecificationlimitgrid.png}
+	\caption{Cuadro de control del límite vs límite de especificaciones}
+	\label{fig:Controllimitversusspecificationlimitgrid}
+\end{figure}
+
+Un producto, después de ser empaquetado muestra que el peso está entre 1.00 y 1.10 kgs. Se recogen datos de 30 días de los envíos, y se determina que la distribución es normalmente distribuida y su control chart es estable. Control chart saca que el promedio es 1.065 kg, y el rango promedio en el que oscila es 0.05 ¿cual es el porcentaje de producto que puede estar siendo enviado con sobrepeso o bajopeso?
+
+\begin{equation}
+\sigma = \frac{R}{d_2} = \frac{0.05}{2.059} \approx 0.024 kg.
+\end{equation}
+El valor estadístico para la variable $d_2$ para un subgrupo de tamaño 4 es 2,059. USL/LSL = Upper/Lower Specification Limit, X = media del proceso y $\sigma$ = desviación estándar estimada:
+
+\begin{equation}
+Z_U = \frac{USL - X}{\sigma} = \frac{1.1 - 1.065}{0.024} = 1.46
+\end{equation}
+
+\begin{equation}
+Z_L = \frac{X - LSL}{\sigma} = \frac{1.065 - 1}{0.024} = 2.7
+\end{equation}
+
+Sacando de la tabla los valores correspondientes a $Z_U$ = 1.46 y $Z_L$ = 2.7, tenemos que $\sigma_U$ = 0.0721, por lo que el 7.21\% de los envíos llevarán sobrepeso y tenemos $\sigma_L$ = 0.0035, por lo que el 0.35\% de los paquetes enviados estarán con el peso inferior.
+
+La definición natural de límites de proceso es 3$\sigma$, en este caso 1.065 $\pm$ 3(0.024), [0.993 - 1.137].
+
+\subsection{Process Capability Studies}
+
+Define, describe y conduce las capacidades de un proceso, incluyendo la identificación de sus características, especificaciones, tolerancias y verificando la estabilidad y normalidad.
+
+La \textit{Process capability} es la habilidad del proceso para tener las especificaciones esperadas. Cada proceso varía por causas comunes y especiales, internas y externas al proceso. Causas comunes: interacción entre pasos, diseño, variación natural por el material proporcionado, ..... Causas especiales: operadores con varios niveles de habilidad, cambios en la configuración del proceso, variaciones por el ambiente, cambios de equipo...
+
+En la práctica la gente con experiencia en proceso normalmente puede identificar las características que necesita un estudio completo de \textit{capability}. En algunas industrias, los clientes identifican las características críticas que ellos necesitan. En la práctica con un FMEA se identifican los parámetros o características que necesitan un control estadístico de proceso y en base a esto se crea un planning SPC. 
+
+\subsection{Process Capability and Process Performance Indices}
+
+\subsection{Short-Term vs Long-Term Capability and Sigma Shift}
+
+
 \pagebreak[4]
 \part{Glosario}
 
 Una relación de palabras y traducciones Español - Inglés de cara al examen:
 
 Skills - Habilidades. Relativas al conocimiento o técnica.
+Reliability - Confianza/Confiabilidad. Relativo a los datos.
+Appraiser - Medidor/Tasador. Relativo a personas.
 
 \end{document}
