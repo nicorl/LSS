@@ -1456,7 +1456,26 @@ La diferencia contra $C_pk$, es que $C_p$ no tiene en consideración si el proce
 
 \subsubsection{Process Capability Calculations}
 
+Dos cálculos son los que controlan e identifican lo capaz que es un proceso. Estos dos índices calculados son $C_p$ (índice de capacidad) y $C_{pk}$ (actuación del proceso).
 
+Diferentes escenarios que nos encontramos: 
+\begin{itemize}
+	\item $C_p = 2$ y $C_{pk} = 1.5$ indican que el proceso está en Six Sigma.
+	\item $C_p, C_{pk} \geq 1.3$ indican que el proceso es capaz.
+	\item $C_p, C_{pk} = 1$ indica que el proceso cumple justo con las especificaciones. 0.27 unidades con defecto.
+	\item $C_p, C_{pk} < 1$ fuera de especificaciones de ingeniería.
+	\item $C_p, C_{pk} > 3$, valores anormalmente altos, la especificación es demasiado amplia o identifica la oportunidad de moverse hacia un proceso menos caro.
+\end{itemize}
+
+Interpretaciones sobre $C_p$ y $C_{pk}$:
+\begin{itemize}
+	\item Mayor $C_p$ y $C_{pk}$, mejor.
+	\item El valor no cambia a medida que el proceso se centra en el objetivo a menos que algo en el proceso cambie.
+	\item El valor de $C_p$ y $C_{pk}$ serán iguales si el proceso está centrado.
+	\item $C_{pk}$ siempre es igual o menor a $C_p$
+	\item Si $C_{pk}$ pasa a ser negativo, la media del proceso está fuera de alguna especificación de ingeniería.
+	\item 	
+\end{itemize}
 
 \subsection{Short-Term vs Long-Term Capability and Sigma Shift}
 
