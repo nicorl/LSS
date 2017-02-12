@@ -1474,11 +1474,69 @@ Interpretaciones sobre $C_p$ y $C_{pk}$:
 	\item El valor de $C_p$ y $C_{pk}$ serán iguales si el proceso está centrado.
 	\item $C_{pk}$ siempre es igual o menor a $C_p$
 	\item Si $C_{pk}$ pasa a ser negativo, la media del proceso está fuera de alguna especificación de ingeniería.
-	\item 	
 \end{itemize}
 
 \subsection{Short-Term vs Long-Term Capability and Sigma Shift}
 
+Una línea de ensamblaje que envía unidades completas semanalmente muestrea aleatoriamente parámetros críticos en sus unidades. El ingeniero de calidad usa estos datos para medir índices de actuación para estos parámetros críticos. Desde que los datos incluyen variaciones a largo plazo y cambios, el ingeniero no debe utilizar las métricas $C_p$ y $C_{pk}$. Las medidas $C_p$ y $C_{pk}$ son usadas cuando la estabilidad del proceso es monitorizada a través de SPC y la desviación estandar se sale del rango principal. El ingeniero mide una desviación de 0,004 y una media de 10,014. Los límites de especificación son 9,99 y 10,03.
+
+\begin{equation}
+s = \sqrt{\frac{1}{N-1}\sum_{i=1}^{N}(x_i-x)^2} = 0.004
+\end{equation}
+
+\begin{equation}
+P_p = \frac{Tolerancia}{6s} = \frac{10,03 - 9,99}{6*0,004} = 1.667
+\end{equation}
+
+\begin{equation}
+P_{pk}= Min(\frac{USL - X}{3s}, \frac{X - LSL}{3s}) = Min(\frac{10,03-10,014}{3*0,004},\frac{10,014-9,99}{3*0,004})
+\end{equation}
+
+\begin{equation}
+P_{pk} = Min(\frac{0,016}{0,012},\frac{0,024}{0,012})= Min(1.33 , 2) = 1.33
+\end{equation}
+
+Y ahora se compara el requerimiento contractual de los $P_p$ y $P_{pk}$ del cliente con los $P_p$ y $P_{pk}$ calculados.
+
+Teniendo un proceso fuera de control se recomienda utilizar $P_p$ y $P_{pk}$, con la controversia de que es un proceso impredecible. Usar estos índices es un paso atrás, un gasto de energía e ingeniería y esfuerzo de gestión que no te lleva a nada.
+
+\begin{equation}
+C_{pm} = \frac{USL - LSL}{6 \sigma_{C_{pm}}}
+\end{equation}
+
+Indudablemente $C_p$ y $C_{pk}$ es una mejor medida que refleja lo capaz de un proceso.
+
+$P_p$ y $P_{pk}$ pueden ser aplicados para recopilar datos de inspecciones de material para obtener una indicación de la actuación del proceso para el proveedor y donde los datos del SPC no están disponibles.
+
+Dado que los datos del proceso pueden contener causas especiales, siempre que los datos sigan una distribución normal, $P_p$ y $P_{pk}$ pueden dar alguna idea sobre los procesos.
+
+También es improbable que los proveedores implementados por el SPC estén dispuestos a compartir sus datos de proceso en secuencia temporal con sus clientes. Por lo tanto, $P_p$,
+y $P_{pk}$ pueden servir de indicador para estas situaciones.
+
+\subsubsection{Short-Term vs Long-Term Capability}
+
+La \textit{Short-Term Capability} se calcula con datos recogidos de 20-30 subgrupos. La variabilidad es relativamente pequeña.
+
+Para la \textit{Long-Term Capability} el muestreo se recoge atendiendo a diferentes procesos, cavidades, operarios, ... y teniendo en cuenta datos externos al proceso que pueden influir (temperatura, presión, número de equipos trabajando a la par, ...). Lo normal es que la variación del \textit{Long-Term} sea mayor que el \textit{Short-Term}.
+
+Además, hay parámetros que no tienen que atender a distribuciones normales, como los tiempos de espera, por ejemplo. Técnicas de transformación de datos son utilizadas antes de analizar la capacidad de un proceso.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=120mm]{imagenes/ShortTermVsLongTerm.png}
+	\caption{Variación del Short-Term y Long-Term.}
+	\label{fig:ShortTermVsLongTerm}
+\end{figure}
+
+\part{Análisis}
+
+\section{Exploratory Data Analysis}
+
+\subsection{Estudios de multi-variable}
+
+\subsection{Correlación y regresión lineal}
+
+\section{Hypotesis Testing}
 
 \pagebreak[4]
 \part{Glosario}
