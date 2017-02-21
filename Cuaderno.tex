@@ -1534,9 +1534,130 @@ Además, hay parámetros que no tienen que atender a distribuciones normales, co
 
 \subsection{Estudios de multi-variable}
 
+Selección de los planes apropiados de muestreo para crear cartas para el estudio multivariable e interpretar los resultados para la variación de posición, la variación de ciclo y la variación temporal.
+
+\begin{tabular}{|c|c|c|}
+	\hline Tipos de variación & Piezas & Lote \\ 
+	\hline Posicional & Within-Part & Within-Lot \\ 
+	\hline Cíclico & Part-to-part & Lot-to-Lot \\ 
+	\hline Temporal & Over time (shift-to-shift) & Over time (shift-to-shift) \\ 
+	\hline 
+\end{tabular} 
+
+Multi-var chart es útil para analizar los tres tipos de variación, también ayuda a minimizar la variación identificando áreas en las cuales hay una excesiva variación.
+Posicional se refiere sobre las características en un mismo producto, cíclico es la variación sobre diferentes lotes y Temporal es la que ocurre con el paso del tiempo.
+
+
+Procedimiento para un plan de muestreo multivariable
+
+\begin{enumerate}
+	\item Selección del proceso y de las características a ser investigadas,
+	\item Selección de un tamaño de muestra gestionable, identificando en tiempo las muestras,
+	\item Registrar tiempo y valores de cada muestra en un formato tabla,
+	\item Representar un gráfico con el tiempo en la escala horizontal y los valores medidos en la vertical,
+	\item Conectar los valores observados con líneas
+	\item Observar y analizar la variación en la muestra, entre muestras, y a lo largo del tiempo,
+	\item Focalizar estudios en las áreas donde haya máximas variaciones,
+	\item Hacer mejoras de procesos y repetir estudios multivariable para confirmar los resultados.
+\end{enumerate}
+
 \subsection{Correlación y regresión lineal}
 
+Correlación es encontrar la relación entre dos o más conjuntos de datos. Para encontrar correlación, tenemos que hablar de que hay una variable dependiente ($y$) y una independiente ($x$). Ejemplos. Horas estudiadas - Examen, Horas de ejercicio físico - Pérdida de peso, Cantidad de publicidad - Volumen de ventas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=120mm]{imagenes/Correlation.png}
+	\caption{Correlation plot.}
+	\label{fig:Correlation}
+\end{figure}
+
+\begin{equation}
+r = \frac{1}{n-1} \sum \frac{(x-x_m)(y-y_m)}{S_xS_y}
+\end{equation}
+
+Procedimiento para calcular el coeficiente de correlación
+
+\begin{enumerate}
+	\item Calcular la media $x_m$ y $y_m$.
+	\item Calcular desviaciones standart $S_x$ y $S_y$.
+	\item Calcular la diferencia $x-x_m$ y $y-y_m$ para cada par de datos, y multiplicar las diferencias juntas
+	\item Sumar todas las diferencias de producto. 
+	\item Dividir la suma por el producto de las dos desviaciones estandar. 
+	\item Dividir los resultados del paso anterior por $n-1$, siendo $n$ el número de parejas de datos (x,y)
+\end{enumerate}
+
+\subsubsection{p-valor}
+
+P-valor es utilizado en el test de hipótesis para decidir cuando rechazar una hipótesis nula o no rechazarla. Es común utilizar 0.05 como p-valor. 
+
+\begin{equation}
+r = \frac{n*\Sigma xy - (x*y)}{\sqrt{(n*[\Sigma x^2- (\Sigma x)^2])(n*[\Sigma y^2- (\Sigma y)^2])}}
+\end{equation}
+
+\subsection{Regresión simple}
+
+\begin{equation}
+y = a + bx
+\end{equation}
+
+Siendo y el valor previsto, dado un valor de x. Siendo x la variable independiente.
+
+\subsubsection{Procedimiento para Mínimos Cuadrados}
+
+\begin{enumerate}
+	\item Calcular xy, $x^2$ e $y^2$
+	\item Calcular las sumas para x, y, xy, $x^2$, $y^2$, ademas de las medidas $x_m$ y $y_m$
+	\item Encontrar la ecuación lineal que mejor se ajusta 
+	\begin{equation}
+	b = \frac{n \Sigma xy - (\Sigma x)(\Sigma y)}{n \Sigma x^2 - (\Sigma x)^2}
+	\end{equation}
+	\begin{equation}
+		a = y - bx 
+	\end{equation}
+\end{enumerate}
+
 \section{Hypotesis Testing}
+
+\subsection{Términos básicos}
+
+Los DOE (\textit{Design of experiments}) puede ser resumido como un conjunto de experimentos planificados. Se ajustan el conjunto de variables bajo las condiciones controladas.
+
+\textbf{Factor}: es la variable controlada por el experimentador, y puede ser visto como un estímulo.
+
+\textbf{Levels}: un nivel refiere al ajuste o posibles valores de un valor en un diseño experimental (high-medium-low, por ejemplo).
+
+\textbf{Treatment}: es un nivel simple asignado a un factor simple, durante el experimento, por ejemplo: presión 1 atmósfera.
+
+\textbf{Block}: Es un etiqueta común a todos los elementos. Por ejemplo: muestras del mismo lote.
+
+\textbf{Diseño experimental}: es el plan donde se incluyen las responsabilidades, factors, levels, treatments, blocks y el uso de la planificación y la replicación del experimento.
+
+\textbf{Error experimental}: La variación en la variable de respuesta cuando los niveles y factores se mantienen constantes.
+
+\textbf{Planned grouping}: La manera de buscar uniformidad en las muestras, en los \textit{Blocks}.
+
+\textbf{Randomization}: Organiza el experimento para tener validez estadística.
+
+\textbf{Replication}: incrementa precisión, reduce mediciones erróneas.
+
+\textbf{Repetition}: Es el proceso para poder repetir el experimento con los mismos parámetros de máquina y sin encontrar variaciones.
+
+\textbf{Variables}: Dependientes, independientes y de respuesta, que son las observadas como respuesta de un experimento.
+
+\textbf{Effects}: Main effects e Interactions. Los efectos principales se definen como una estimación del efecto de un factor independiente de cualquier otro medio. Las interacciones ocurren cuando el efecto de un factor de entrada sobre el de salida depende del nivel de otro factor de entrada.
+
+\subsubsection{DOE Overview}
+
+\textbf{History of DOE}: Diseñar experimentos es un método estructurado y organizado que determina la relación entre factores (X's) que afectan a un proceso y el resultado del proceso (Y).
+
+\textbf{Purpose}: El objetivo de diseñar un experimento es generar conocimiento sobre el producto o proceso. Se hace a través de: definir un objetivo, definir las variables que serán controladas, definir las variables que serán medidas para describir el resultado y examinar su precisión, y elegir el diseño que es compatible con el objetivo, numero de variables de diseño y precisión de medidas.
+
+\textbf{Planning Test Programs}: Basado en la información de fondo, elegir los factores y el diseño del programa experimental. Clasificación:
+\begin{itemize}
+	\item \textit{Completamente aleatorios}: para cuando 
+\end{itemize}
+ 
 
 \pagebreak[4]
 \part{Glosario}
