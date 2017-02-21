@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+## Lean Six Sigma Green Belt
 
-You can use the [editor on GitHub](https://github.com/nicorl/LSS/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+Este documento que estoy desarrollando en LaTeX pretende recoger a modo de resumen los puntos tratados en [Book of Knowledge (BoK)](http://www.iassc.org/body-of-knowledge/green-belt-body-of-knowledge/) de cara a la preparación de la certificacin **Lean Six Sigma Green Belt**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+También, por el hecho de aprender a manejar esta plataforma, he decidido ir generando el documento con múltiples versiones y utilizando GitHub.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nicorl/LSS/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Espero que sirva de ayuda.
