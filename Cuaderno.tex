@@ -1655,9 +1655,233 @@ Los DOE (\textit{Design of experiments}) puede ser resumido como un conjunto de 
 
 \textbf{Planning Test Programs}: Basado en la información de fondo, elegir los factores y el diseño del programa experimental. Clasificación:
 \begin{itemize}
-	\item \textit{Completamente aleatorios}: para cuando 
+	\item \textit{Completamente aleatorios}: para cuando un solo factor es analizado
+	\item \textit{Factorials}: apropiado cuando se investigan varios factores a dos o mas niveles y la interacción es necesaria.
+	\item \textit{Blocked factorials}: reducen el número de ejecuciones y usa bloques para ejecutar experimentos en \textit{subsets}.
+	\item textit{Fractional factorials}: reduce el número de combinaciones de factores y niveles requeridos para ser lanzado.
+	\item \textit{Randomized blocks}: investigar un factor simple cuando el material puede ser bloqueado.
+	\item ...
 \end{itemize}
  
+\textbf{Experimental Objectives}: \textit{¿Qué pregunta estamos intentando contestar?} 
+\begin{itemize}
+	\item Encontrar el procedimiento de inspección que dé mejor precisión.
+	\item Encontrar el equilibrio entre emails y anuncios de TV que produce más ventas.
+	\item Encontrar el recipiente de pastel que produce el sabor más consistente.
+\end{itemize}
+En cualquier caso, el objetivo debe ser medible, estar relacionado con metas y objetivos de la empresa y el sistema de medida que lo controle sea sencillo de manejar.
+
+\subsubsection{DOE Design Principles}
+
+\textit{Randomization}: Es un método de diseño y organización experimental que intenta disminuir los efectos de las variaciones por causas especiales. Ejemplo: 8 tratamientos diferentes, y se hacen 5 réplicas por tratamiento. El propósito de hacer los 40 tests es reducir la variación causada por \textit{variables ruido}.
+
+\textit{Blocking}: intenta mitigar el efecto de variables que estamos intentando eliminar o evitar. Por ejemplo, los experimentos 1, 4, 5 y 8 se realizan durante el primer turno, y 2, 3, 6 y 7 durante el segundo.
+
+\textit{Replication}: Es la repetición del conjunto de todas las combinaciones de tratamientos para ser comparadas en un experimento en orden aleatorio.
+
+\textbf{Experimentation}: Un experimento planificado puede ser muy útil para entender la variación. El propósito de ejecutar un DOE es determinar los mejores caminos de hacer cosas o entender otros factores del proceso. Para cada prueba proceso/prueba/\textit{trial} se debe definir una lista de actividades. Un ejemplo de acciones que ayudan a tener un DOE con éxito: mapear el proceso, brainstorm de las causas de la variación, un diagrama causa-efecto, determinar los niveles de variación útiles dentro del proceso, definir el experimento, ejecutar el experimento operando el proceso usando factores varios, recoger muestras de cada experimento, calcular los factores que afectan, correr el proceso de nuevo para confirmar las mejoras, actualizar las plantillas de operaciones para mostrar los nuevos parámetros de operación.
+
+Pasos prácticos importantes cuando se diseñan experimentos: comprobar los patrones y equipos de medición, hacer los experimentos lo más simples posibles, comprobar que todas las ejecuciones planificadas son factibles, evitar cambios no planeados, guardar algo de tiempo para eventos inesperados, guardar los datos en bruto, registrar todo lo que ocurra, resetear los equipos al terminar.
+
+Los objetivos de experimento se pueden resumir en cuatro categorías: Comparatives (concluye si el factor es significante), Screening (selecciona unos pocos efectos principales), Response surface (encuentra la configuración óptima y los puntos débiles de los procesos) y Mixture.
+
+Una vez configurados los objetivos los experimentos pueden ser desarrollados, lo mejor es utilizar pasos como: definir el objetivo, aprender echos sobre el proceso, hacer un brainstorm sobre variables dependientes e independientes, asignar niveles para las variables independientes, seleccionar o desarrollar un plan DOE, correr experimentos en orden aleatorio y analizar periódicamente, dibujar las conclusiones y verificar la replicación.
+
+Tener en cuenta que para que el experimento sea válido hace falta que el sistema de medición sea capaz, que el proceso sea estable y que existen residuos y que éstos deben ser normalizados.
+
+\textbf{Application of DOE}: Los operadores son los que conocen mejor las máquinas. A través de conocer cómo trabajan, se pueden tomar los parámetros de diseño y posteriormente, analizarlos bajo la óptica de la ingeniería para conseguir optimizar (rendimiento, las variables, tiempos, ...). Estos parámetros modificados deben ser verificados, saber si el equipo trabaja mejor en estas condiciones. Por ejemplo con SDCA (\textit{standarize, do, check, act}) es común mejorar los planes de control y las hojas de proceso.
+
+\textbf{Simulation Studies}: Como el sofware de simulación incrementa la versatilidad y usabilidad de la simulación computerizada y la experimentación, se pueden conducir mas experimentos para mostrar potenciales resultados e interacciones. 
+
+\begin{itemize}
+	\item Especificar el problema, preguntas, necesidades del negocio y resultados esperados.
+	\item Preparar un plan que incluya datos de prueba, colecciones de datos, escenarios alternativos, hitos y líneas temporales.
+	\item Recoger datos, identificar vacíos.
+	\item Construir un modelo que relacione inputs, las variables del proceso y outputs.
+	\item Diseñar y ejecutar escenarios, distinguiendo entre parámetros variables y fijos, asegurando la reporoducibilidad de los resultados.
+	\item Analizar e interpretar los datos, verificar las significancias estadísticas.
+\end{itemize}
+
+\subsection{Doe Graphs and Plots}
+\subsubsection{Main Effects}
+Son definidos como una estimación del efecto de un factor independiente de cualquier otro medio. El primer paso es calcular efectos principales, y son llamados \textit{average main effects}.
+
+\subsubsection{Interaction Effects}
+Las interacciones ocurren cuando el efecto de un factor de entrada sobre un factor de salida, depende del nivel de otro factor de entrada.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=90mm]{imagenes/a23design.png}
+	\caption{$2^3$ full-factorial design.}
+	\label{fig:A23design}
+\end{figure}
+
+\subsubsection{Balanced Designs}
+Se llama \textit{Balanced} cuando cada configuración de factores aparece el mismo numero de veces que cada configuración de cada uno de los otros valores. \textbf{Es la mitad de un diseño $2^3$}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=80mm]{imagenes/a23halfdesign.png}
+	\caption{$2^3$ half design.}
+	\label{fig:a23halfdesign}
+\end{figure}
+
+\subsubsection{Effects and Confounding}
+
+Un DOE utiliza los efectos para determinar si la configuración de un factor o no tiene impacto significativo en un proceso. 
+Según la tabla \ref{fig:a23halfdesign}, la columna de la interacción A $\times$ B tiene la misma configuración que C. Esto significa que cuando el efecto C es calculado, no está claro si es debido al factor C o a la interacción A $\times$ B, o la combinación de ambas. Esto significa que el efecto de C está \textit{confounded} con la interacción A $\times$ B.
+
+\subsubsection{Diseño y análisis de experimentos de un factor}
+Experimentos de un factor son aleatorios cuando no hay pruebas omitidas y el orden es completamente aleatorio. Los resultados son analizados y evaluados con ANOVA y los valores significantes exceden el F-statistic.
+\subsubsection{Diseño y análisis de Full Factorial Experiments}
+Buscan todas las posibilidades de combinación de factores para completar un estudio de interacciones. Pueden ser mantenidas y convertidas en diferentes diseños de experimentos. A través de un two-way ANOVA se comprueba si son estadísticamente significativos.
+
+Ejemplo: Estas cocinando carne para 100 personas y el ratio de aceptabilidad es del 75\%. Quieres saber el efecto de diferentes métodos de cocinar y las aproximaciones para ver como afecta.
+Método: + es grill, - es frito. Carne: + es solomillo, - es costilla. Marinado: + es vino rojo, - es salsa de soja.
+
+\begin{table}[H]
+	\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+	\hline Experimento & Método & Carne & Marinado & \% de aprobado \\ 
+	\hline 1 & - & - & - & 66 \\ 
+	\hline 2 & + & - & - & 88 \\ 
+	\hline 3 & - & + & - & 58 \\ 
+	\hline 4 & + & + & - & 84 \\ 
+	\hline 5 & - & - & + & 67 \\ 
+	\hline 6 & + & - & + & 91 \\ 
+	\hline 7 & - & + & + & 63 \\ 
+	\hline 8 & + & + & + & 84 \\ 
+	\hline 
+\end{tabular} 
+		\caption{Tabla 1 de ejemplo de ejercicio Full Factorial Experiment.}
+		\end{center}
+\end{table}
+
+Método: [(88+84+91+84)-(66+58+67+63)]/4 = 23.25 \newline
+Carne: [(58+84+63+84)-(66+88+67+91)]/4 = -5.75 \newline
+Marinado: [(67+91+63+84)-(66+88+58+84)] = 2.25
+
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.8cm}|c|}
+			\hline Experimento & Método & Carne & Marinado & Cook $\times$ Meat & Meat $\times$ Mar & Cook $\times$ Mar & Cook $\times$ Meat $\times$ Mar & \% de aprobado \\ 
+			\hline 1 & - & - & - & + & + & + & - & 66 \\ 
+			\hline 2 & + & - & - & - & + & - & + & 88 \\ 
+			\hline 3 & - & + & - & - & - & + & + & 58 \\ 
+			\hline 4 & + & + & - & + & - & - & - & 84 \\ 
+			\hline 5 & - & - & + & + & - & - & + & 67 \\ 
+			\hline 6 & + & - & + & - & - & + & - & 91 \\ 
+			\hline 7 & - & + & + & - & + & - & - & 63 \\ 
+			\hline 8 & + & + & + & + & + & + & + & 84 \\ 
+			\hline 
+		\end{tabular} 
+		\caption{Tabla 2 de ejemplo de ejercicio Full Factorial Experiment.}
+	\end{center}
+\end{table}
+
+Método y Carne: [(66+84+67+84)-(88+58+91+63)]/4 = 1.25
+Carne y Marinado: [(66+88+63+84)-(58+84+67+91)]/4 = 0.25
+Método y Marinado: [(66+58+91+84)-(88+84+67+63)]/4 = -0.75
+Método, Carne y Marinado [(88+58+67+84)-(66+84+91+63)] = -1.75
+
+Las interacciones tiene mínimos efectos en cuanto a la aprobación o retirada. La conclusión es que el método (grill o frito) tiene mayor efecto que el resto.
+
+\subsubsection{Diseño y análisis de experimentos de Two-Level Fractional Factorial}
+\begin{equation}
+Number of runs = L^F
+\end{equation}
+Siendo L el número de niveles, y F el número de factores.
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline Experimento & Método & Carne & Marinado & \% de aprobado \\ 
+			\hline 2 & + & - & - & 88 \\ 
+			\hline 3 & - & + & - & 58 \\ 
+			\hline 5 & - & - & + & 67 \\ 
+			\hline 8 & + & + & + & 84 \\ 
+			\hline 
+		\end{tabular} 
+		\caption{Tabla de ejemplo de ejercicio Fractional Factorial Experiment.}
+	\end{center}
+\end{table}
+
+Método: [(88+84)-(58+67)]/2 = 23.5
+Carne: [(54+84)-(88+67)]/2 = -6.5
+Marinado: [(67+84)-(88+58)]/2 = 2.5
+
+Aunque los resultados no son iguales que en el caso anterior, las conclusiones son similares.
+
+\subsubsection{Two-Level Fractional Factorial Experiment Procedure}
+
+El procedimiento se resume en tres etapas: seleccionar un proceso, seleccionar un diseño y analizar los datos-dibujar las conclusiones.
+
+Ejemplo:
+Selecciona un proceso e identifica inputs y outputs.
+\begin{enumerate}
+	\item Desarrollo y entrega de software a un cliente
+	\item El éxito se basa en el despliegue sin problemas críticos que requieren resoluciones de alta prioridad
+	\item Estudiar el efecto de siete variables en dos niveles.
+\end{enumerate}
+
+\begin{table}[H]
+	\begin{center}
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+	\hline Input factors & Level 1 (-) & Level 2 (+) \\
+	\hline A. Requisitos & 20 requsitos de alto nivel & Definir +400 requisitos \\
+	\hline B. Analisis de riesgo & Minimal checklist & Formal \\
+	\hline C. Arquitectura & Agil & Estructurada \\
+	\hline D. Diseño y código & Prototipo & Etapa consensuada \\
+	\hline E. Integración de sistema & Freeware y Shareware & Componentes precualificados \\
+	\hline F. Test de producto & Explicar y checks aleatorios & Unidad-integración-sistema-usuario \\
+	\hline G. Aseguramiento de Calidad & Inspección final & Series de 5 pasa no pasa para aprobar \\
+	\hline
+\end{tabular}
+\end{center}
+\end{table}
+Experimento: Siete factores se evaluan a dos niveles. \textit{Pass} es que no tiene problemas críticos. \textit{Score} es satisfacción de cliente.
+
+\begin{table}[H]
+	\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+	\hline Test & A & B & C & D & E & F & G & Pass & Score \\
+	\hline 1 & + & + & - & + & - & - & + & Yes+& 85 \\
+	\hline 2 & + & + & - & - & + & + & - & No- & 57 \\
+	\hline 3 & + & - & + & + & - & + & - & No- & 82 \\
+	\hline 4 & + & - & + & - & + & - & + & Yes+& 100 \\
+	\hline 5 & - & + & + & + & + & - & - & No- & 69 \\
+	\hline 6 & - & + & + & - & - & + & + & Yes+& 87 \\
+	\hline 7 & - & - & - & + & + & + & + & No- & 72 \\
+	\hline 8 & - & - & - & - & - & - & - & No- & 44 \\
+	\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+			\hline Test & A & B & C & D & E & F & G & Pass & Score \\
+			\hline 1 & +85 & +85 & -85 & +85 & -85 & -85 & +85 & Yes+& 85 \\
+			\hline 2 & +57 & +57 & -57 & -57 & +57 & +57 & -57 & No- & 57 \\
+			\hline 3 & +82 & -82 & +82 & +82 & -82 & +82 & -82 & No- & 82 \\
+			\hline 4 & +100 & -100 & +10 & -100 & +100 & -100 & +100 & Yes+& 100 \\
+			\hline 5 & -69 & +69 & +69 & +69 & +69 & -69 & -69 & No- & 69 \\
+			\hline 6 & -87 & +87 & +87 & -87 & -87 & +87 & +87 & Yes+& 87 \\
+			\hline 7 & -72 & -72 & -72 & +72 & +72& +72 & +72 & No- & 72 \\
+			\hline 8 & -44 & -44 & -44 & -44 & -44 & -44 & -44 & No- & 44 \\
+			\hline 
+			\hline Difference ($\Sigma_1^8$) & 52 & 0 & 80 & 20 & 0 & 0 & 92 &  &  \\
+			\hline Effect (/4) & 13 & 0 & 20 & 5 & 0 & 0 & 23 & & \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+Los grandes contribuidores son C (arquitectura) y G (aseguramiento de la calidad).
+
 
 \pagebreak[4]
 \part{Glosario}
