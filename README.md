@@ -19,4 +19,4 @@ Capítulo | Apartados | Parte
 **Cap 1** | `DMAIC`, `Road Map`, `Cost-Benefit`, `Conductores de la organización y la métrica`  | Introducción
 **Cap 2** | `Value`, `TPS House`, `5S`, `Waste`, `VSM` | Introducción
 **Cap 3** | `IDOV`, `DMADV`, `FMEA` | Introducción
-**Cap 4** | `Project Selection`, `Process Elements`, `Benchmarking`, `I/O Process`, `Stakeholders | Definición
+**Cap 4** | `Project Selection`, `Process Elements`, `Benchmarking`, `I/O Process`, `Stakeholders` | Definición
