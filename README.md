@@ -1,7 +1,7 @@
 # LSS
 Preparación de Lean Six Sigma Green Belt,
 
-Este documento es un resúmen del [Book of Knowledge (BoK)]:https://asq.org/cert/resource/docs/2014/FINAL%202014%20Green%20Belt%20BOK.pdf de la ASQ para la certificación Green Belt.
+Este documento es un resúmen del [Book of Knowledge (BoK)](https://asq.org/cert/resource/docs/2014/FINAL%202014%20Green%20Belt%20BOK.pdf) de la ASQ para la certificación Green Belt.
 
 Capítulos completos
 =====
