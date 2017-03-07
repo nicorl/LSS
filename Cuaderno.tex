@@ -405,26 +405,26 @@ Los dueños de los procesos son los que tienen la responsabilidad de ejecutar e 
 \section{Voice of the Customer (VOC)}
 
 \subsection{Identificar al customer}
-Customers puede haber de dos tipos: internos, que trabajan en el proceso, externos. Pasa identificar customers: brainstorming, SIPOC, analisis de márketing, trackear un producto hasta la entrega.
+\textit{Customers} puede haber de dos tipos: internos, que trabajan en el proceso, externos. Pasa identificar customers internos los mejores métodos a utilizar: brainstorming, SIPOC, análisis de márketing, perseguir un producto por todos los pasos hasta la entrega.
 
-Al igual, se pueden dividir los customers por grupos: Internos/Externos, por edad, por localización, clima, lengua, por industria.
+Al igual, se pueden dividir los \textit{customers} por grupos: Internos/Externos, por edad, por localización, clima, lengua, por industria.
 
 \subsection{Datos del customer}
 
 Hace falta conseguir datos: encuestas, observar grupos, entrevistas, ... Identificar los elementos clave para hacer efectivas estas herramientas. Revisar colecciones de datos para eliminar indeterminaciones.
 ¿Cómo saber lo que el cliente quiere? preguntándole. El cliente es experto en lo que hace, sabrá lo que necesita. 
 
-El foco para un GB es, internamente, hablar con la gente para saber qué hacen y cómo podríamos hacer que fuera más fácil hacerlo: lo que quiere, requisitos y expectativas. 
+El foco para un Green Belt es, internamente, hablar con la gente para saber qué hacen y cómo podríamos hacer que fuera más fácil hacerlo: lo que quiere, requisitos y expectativas. 
 
-Para capturar datos del customer podemos utilizar: VoC, surveys, QFD (Quality function deployment), entrevistas, Focus groups!
+Para capturar datos del \textit{customer} podemos utilizar: VoC, surveys, QFD (Quality function deployment), entrevistas, ...
 
-Lo suyo es seleccionar aleatoriamente un gran grupo de clientes y aplicar un método de manera estadísticamente válido. La info debe ser objetiva, con precisión y consistencia, evitando la ambigüedad. 
+Lo suyo es seleccionar aleatoriamente un gran grupo de clientes y aplicar un método de manera estadísticamente válido ya que la información debe ser objetiva, con precisión y consistencia, evitando la ambigüedad. 
 
 \subsection{Requisitos del cliente}
 
-Usamos QFD (Quality Functions Deployment) para traducir los requisitos del cliente en características del producto y oportunidades de mejora. Una de las aplicaciones mas importantes de Six Sigma es diseñar y rediseñar procesos y productos, para conseguir el menor coste posible.
+Usamos QFD (\textit{Quality Functions Deployment}) para traducir los requisitos del cliente en características del producto y oportunidades de mejora. Una de las aplicaciones mas importantes de Six Sigma es diseñar y rediseñar procesos y productos, para conseguir el menor coste posible.
 
-QFD (o \textit{House of Quality}) tiene de input VOC. La matriz QFD muestra el enlace entre VOC y los requisitos técnicos resultantes.
+QFD (o \textit{House of Quality}) tiene de input VoC. La matriz QFD muestra el enlace entre VoC y los requisitos técnicos resultantes.
 
 \begin{figure}[ht!]
 	\centering
@@ -433,7 +433,7 @@ QFD (o \textit{House of Quality}) tiene de input VOC. La matriz QFD muestra el e
 	\label{fig:ExampleQFD}
 \end{figure}
 
-QFD puede ser aplicado para mejorar calidad. En la matriz, los What's, se traducen por \textit{must have} o por \textit{expected to have}. QFD ayuda a la calidad de cliente conducida.
+QFD puede ser aplicado para mejorar calidad. En la matriz, los \textbf{What's}, se traducen por \textit{must have} o por \textit{expected to have}. QFD ayuda a conducir los procesos mediante la calidad hasta el cliente.
 
 \section{Project Management Basics}
 
@@ -1657,6 +1657,65 @@ Siendo y el valor previsto, dado un valor de x. Siendo x la variable independien
 
 \subsection{Términos básicos}
 
+Una hipótesis es asumir un parámetro poblacional: el adulto promedio bebe 1.7 cafés al día.
+
+Todos los test de hipótesis tienen hipótesis nula $H_0$ e hipótesis alternativa. $H_0$ significa que la media de la población es $\leq$, =, $\geq$ que un valor. $H_0$ es verdad si no se demuestra lo contrario. Una vez rechazada, la hipótesis alternativa debe ser considerada.
+
+Un componente tiene un peso de 6 gramos. $\mu$ es la media poblacional. Hipótesis nula
+
+\begin{equation}
+H_0 : \mu = 6 \ , \ H_0 : \mu \leq 6 \ , \ H_0 : \mu \geq 6
+\end{equation}
+
+La hipótesis alternativa $H_1$ representa lo contrario a la $H_0$:
+
+\begin{equation}
+H_1 : \mu \neq 6 \ , \ H_1 : \mu < 6 \ , \ H_1 : \mu > 6
+\end{equation}
+
+\subsubsection{Tipos de Error}
+
+\textit{Type I error}: resulta cuando la hipótesis nula es rechazada, siendo real.
+\textit{Type II error}: resulta cuando la hipótesis nula no es rechazada, debiendo serlo.
+
+\subsubsection{One-Tail Test}
+
+Cuando hay algún riesgo asociado a él, y es asociado a $\alpha$ risk (type I error). El nivel del riesgo $\alpha$ determina el nivel de confianza que tenemos en la conclusión. Se utiliza para determinar le valor crítico del test estadístico.
+
+Ejemplo: Una compañía inventa una pelota de golf que aumenta la distancia de lanzamiento en más de 20 metros. Test:  \newline \begin{center}
+	$H_0$ : $\mu$ $leq$ 20, $H_1$ : $\mu$ > 20
+\end{center}
+
+Atendiendo a una campana de Gauss donde los extremos responden a la región de rechazo. Si la media de muestreo cae en la zona no-extremo, no rechazamos $H_0$. Esto es que no tenemos suficiente evidencia para apoyar $H_1$. Si la media de muestreo cae en la zona de rechazo, rechazamos $H_0$, esto significa que tenemos suficiente evidencia para apoyar $H_1$, y confirmamos que la bola incrementará su distancia en mas de 20 metros.
+
+Muestras: 18, 20, 19, 18, 21, 19, 23, 18, 19, 22. \newline 
+Test de $\mu$ = 20 vs $>$ 20. \newline
+N: 10 ; Media: 19.7 ; StDev: 1.775 ; SE Mean: 0.561 ; 95\% Lower Bound: 18.644 ; T: -0.58 ; P: 0.713 \newline
+p-value $>$ 0.05. La distancia adicional afirmada por la compañía no es estadísticamente válida.
+
+\subsection{Test for Means, Variances and Proportions}
+
+Para medias debe ser utilizado t-distribution:
+\begin{equation}
+X_m \pm t_{\alpha/2}\frac{s}{\sqrt{n}}
+\end{equation}
+
+\subsection{Student's t-Test}
+\begin{equation}
+t = \frac{X_m-\mu_0}{s/\sqrt{n}}
+\end{equation}
+
+\subsection{Intervalos de confianza para medias}
+\begin{equation}
+X_m \pm Z_{\alpha/2} \frac{\sigma}{\sqrt{n}}
+\end{equation}
+
+Ejemplo: Tenemos en cuenta un canal de compra. 32 clientes, con un pedido promedio en 78.25 euros, y la desviación 37.5 euros. ¿Cómo calculamos el intervalo de confianza al 95\% de la población? \newline
+\begin{center}$\mu = 78.25 \pm 1.96\frac{37.50}{\sqrt{32}} = 78.25 \pm 13$ \end{center} 
+\begin{center}$91.25 \geq \mu \geq 65.25 $ \end{center}
+
+\section{Design of Experiments (DOE)}
+
 Los DOE (\textit{Design of experiments}) puede ser resumido como un conjunto de experimentos planificados. Se ajustan el conjunto de variables bajo las condiciones controladas.
 
 \textbf{Factor}: es la variable controlada por el experimentador, y puede ser visto como un estímulo.
@@ -1918,6 +1977,149 @@ Experimento: Siete factores se evaluan a dos niveles. \textit{Pass} es que no ti
 
 Los grandes contribuidores son C (arquitectura) y G (aseguramiento de la calidad).
 
+\subsection{DOE Considerations}
+
+\begin{itemize}
+	\item Trabajar con expertos en la materia para determinar que factores deben ser incluidos en el experimento.
+	\item Evaluar el proceso histórico para especificar los valores de cada factor.
+	\item Determinar los factores representativos y sus niveles
+	\item Usar registros históricos para revisar datos existentes y determinar cuantos más datos adicionales deben ser recogidos para obtener confianza estadística.
+\end{itemize}
+
+\section{Root Cause Analysis}
+
+El enfoque de las ocho disciplinas (8D): \begin{enumerate}
+	\item Utilizar enfoque de equipo. Junta a quien conoce el proceso y tiene habilidades técnicas para resolver el problema. Asigna un campeón que conduzca al equipo.
+	\item Describe el problema. Usa técnicas de calidad y métodos para describir el problema y el impacto en el objetivo. Ayuda a priorizar sobre los objetivos y acciones.
+	\item Empieza y comprueba acciones internas. 
+	\item Define y comprueba las causas raíz. Haz pruebas, aísla otras causas/parámetros. Asegura que la causa raíz es la que genera el problema.
+	\item Comprobar acciones correctivas. Confirma si las acciones correctivas se están llevando a cabo adecuadamente.
+	\item Empieza acciones correctivas permanentes. 
+	\item Evitar problemas futuros. Las modificaciones que es hagan deben evitar que los problemas sean recurrentes de cara al futuro.
+	\item Felicitar al equipo. Dar reconocimiento.
+\end{enumerate}
+
+\subsection{Fase 1: Identificar la oportunidad (Problem Identification)}
+Las oportunidades para la mejora deben ser identificadas y priorizadas atendiendo al equipo y el alcance. Métodos para identificar los problemas: 
+\begin{itemize}
+	\item Análisis Pareto: campos de fallo, quejas, retornos, basura, reworks, ...
+	\item Propuestas de esquemas de sugerencia, 
+	\item Necesidades de los usuarios/empleados, \textit{feedback} del mercado, ...
+	\item Resultados de auditorías y observaciones,
+	\item Encuestas a clientes, empleados y stakeholders,
+	\item Brainstorming, 
+\end{itemize}
+Tres atributos deben estar presentes para que un problema sea seleccionado y priorizado:
+\begin{itemize}
+	\item Divergencia significativa respecto a los estandares generales,
+	\item Inconsistentes impresiones y objetivo evidente,
+	\item Causa raíz no identificada,
+\end{itemize}
+Criterios para seleccionar:
+\begin{itemize}
+	\item El problema es importante y sustancial. ¿Por qué?
+	\item ¿Resolver el problema ayuda al logro de objetivos?
+	\item ¿Puede el problema ser definido usando mediciones objetivas?
+\end{itemize}
+
+\subsection{Fase 2: Analizar el proceso actual}
+En esta fase los límites del proceso son definidos especificando los \textit{outputs} y clientes, los \textit{inputs} y proveedores y el flujo de proceso. Los niveles de satisfacción de cliente y medidas necesidades para permitir la recolección de datos y la identificación de la causa raíz. Hay que desarrollar los procesos atendiendo a: 
+\begin{itemize}
+	\item Líneas de actuación de acuerdo a los requisitos del cliente
+	\item Datos necesitados para gestionar el proceso
+	\item Feedback de clientes y proveedores
+	\item Calidad/coste/líneas temporales de \textit{inputs} y \textit{outputs}.
+\end{itemize}
+Ventajas de recoger datos: confirmar problemas y hechos, tener criterio sobre las magnitudes y la posibilidad de medir los resultados una vez.
+
+El método más efectivo para esta fase es el diagrama causa-efecto.
+Procedimiento:
+\begin{enumerate}
+	\item Examinar la causa más probable de los problemas.
+	\item Validar los datos para la causa mas probable.
+	\item Distinguir que elementos del proceso cambian entre estado controlado y fallo.
+	\item Someter la causa a escrutinio.
+	\item Usar diseño experimental, Taguchi, y otras técnicas avanzadas para determinar factores críticos y sus niveles.
+	\item Confirmar con datos durante los pasos de verificación.
+\end{enumerate}
+
+\subsection{Fase 3: Desarrollar las soluciones óptimas (correcciones)}
+Al obtener la información, el equipo del proyecto comienza su búsqueda de posibles soluciones. La creatividad y la lluvia de ideas sobre posibles soluciones requieren la creación, combinación o modificación de prácticas existentes. La combinación de dos o más procesos es una actividad de síntesis que depende en gran medida del \textit{benchmarking}.
+Una vez que se han determinado las soluciones posibles, la evaluación o la prueba de las soluciones viene a continuación. Los criterios de aceptación incluyen cosas tales como costo, factibilidad, efecto, resistencia al cambio, consecuencias y entrenamiento. Las soluciones deben evitar la recurrencia y resolver el problema.
+
+\subsection{Fase 4: Implementar cambios}
+Los cambios se implementan usando un plan que describa las 5W1H: \textit{who, what, when, where, why, how}. Incluye responsabilidades, horarios, hitos y la monitarización de actividades. Herramientas de medida como \textit{run charts, control charts, Pareto, histogramas, ...}
+
+\subsection{Fase 5: Estudiar los resultados}
+A través de los datos recogidos, se puede conocer cuán significativo es el cambio y la mejora puede ser lograda. Evaluando los resultados el equipo puede verificar y validar que el problema ha sido resuelto o determinar si hay otros problemas que han surgido a través del desarrollo de la solución.
+
+\subsection{Fase 6: Estandarizar la solución}
+\textit{Positrol} (control positivo) asegura que las variables importantes están bajo control, especifica las 5W1H del proceso y es una actualización de la solución. Estandarizarla evita el que la solución retroceda. Los operadores necesitan claras instrucciones para los procesos particulares, \textit{training} para asegurar el proceso y conocimiento sobre el proceso que le sigue, por lo que un conocimiento completo del producto es deseable.
+
+\subsection{Fase 7: Plan para el futuro}
+Habitualmente hay que planificar revisiones del progreso para identificar las mejoras futuras. Se tiene que ir controlando los cambios en las necesidades del cliente
+
+\subsection{Root Cause Analysis Methodology}
+El \textit{Root Cause Analysis} (RCA) es la metodología para analizar un problema y poner la solución para que el problema no vuelva a repetirse nunca más. Problem-solving y RCA es el corazón del proceso \textit{corrective and preventive action} (CAPA).
+Metodología de actuación RCA:
+\begin{enumerate}
+	\item Define y documenta el problema que requiere RCA.
+	\item Entiende el problema.
+	\item Consigue datos y analízalos.
+	\item Determina la causa raíz. 
+	\item Establece un programa de acciones correctivas.
+	\item Implementa el plan de acciones correctivas.
+	\item Evalúa los efectos de la implementación para demostrar que la causa raíz del problema fue eliminada.
+\end{enumerate}
+Para encontrar las causas: análisis de valor añadido, comparación de procesos \textit{as-is} vs \textit{should-be}, FMEA, análisis de cambio-evaluación, de errores en prevención o de predicción.
+
+\subsection{Identificando la causa raíz}
+
+El diagrama Cause-and-Effect o Ishikawa/Fishbone diagram identifica todas las causas probables y las selecciona para investigar. La construcción del diagrama CE:
+\begin{enumerate}
+	\item Crear un equipo de individuos que conozcan el proceso, los problemas y otras funciones
+	\item Definir el problema (efecto). Ponerlo en el extremo derecho y dibujar una flecha que apunte hasta él.
+	\item Lluvia de ideas y listar todas las posibles causas.
+	\item Agrupar las causas en categorías y darle a cada una un nombre.
+	\item Dibujar el diagrama con líneas al estilo \textit{fishbone}.
+	\item Asignar las causas de las ideas en las categorías.
+	\item Redondear las causas más posibles. El equipo tiene que agrupar información para verificar la causa mas probable.
+\end{enumerate}
+Maneras de agrupar: \begin{itemize}
+	\item Man - Machine - Material - Method - Maintenance - Management - Measurement - Mother Nature.
+	\item Product - Place - People - Process - Promotion - Productivity - Price - Physical evidence
+	\item Suppliers - Systems - Surroundings - Skills
+\end{itemize}
+El diagrama \textit{fishbone} se utiliza junto con los \textbf{5 why's} para conseguir llegar a la raíz de los problemas.
+
+\subsubsection{5 Whys}
+Consiste en preguntar 5 veces ¿por qué? consiguiendo entrar en detalle cada vez más para conocer cual es la raíz de un problema.
+
+\subsubsection{Cause-and-Effect Relational Matrix}
+Es una matriz para cuantificar y priorizar los impactos de causas (X) en efectos (Y) a través de un ranking numérico. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=80mm]{imagenes/Cause-and-effectrelationalmatrix.png}
+	\caption{Cause-and-effect relational matrix.}
+	\label{fig:Cause-and-effectrelationalmatrix}
+\end{figure}
+
+
+\subsubsection{Root Cause tree}
+Diagrama para ver visualmente la conexión entre efectos por fallos y la causa potencial y problemas centrales.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=140mm]{imagenes/Rootcausetreeexample.png}
+	\caption{Root cause tree example.}
+	\label{fig:Rootcausetreeexample}
+\end{figure}
+
+\subsection{Failure Mode and Effects Analysis}
+Es un grupo de actividades para reconocer y evaluar los fallos potenciales de un producto o proceso e identificar los efectos de tal fallo, identificar las acciones para eliminar o reducir la posibilidad de que ocurran, documentar el proceso entero.
+
+El propósito de un FMEA es entender la oportunidad para fallos y el impacto de los riesgos en un producto o proceso, priorizar riesgos, tomar acciones para eliminar o reducir el impacto de los riesgos.
 
 \pagebreak[4]
 \part{Glosario}

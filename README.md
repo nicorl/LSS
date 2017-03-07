@@ -9,10 +9,10 @@ Capítulos completos
 * Cap 2. Principios Lean en la organización.
 * Cap 3. Diseño para metodologías Six Sigma (DFSS).
 * Cap 4. Identificación del proyecto.
+* Cap 5. La voz del cliente (VoC).
 
 Capítulos pendientes de revisión
 -----
-* Cap 5. La voz del cliente (VoC).
 * Cap 6. Básicos de la gestión de proyectos.
 * Cap 7. Herramientas de gestión y planificación.
 * Cap 8. Resultados de negocio para proyectos.
@@ -26,10 +26,10 @@ Capítulos pendientes de revisión
 * Cap 16. Exploración del análisis de datos.
 * Cap 17. Test de hipótesis.
 * Cap 18. Diseño de experimentos (DOE).
+* Cap 19. Análisis de la causa raíz.
 
 Capítulos pendientes de ser resumidos
 -----
-* Cap 19. Análisis de la causa raíz.
 * Cap 20. Herramientas Lean.
 * Cap 21. Control de proceso estadístico (SPC).
 * Cap 22. Plan de Control.
@@ -45,3 +45,4 @@ Capítulo | Apartados | Sección
 **Cap 2** | `Value`, `TPS House`, `5S`, `Waste`, `VSM` | Introducción
 **Cap 3** | `IDOV`, `DMADV`, `FMEA` | Introducción
 **Cap 4** | `Project Selection`, `Process Elements`, `Benchmarking`, `I/O Process`, `Stakeholders` | Definición
+**Cap 5** | `VoC`, `QFD`, `HoQ` | Definición
