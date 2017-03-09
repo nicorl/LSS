@@ -10,11 +10,11 @@ Capítulos completos
 * Cap 3. Diseño para metodologías Six Sigma (DFSS).
 * Cap 4. Identificación del proyecto.
 * Cap 5. La voz del cliente (VoC).
+* Cap 6. Básicos de la gestión de proyectos.
+* Cap 7. Herramientas de gestión y planificación.
 
 Capítulos pendientes de revisión
 -----
-* Cap 6. Básicos de la gestión de proyectos.
-* Cap 7. Herramientas de gestión y planificación.
 * Cap 8. Resultados de negocio para proyectos.
 * Cap 9. Dinámicas de equipo y actuaciones.
 * Cap 10. Análisis de proceso y documentación.
@@ -46,3 +46,5 @@ Capítulo | Apartados | Sección
 **Cap 3** | `IDOV`, `DMADV`, `FMEA` | Introducción
 **Cap 4** | `Project Selection`, `Process Elements`, `Benchmarking`, `I/O Process`, `Stakeholders` | Definición
 **Cap 5** | `VoC`, `QFD`, `HoQ` | Definición
+**Cap 6** | `Scope-SIPOC`, `Metrics-KPI`, `CPM`, `PERT`, `RPN` | Definición
+**Cap 7** | `AND`, `AQP`, `Ishikawa+5W+6M`, `Gantt`, `Graphical tools`, `Digraphs`, `NGT`, `PDCA-PDSA-SDCA`, `8D`, `PDPC`, `RPN`, `SIPOC`, `Tree Diagram` | Definición
