@@ -16,11 +16,11 @@ Capítulos completos
 * Cap 5. La voz del cliente (VoC).
 * Cap 6. Básicos de la gestión de proyectos.
 * Cap 7. Herramientas de gestión y planificación.
+* Cap 8. Resultados de negocio para proyectos.
+* Cap 9. Dinámicas de equipo y actuaciones.
 
 Capítulos pendientes de revisión
 -----
-* Cap 8. Resultados de negocio para proyectos.
-* Cap 9. Dinámicas de equipo y actuaciones.
 * Cap 10. Análisis de proceso y documentación.
 * Cap 11. Probabilidad y estadística.
 * Cap 12. Distribuciones estadísticas.
@@ -31,10 +31,10 @@ Capítulos pendientes de revisión
 * Cap 17. Test de hipótesis.
 * Cap 18. Diseño de experimentos (DOE).
 * Cap 19. Análisis de la causa raíz.
+* Cap 20. Herramientas Lean.
 
 Capítulos pendientes de ser resumidos
 -----
-* Cap 20. Herramientas Lean.
 * Cap 21. Control de proceso estadístico (SPC).
 * Cap 22. Plan de Control.
 * Cap 23. Herramientas Lean para el control de proceso.
@@ -52,3 +52,5 @@ Capítulo | Apartados | Sección
 **Cap 5** | `VoC`, `QFD`, `HoQ` | Definición
 **Cap 6** | `Scope-SIPOC`, `Metrics-KPI`, `CPM`, `PERT`, `RPN` | Definición
 **Cap 7** | `AND`, `AQP`, `Ishikawa+5W+6M`, `Gantt`, `Graphical tools`, `Digraphs`, `NGT`, `PDCA-PDSA-SDCA`, `8D`, `PDPC`, `RPN`, `SIPOC`, `Tree Diagram` | Definición
+**Cap 8** | `CPI`, `SPI`, `DPU`, `RTY`, `COPQ`, `DPMO`, `USL`, `LSL`, `Cp`, `Cpk` | Definición
+**Cap 9** | `I in Team`, `Forming`, `Storming`, `Norming`, `Performing`, `Roles`, `Brainstorming`, `NGT`, `Multivoting` | Definición
