@@ -14,9 +14,6 @@ Capítulos completos
 * Cap 7. Herramientas de gestión y planificación.
 * Cap 8. Resultados de negocio para proyectos.
 * Cap 9. Dinámicas de equipo y actuaciones.
-
-Capítulos pendientes de revisión
------
 * Cap 10. Análisis de proceso y documentación.
 * Cap 11. Probabilidad y estadística.
 * Cap 12. Distribuciones estadísticas.
@@ -24,6 +21,9 @@ Capítulos pendientes de revisión
 * Cap 14. Análisis del sistema de medidas.
 * Cap 15. Capacidad de actuación de proceso.
 * Cap 16. Exploración del análisis de datos.
+
+Capítulos pendientes de revisión
+-----
 * Cap 17. Test de hipótesis.
 * Cap 18. Diseño de experimentos (DOE).
 * Cap 19. Análisis de la causa raíz.
@@ -50,3 +50,10 @@ Capítulo | Apartados | Sección
 **Cap 7** | `AND`, `AQP`, `Ishikawa+5W+6M`, `Gantt`, `Graphical tools`, `Digraphs`, `NGT`, `PDCA-PDSA-SDCA`, `8D`, `PDPC`, `RPN`, `SIPOC`, `Tree Diagram` | Definición
 **Cap 8** | `CPI`, `SPI`, `DPU`, `RTY`, `COPQ`, `DPMO`, `USL`, `LSL`, `Cp`, `Cpk` | Definición
 **Cap 9** | `I in Team`, `Forming`, `Storming`, `Norming`, `Performing`, `Roles`, `Brainstorming`, `NGT`, `Multivoting` | Definición
+**Cap 10** | `Flowchart`, `SIPOC`, `Ishikawa`, `Diagramas` | Medición
+**Cap 11** | `Probabilidad`, `CTL` | Medición
+**Cap 12** | `Distribuciones`, `Chi-cuadrado`, `t-`, `F-` | Medición
+**Cap 13** | `Cheek sheets`, `Stem-and-Leaf`, `Box-Plots`, `Run chart`, `Scatter Diagrams` | Medición
+**Cap 14** | `GR&R` | Medición
+**Cap 15** | `Cpk`, `SPC` | Medición
+**Cap 16** | `Regresiones`, `p-valor` , `MMCC` | Análisis.
