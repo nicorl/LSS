@@ -5,7 +5,7 @@ Este documento que estoy desarrollando en LaTeX pretende recoger a modo de resum
 
 También, por el hecho de aprender a manejar esta plataforma, he decidido ir generando el documento con múltiples versiones y utilizando GitHub.
 
-Espero que sirva de ayuda.
+Espero que sirva de ayuda a todo aquel que quiera aprender algo más sobre Lean Six Sigma o quiera prepararse algún tipo de certificación.
 
 Capítulos completos
 =====
