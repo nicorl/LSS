@@ -1679,22 +1679,26 @@ H_1 : \mu \neq 6 \ , \ H_1 : \mu < 6 \ , \ H_1 : \mu > 6
 
 \subsubsection{Tipos de Error}
 
-\textit{Type I error}: resulta cuando la hipótesis nula es rechazada, siendo real.
+\textit{Type I error}: resulta cuando la hipótesis nula es rechazada, siendo real. 
+
 \textit{Type II error}: resulta cuando la hipótesis nula no es rechazada, debiendo serlo.
 
 \subsubsection{One-Tail Test}
 
-Cuando hay algún riesgo asociado a él, y es asociado a $\alpha$ risk (type I error). El nivel del riesgo $\alpha$ determina el nivel de confianza que tenemos en la conclusión. Se utiliza para determinar le valor crítico del test estadístico.
+Cuando hay algún riesgo asociado a él, y es asociado a $\alpha$ risk (type I error). El nivel del riesgo $\alpha$ determina el nivel de confianza que tenemos en la conclusión. Se utiliza para determinar el valor crítico del test estadístico.
 
 Ejemplo: Una compañía inventa una pelota de golf que aumenta la distancia de lanzamiento en más de 20 metros. Test:  \newline \begin{center}
-	$H_0$ : $\mu$ $leq$ 20, $H_1$ : $\mu$ > 20
+	$H_0$ : $\mu$ $\leq$ 20, $H_1$ : $\mu >$ 20
 \end{center}
 
-Atendiendo a una campana de Gauss donde los extremos responden a la región de rechazo. Si la media de muestreo cae en la zona no-extremo, no rechazamos $H_0$. Esto es que no tenemos suficiente evidencia para apoyar $H_1$. Si la media de muestreo cae en la zona de rechazo, rechazamos $H_0$, esto significa que tenemos suficiente evidencia para apoyar $H_1$, y confirmamos que la bola incrementará su distancia en mas de 20 metros.
+Atendiendo a una campana de Gauss donde los extremos responden a la región de rechazo. Si la media de muestreo cae en la zona no-extremo, no rechazamos $H_0$. Esto es que no tenemos suficiente evidencia para apoyar $H_1$. Si la media de muestreo cae en la zona de rechazo, rechazamos $H_0$, esto significa que tenemos suficiente evidencia para apoyar $H_1$, y confirmamos que la bola incrementará su distancia en más de 20 metros.
 
-Muestras: 18, 20, 19, 18, 21, 19, 23, 18, 19, 22. \newline 
-Test de $\mu$ = 20 vs $>$ 20. \newline
-N: 10 ; Media: 19.7 ; StDev: 1.775 ; SE Mean: 0.561 ; 95\% Lower Bound: 18.644 ; T: -0.58 ; P: 0.713 \newline
+Muestras: 18, 20, 19, 18, 21, 19, 23, 18, 19, 22. 
+ 
+Test de $\mu$ = 20 vs $>$ 20. 
+
+N: 10 ; Media: 19.7 ; StDev: 1.775 ; SE Mean: 0.561 ; 95\% Lower Bound: 18.644 ; T: -0.58 ; P: 0.713 
+
 p-value $>$ 0.05. La distancia adicional afirmada por la compañía no es estadísticamente válida.
 
 \subsection{Test for Means, Variances and Proportions}
@@ -2346,6 +2350,211 @@ Aspectos para lograr el éxito:
 	\item Visibilidad. Quien no esté envuelto en esto debe también conocer las mejoras que está haciendo el equipo.
 	\item Comité de gestión. La dirección debe apoyar activamente y participar en las iniciativas kaizen. Debe asegurar que el equipo tiene todo lo que necesita.
 \end{itemize}
+
+\section{Statistical Process Control}
+
+Las bases del control es categorizado como SPC. El propósito no es crear cartas de control, sino aplicar la información para construir y adaptar procesos.
+Definiciones útiles:
+\begin{itemize}
+	\item Statistical Process Control (SPC): Aplicación de técnicas estadísticas para medir y analizar la variación en los procesos.
+	\item Statistical Quality Control (SQC): Aplicación de técnicas estadísticas para medir y mejorar la calidad del proceso.
+	\item Statistical Process Display (SPD): La aplicación errónea de técnicas estadísticas para evitar que la información sea utilizada para correr un proceso, cuando es solo para mostrar al cliente. 
+	\item Assignable cause: El cambio observado es causado por el comportamiento del variable principal en el proceso.
+	\item Chance / unassignable cause: El cambio observado es causado por la interacción de múltiples variables menores en el proceso.
+	\item X y R son las cartas mas comunes del control de comportamiento de proceso.
+\end{itemize}
+Objetivos y beneficios:
+\begin{itemize}
+	\item Monitorizar procesos en tiempo real.
+	\item Identificar que los procesos son tan operativos como se espera.
+	\item Identificar que los procesos han sido cambiados y las acciones correctivas pueden ser requeridas.
+	\item Tomar decisiones estadísticamente válidas.
+	\item Centrado de proceso.
+	\item Determinar cuando y cuando no tomar acciones sobre el proceso.
+	\item Cuantificar y reducir variación.
+	\item Mejorar el entendimiento de productos y procesos.
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=120mm]{imagenes/XandRControl.png}
+	\caption{X and R Chart Control.}
+	\label{fig:XandRControl}
+\end{figure}
+
+Variables:
+\begin{itemize}
+	\item Key process input variables (KPIVs) pueden ser analizados para determinar su efecto en el proceso.
+	\item Key process output variables (KPOVs) determinar la capacidad de un proceso y monitorizar el proceso utilizando cartas de control.
+	\item Design of experiment (DOE) y análisis de varianza (ANOVA) pueden identificar variables significantes para controlar el proceso.
+\end{itemize}
+
+\subsection{Enfoque racional de subgrupos}
+
+\begin{itemize}
+	\item Seleccionar el tamaño, frecuencia y numero de subgrupos.
+	\item Elegir subgrupos para minimizar la variación pieza a pieza entre subgrupos.
+	\item Asegurar que las muestras son contantes de todos los subgrupos.
+	\item Mayores fuentes de variación deben tener la oportunidad de aparecer en los subgrupos de inspección.
+\end{itemize}
+
+\subsection{Cartas de control}
+
+\textbf{Variables Charts}. Para variables de escala continua. Este tipo de medida ocurre cuando cada par de valores son infinitos números de valores posibles entre ellos. X y R, y X y s, son los más importantes.
+
+\subsubsection{X y R Control Charts}
+
+Muestra como cambia la media de un proceso a lo largo de las variaciones del proceso. Ambas variaciones deben ser controladas. Para construir un chart de este tipo:
+\begin{itemize}
+	\item Determinar el tamaño de muestra y la frecuencia,
+	\item Calcular media y rango, las medias de ambas medidas,
+	\item Calcular el límite de control basado en el tamaño del subgrupo,
+	\item Dibujar los datos y analizar la chart.
+\end{itemize}
+Límite superior para la media,
+\begin{equation}
+UCL_X = X + A_2R
+\end{equation}
+Límite inferior para la media,
+\begin{equation}
+LCL_X = X - A_2R
+\end{equation}
+Límite superior para rango,
+\begin{equation}
+UCL_R = D_4R
+\end{equation}
+Límite inferior para rango,
+\begin{equation}
+LCL_R = D_3R
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=120mm]{imagenes/XandRControlEjemplo.png}
+	\caption{Ejemplo de X and R Chart Control.}
+	\label{fig:XandRControlEjemplo}
+\end{figure}
+
+\subsubsection{X y s Control Charts}
+
+Esta \textit{chart} muestra la media y el sigma de los valores de proceso. Similar a X y R excepto porque cada valor de la columna del rango es remplazado por la desviación estándar \textit{s}.
+ Límite superior para la media,
+ \begin{equation}
+ UCL_X = X + A_3s
+ \end{equation}
+ Límite inferior para la media,
+ \begin{equation}
+ LCL_X = X + A_3s
+ \end{equation}
+ Límite superior para la desviación estándar,
+ \begin{equation}
+ UCL_s = B_4s
+ \end{equation}
+ Límite inferior  para la desviación estándar,
+ \begin{equation}
+ LCL_s = B_3s
+ \end{equation}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=120mm]{imagenes/XandsControlEjemplo.png}
+	\caption{Ejemplo de X and S Chart Control.}
+	\label{fig:XandSControlEjemplo}
+\end{figure}
+
+\subsubsection{Medias y Rangos Móviles}
+Si el tamaño de muestra es uno, un rango individual o móvil (ImR / XmR) es apropiado. Los límites vienen dados por
+\begin{equation}
+UCL_X = X + E_2R
+\end{equation}
+\begin{equation}
+LCL_X = X - E_2R
+\end{equation}
+
+
+\subsubsection{p-control Charts}
+Mide la cantidad de partes defectuosas o piezas en un grupo bajo revisión. Puede ser una simple característica o múltiples características. 
+Las piezas son conformes o rechazadas. 
+
+Ejemplo: Un test para la presencia del factor RH en doce muestras de sangre devuelve el dato mostrado en el gráfico \ref{fig:pChartEjemplo}.
+Los límites de control para el p-chart son:
+\begin{equation}
+UCL_p = p + 3 \sqrt{\frac{p(1-p)}{n}}
+\end{equation}
+\begin{equation}
+LCL_p = p - 3 \sqrt{\frac{p(1-p)}{n}}
+\end{equation}
+Donde:
+\begin{equation}
+n = \frac{\Sigma sample sizes}{Num. samples}
+\end{equation}
+
+\begin{equation}
+p = \frac{\Sigma discrepances}{Num. samples}
+\end{equation}
+
+En este caso = $\frac{\Sigma sample sizes}{Num. samples} = 1496 / 12$ = 124.7, $\frac{\Sigma discr}{\Sigma n} = \frac{177}{1496} = $0.118;
+Por lo que UCL = 0.205 y LCL = 0.03.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=120mm]{imagenes/pChartEjemplo.png}
+	\caption{Ejemplo de p-Chart Control.}
+	\label{fig:pChartEjemplo}
+\end{figure}
+
+\subsubsection{np-Chart}
+El gráfico np mide el número de elementos rechazados en una muestra con un número entero en lugar de una proporción. El gráfico np es más útil cuando los tamaños de muestra son constantes y el número entero es más significativo y relevante que la cantidad decimal proporcional.
+Si se están contando los defectuosos y el tamaño de la muestra permanece constante, se puede usar el gráfico np en lugar de la p-chart.
+
+Ejemplo: Los envases que contienen 1000 bombillas se seleccionan al azar y las 1000 bombillas son probados utilizando luz. Los datos se han introducido en el gráfico np mostrado en la figura . Este gráfico es ligeramente más simple de usar que el gráfico p porque el número de defectuosos se representa en lugar de la fracción de la muestra.
+Las fórmulas para límites de control:
+\begin{equation}
+UCL_{np} = np + 3 \sqrt{np*(1-\frac{np}{n})}
+\end{equation}
+\begin{equation}
+LCL_{np} = np - 3 \sqrt{np*(1-\frac{np}{n})}
+\end{equation}
+
+siendo $np$ la media de defectuosos, y $n$ el tamaño de la muestra.
+
+\subsubsection{c Control Chart}
+
+Miden el numero de defectos en una muestra. Cuando los defectos son contados y el numero de muestra es constante, el $c-chart$ es usado en vez del $u-chart$. Es relevante para procesos de flujo continuo o donde hay muchas posibles fuentes de variación o deficiencias.
+
+\begin{equation}
+UCL_c = c + 3\sqrt{c}
+\end{equation}
+\begin{equation}
+LCL_c = c - 3\sqrt{c}
+\end{equation}
+siendo c el número de defectos promedio.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=120mm]{imagenes/cChartEjemplo.png}
+	\caption{Ejemplo de c-Chart Control.}
+	\label{fig:cChartEjemplo}
+\end{figure}
+
+\subsubsection{Control Chart Interpretation}
+
+\begin{itemize}
+	\item \textit{Specials} son puntos por encima del UCL y por debajo del LCL
+	\item \textit{Run violation} ocurre cuando siete o mas puntos consecutivos están en un mismo lado de la línea central.
+	\item \textit{1 in 20 violation} es mas de un punto de 20 fuera del 33\% del \textit{control chart}.
+	\item \textit{Tren violation} es un movimiento con tendencia hacia arriba o hacia abajo en mas de 5 puntos consecutivos.
+\end{itemize}
+
+\subsubsection{Process Control}
+\begin{itemize}
+	\item Un proceso está bajo control cuando media y variación es estable.
+	\item La tendencia puede ser corregida con equipos de reparación, rotación o reemplazo.
+	\item Saltos abruptos están reflejando cambios en material, métodos, actuación y pueden ser corregidos con consistencia.
+	\item Puntos cerca de los límites pueden indicar sobreajustamiento o variación del material.
+	\item Falta de variabilidad sugiere que los límites de control son demasiado ligeros.
+\end{itemize}
+
 %\pagebreak[4]
 %\part{Glosario}
 

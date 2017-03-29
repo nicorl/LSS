@@ -21,17 +21,17 @@ Capítulos completos
 * Cap 14. Análisis del sistema de medidas.
 * Cap 15. Capacidad de actuación de proceso.
 * Cap 16. Exploración del análisis de datos.
+* Cap 17. Test de hipótesis.
 
 Capítulos pendientes de revisión
 -----
-* Cap 17. Test de hipótesis.
 * Cap 18. Diseño de experimentos (DOE).
 * Cap 19. Análisis de la causa raíz.
 * Cap 20. Herramientas Lean.
+* Cap 21. Control de proceso estadístico (SPC).
 
 Capítulos pendientes de ser resumidos
 -----
-* Cap 21. Control de proceso estadístico (SPC).
 * Cap 22. Plan de Control.
 * Cap 23. Herramientas Lean para el control de proceso.
 
@@ -56,4 +56,5 @@ Capítulo | Apartados | Sección
 **Cap 13** | `Cheek sheets`, `Stem-and-Leaf`, `Box-Plots`, `Run chart`, `Scatter Diagrams` | Medición
 **Cap 14** | `GR&R` | Medición
 **Cap 15** | `Cpk`, `SPC` | Medición
-**Cap 16** | `Regresiones`, `p-valor` , `MMCC` | Análisis.
+**Cap 16** | `Regresiones`, `p-valor` , `MMCC` | Análisis
+**Cap 17** | `SPC`, `X&R`, `X&s`, `KPIV`, `KPOV`, `Charts`, `UCL`, `LCL` | Análisis
