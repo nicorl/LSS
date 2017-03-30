@@ -1724,7 +1724,7 @@ Ejemplo: Tenemos en cuenta un canal de compra. 32 clientes, con un pedido promed
 
 \section{Design of Experiments (DOE)}
 
-Los DOE (\textit{Design of experiments}) puede ser resumido como un conjunto de experimentos planificados. Se ajustan el conjunto de variables bajo las condiciones controladas.
+Los DOE (\textit{Design of experiments}) pueden ser resumidos como un conjunto de experimentos planificados. Se ajustan el conjunto de variables bajo condiciones controladas.
 
 \textbf{Factor}: es la variable controlada por el experimentador, y puede ser visto como un estímulo.
 
@@ -1734,7 +1734,7 @@ Los DOE (\textit{Design of experiments}) puede ser resumido como un conjunto de 
 
 \textbf{Block}: Es un etiqueta común a todos los elementos. Por ejemplo: muestras del mismo lote.
 
-\textbf{Diseño experimental}: es el plan donde se incluyen las responsabilidades, factors, levels, treatments, blocks y el uso de la planificación y la replicación del experimento.
+\textbf{Diseño experimental}: es el plan donde se incluyen las responsabilidades, \textit{factors}, \textit{levels}, \textit{treatments}, \textit{blocks} y el uso de la planificación y la replicación del experimento.
 
 \textbf{Error experimental}: La variación en la variable de respuesta cuando los niveles y factores se mantienen constantes.
 
@@ -1748,7 +1748,7 @@ Los DOE (\textit{Design of experiments}) puede ser resumido como un conjunto de 
 
 \textbf{Variables}: Dependientes, independientes y de respuesta, que son las observadas como respuesta de un experimento.
 
-\textbf{Effects}: Main effects e Interactions. Los efectos principales se definen como una estimación del efecto de un factor independiente de cualquier otro medio. Las interacciones ocurren cuando el efecto de un factor de entrada sobre el de salida depende del nivel de otro factor de entrada.
+\textbf{Effects}: \textit{Main effects} e \textit{Interactions}. Los efectos principales se definen como una estimación del efecto de un factor independiente de cualquier otro medio. Las interacciones ocurren cuando el efecto de un factor de entrada sobre el de salida depende del nivel de otro factor de entrada.
 
 \subsubsection{DOE Overview}
 
@@ -1758,10 +1758,10 @@ Los DOE (\textit{Design of experiments}) puede ser resumido como un conjunto de 
 
 \textbf{Planning Test Programs}: Basado en la información de fondo, elegir los factores y el diseño del programa experimental. Clasificación:
 \begin{itemize}
-	\item \textit{Completamente aleatorios}: para cuando un solo factor es analizado
-	\item \textit{Factorials}: apropiado cuando se investigan varios factores a dos o mas niveles y la interacción es necesaria.
+	\item \textit{Completamente aleatorios}: para cuando un solo factor es analizado.
+	\item \textit{Factorials}: apropiado cuando se investigan varios factores a dos o más niveles y la interacción es necesaria.
 	\item \textit{Blocked factorials}: reducen el número de ejecuciones y usa bloques para ejecutar experimentos en \textit{subsets}.
-	\item textit{Fractional factorials}: reduce el número de combinaciones de factores y niveles requeridos para ser lanzado.
+	\item \textit{Fractional factorials}: reduce el número de combinaciones de factores y niveles requeridos para ser lanzado.
 	\item \textit{Randomized blocks}: investigar un factor simple cuando el material puede ser bloqueado.
 	\item ...
 \end{itemize}
@@ -1786,7 +1786,7 @@ En cualquier caso, el objetivo debe ser medible, estar relacionado con metas y o
 
 Pasos prácticos importantes cuando se diseñan experimentos: comprobar los patrones y equipos de medición, hacer los experimentos lo más simples posibles, comprobar que todas las ejecuciones planificadas son factibles, evitar cambios no planeados, guardar algo de tiempo para eventos inesperados, guardar los datos en bruto, registrar todo lo que ocurra, resetear los equipos al terminar.
 
-Los objetivos de experimento se pueden resumir en cuatro categorías: Comparatives (concluye si el factor es significante), Screening (selecciona unos pocos efectos principales), Response surface (encuentra la configuración óptima y los puntos débiles de los procesos) y Mixture.
+Los objetivos de experimento se pueden resumir en cuatro categorías: \textit{Comparatives} (concluye si el factor es significante), \textit{Screening} (selecciona unos pocos efectos principales), \textit{Response surface} (encuentra la configuración óptima y los puntos débiles de los procesos) y \textit{Mixture}.
 
 Una vez configurados los objetivos los experimentos pueden ser desarrollados, lo mejor es utilizar pasos como: definir el objetivo, aprender echos sobre el proceso, hacer un brainstorm sobre variables dependientes e independientes, asignar niveles para las variables independientes, seleccionar o desarrollar un plan DOE, correr experimentos en orden aleatorio y analizar periódicamente, dibujar las conclusiones y verificar la replicación.
 
@@ -1800,7 +1800,7 @@ Tener en cuenta que para que el experimento sea válido hace falta que el sistem
 	\item Especificar el problema, preguntas, necesidades del negocio y resultados esperados.
 	\item Preparar un plan que incluya datos de prueba, colecciones de datos, escenarios alternativos, hitos y líneas temporales.
 	\item Recoger datos, identificar vacíos.
-	\item Construir un modelo que relacione inputs, las variables del proceso y outputs.
+	\item Construir un modelo que relacione inputs, las variables del proceso y \textit{outputs}.
 	\item Diseñar y ejecutar escenarios, distinguiendo entre parámetros variables y fijos, asegurando la reporoducibilidad de los resultados.
 	\item Analizar e interpretar los datos, verificar las significancias estadísticas.
 \end{itemize}
@@ -1814,7 +1814,7 @@ Las interacciones ocurren cuando el efecto de un factor de entrada sobre un fact
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=90mm]{imagenes/a23design.png}
+	\includegraphics[width=80mm]{imagenes/a23design.png}
 	\caption{$2^3$ full-factorial design.}
 	\label{fig:A23design}
 \end{figure}
@@ -1862,7 +1862,7 @@ Método: + es grill, - es frito. Carne: + es solomillo, - es costilla. Marinado:
 
 Método: [(88+84+91+84)-(66+58+67+63)]/4 = 23.25 \newline
 Carne: [(58+84+63+84)-(66+88+67+91)]/4 = -5.75 \newline
-Marinado: [(67+91+63+84)-(66+88+58+84)] = 2.25
+Marinado: [(67+91+63+84)-(66+88+58+84)]/4 = 2.25
 
 
 \begin{table}[H]
@@ -1883,16 +1883,16 @@ Marinado: [(67+91+63+84)-(66+88+58+84)] = 2.25
 	\end{center}
 \end{table}
 
-Método y Carne: [(66+84+67+84)-(88+58+91+63)]/4 = 1.25
-Carne y Marinado: [(66+88+63+84)-(58+84+67+91)]/4 = 0.25
-Método y Marinado: [(66+58+91+84)-(88+84+67+63)]/4 = -0.75
-Método, Carne y Marinado [(88+58+67+84)-(66+84+91+63)] = -1.75
+Método y Carne: [(66+84+67+84)-(88+58+91+63)]/4 = 1.25 \newline
+Carne y Marinado: [(66+88+63+84)-(58+84+67+91)]/4 = 0.25 \newline
+Método y Marinado: [(66+58+91+84)-(88+84+67+63)]/4 = -0.75 \newline
+Método, Carne y Marinado [(88+58+67+84)-(66+84+91+63)] = -1.75 
 
 Las interacciones tiene mínimos efectos en cuanto a la aprobación o retirada. La conclusión es que el método (grill o frito) tiene mayor efecto que el resto.
 
 \subsubsection{Diseño y análisis de experimentos de Two-Level Fractional Factorial}
 \begin{equation}
-Number of runs = L^F
+Number \ of \ runs = L^F
 \end{equation}
 Siendo L el número de niveles, y F el número de factores.
 
@@ -1910,9 +1910,9 @@ Siendo L el número de niveles, y F el número de factores.
 	\end{center}
 \end{table}
 
-Método: [(88+84)-(58+67)]/2 = 23.5
-Carne: [(54+84)-(88+67)]/2 = -6.5
-Marinado: [(67+84)-(88+58)]/2 = 2.5
+Método: [(88+84)-(58+67)]/2 = 23.5 \newline
+Carne: [(54+84)-(88+67)]/2 = -6.5 \newline
+Marinado: [(67+84)-(88+58)]/2 = 2.5 
 
 Aunque los resultados no son iguales que en el caso anterior, las conclusiones son similares.
 
@@ -1923,8 +1923,8 @@ El procedimiento se resume en tres etapas: seleccionar un proceso, seleccionar u
 Ejemplo:
 Selecciona un proceso e identifica inputs y outputs.
 \begin{enumerate}
-	\item Desarrollo y entrega de software a un cliente
-	\item El éxito se basa en el despliegue sin problemas críticos que requieren resoluciones de alta prioridad
+	\item Desarrollo y entrega de software a un cliente.
+	\item El éxito se basa en el despliegue sin problemas críticos que requieren resoluciones de alta prioridad.
 	\item Estudiar el efecto de siete variables en dos niveles.
 \end{enumerate}
 
@@ -1990,7 +1990,7 @@ Los grandes contribuidores son C (arquitectura) y G (aseguramiento de la calidad
 \begin{itemize}
 	\item Trabajar con expertos en la materia para determinar que factores deben ser incluidos en el experimento.
 	\item Evaluar el proceso histórico para especificar los valores de cada factor.
-	\item Determinar los factores representativos y sus niveles
+	\item Determinar los factores representativos y sus niveles.
 	\item Usar registros históricos para revisar datos existentes y determinar cuantos más datos adicionales deben ser recogidos para obtener confianza estadística.
 \end{itemize}
 
@@ -2010,7 +2010,7 @@ El enfoque de las ocho disciplinas (8D): \begin{enumerate}
 \subsection{Fase 1: Identificar la oportunidad (Problem Identification)}
 Las oportunidades para la mejora deben ser identificadas y priorizadas atendiendo al equipo y el alcance. Métodos para identificar los problemas: 
 \begin{itemize}
-	\item Análisis Pareto: campos de fallo, quejas, retornos, basura, reworks, ...
+	\item Análisis Pareto: campos de fallo, quejas, retornos, basura, \textit{reworks}, ...
 	\item Propuestas de esquemas de sugerencia, 
 	\item Necesidades de los usuarios/empleados, \textit{feedback} del mercado, ...
 	\item Resultados de auditorías y observaciones,
@@ -2019,7 +2019,7 @@ Las oportunidades para la mejora deben ser identificadas y priorizadas atendiend
 \end{itemize}
 Tres atributos deben estar presentes para que un problema sea seleccionado y priorizado:
 \begin{itemize}
-	\item Divergencia significativa respecto a los estandares generales,
+	\item Divergencia significativa respecto a los estándares generales,
 	\item Inconsistentes impresiones y objetivo evidente,
 	\item Causa raíz no identificada,
 \end{itemize}
@@ -2033,14 +2033,15 @@ Criterios para seleccionar:
 \subsection{Fase 2: Analizar el proceso actual}
 En esta fase los límites del proceso son definidos especificando los \textit{outputs} y clientes, los \textit{inputs} y proveedores y el flujo de proceso. Los niveles de satisfacción de cliente y medidas necesidades para permitir la recolección de datos y la identificación de la causa raíz. Hay que desarrollar los procesos atendiendo a: 
 \begin{itemize}
-	\item Líneas de actuación de acuerdo a los requisitos del cliente
-	\item Datos necesitados para gestionar el proceso
-	\item Feedback de clientes y proveedores
+	\item Líneas de actuación de acuerdo a los requisitos del cliente,
+	\item Datos necesitados para gestionar el proceso,
+	\item \textit{Feedback} de clientes y proveedores,
 	\item Calidad/coste/líneas temporales de \textit{inputs} y \textit{outputs}.
 \end{itemize}
 Ventajas de recoger datos: confirmar problemas y hechos, tener criterio sobre las magnitudes y la posibilidad de medir los resultados una vez.
 
 El método más efectivo para esta fase es el diagrama causa-efecto.
+
 Procedimiento:
 \begin{enumerate}
 	\item Examinar la causa más probable de los problemas.
@@ -2554,6 +2555,97 @@ siendo c el número de defectos promedio.
 	\item Puntos cerca de los límites pueden indicar sobreajustamiento o variación del material.
 	\item Falta de variabilidad sugiere que los límites de control son demasiado ligeros.
 \end{itemize}
+
+\section{Control Plan}
+
+Los planes de control hacen al operario se consciente de los ítems del sistema para controlar partes y procesos durante una producción completa. Es un documento, actualizado con las necesidades que explica como controlar el flujo del trabajo en el proceso. La información básica que tiene que contener un plan de control es:
+\begin{itemize}
+	\item Representación gráfica del proceso con los resultados deseados mostrados.
+	\item Características especiales o seguras deben ser mostradas en el plan.
+	\item Una descripción de la relación directa entre las características destacadas y la relación con la configuración de los procesos o con parámetros.
+	\item Identificación de tamaños de muestras apropiados y frecuencias para pruebas.
+	\item Las reacciones a las condiciones FMEA deben ser mostradas para prevenir no conformidades.
+	\item Los operadores deben fácilmente entender los planes de reacción.
+	\item Los criterios pueden ser utilizados para verificar la precisión y validar la alineación con la siguiente operación en el proceso.
+\end{itemize}
+
+Para asegurar la correcta monitorización del proceso y mediciones de control:
+\begin{itemize}
+	\item Especificar variables con impacto directo e indirecto, el remedio y el impacto en el cliente.
+	\item Establecer límites de control y estandares para saber cuando \textit{entrar en acción}.
+	\item Medir y fijar valores para las diferentes variables de control.
+	\item Especificar el tiempo y la localización de las medidas, y determinar cual es el mejor \textit{control chart} para ello.
+	\item Asignar y delegar aquello que se revisará cuando el proceso está fuera de control y la creación de los diagnósticos de las posibles causas.
+	\item Ejecutar planes de acciones correctivas para restaurar los procesos rápidamente, incorporando adaptaciones al plan de control como parte de la mejora.
+\end{itemize}
+
+El plan de control debe tener los pasos a seguir durante cada fase del proceso para asegurar que todos los \textit{outputs} del proceso están controlados. Los operadores necesitan sentir un trabajo cómodo con el formato de trabajo (\textit{paperwork}) en su área. elementos y atributos que pueden ser parte de un plan de control incluyen:
+\begin{enumerate}
+	\item \textit{Control subject}. Características del producto o proceso que están bajo monitorización o medición como manera de seguir, identificar las condiciones donde el proceso puede estar fuera de control.
+	\item \textit{Performance standard}. Esto permite al operador del proceso evaluar la actuación actual relativa a los límites de control predeterminados.
+	\item \textit{Units of measure}. La consistencia de medición es imperativa para la objetividad y la aceptación de los resultados de control. Unidades confusas pueden llevar a gestionar de manera inadecuada.
+	\item \textit{Measurement rules}. Criterios de medición, aparatos, frecuencia, tamaño de muestra, manera de guardar los datos.
+	\item \textit{Actions}. Si el proceso mide fuera de los límites de control o estándares, el plan de control debe especificar qué hacer para corregir.
+	\item \textit{Decision/deployment}. Debería haber un lugar para mostrar quien decide y quien lleva a cabo las acciones a ser tomadas.
+	\item \textit{Record}. El plan de control especificaría donde las acciones son guardadas y archivadas para referencias futuras o más extensivos análisis de tendencias.
+	\item \textit{Version}. Importante para saber si el plan de control con el que se está trabajado está en la última y más nueva versión en uso.
+\end{enumerate}
+
+\subsection{Dynamic Control Planning}
+El \textit{Dynamic Control Plan} (DCP) combina la información necesaria en un documento para ayudar a planificar, monitorizar, controlar, estudiar y mantener los procesos. Muchos de estos documentos incluyen: \textit{Standard Operating Procedures} (SOP), planes de control, FMEA, \textit{Quality Planning Sheets} (QPS), ...
+
+El DCP a menudo es llamado \textit{documento vivo} ya que los operarios tienen el derecho y responsabilidad de actualizarlo cada vez que las cosas cambian, los documentos deben ser actualizados para comunicar a otros que ellos saben que algo está siendo diferente en el proceso.
+
+Un DCP incluye:
+\begin{itemize}
+	\item DCP launch,
+	\item Estructura del equipo,
+	\item Log de preguntas,
+	\item Información de ayuda,
+	\item Controles preliminares antes de arrancar (launch),
+	\item \textit{Process failure mode and effects analysis} (PFMEA),
+	\item Plan de control,
+	\item Ilustraciones e instrucciones,
+	\item Implementación y mantenimiento.
+\end{itemize}
+
+La dirección debe estar comprometida con ayudar a estos esfuerzos. Es necesario mantener un histórico del proceso para cuando los experimentos se han desarrollados. Información de ayuda incluye las especificaciones de ingeniería, FMEA, información estadística, y toda esa información debe estar a mano del operario.
+
+Los planes de control dinámico ayudan a los planes de control con ilustraciones e instrucciones, además de procedimientos para la implementación y el mantenimiento.
+
+\subsection{Gage Control Plan}
+
+\textit{Gage R\&R} (repetitividad y reproducibilidad) es utilizado para medir la precisión de los sistemas de medida. Los parámetros tienen que incluir el almacenamiento y cuidado de los equipos, los requisitos de calibración, e indicar que partes del proceso se miden y con qué equipo y/o método.
+
+\subsection{Standard Operating Procedures}
+
+Cuando un proceso está actualizado, confirmado y validado, los \textit{Standard Operating Procedures} (SOP) son desarrollados, en ellos se incluye una descripción paso a paso de como completar tareas. 
+
+\subsection{Continual Improvement}
+
+\textit{Continual Improvement} (CI) es un proceso que hace que las cosas se hagan mejor, mas baratas o más rápidas. 
+
+\subsection{Process Improvement}
+
+Es la acción de hacer funcionar al sistema mejor para satisfacer al cliente en cuanto a necesidades y requisitos. Buscamos reducir la variabilidad completa, y está compuesta por: inestabilidad, variación y \textit{off-target}.
+
+La inestabilidad es la falta de estabilidad en el proceso. Las causas comunes y específicas que causan variación no están siendo comprobadas. El mejor método para controlarlo es a través de \textit{Process Behavior Charts}.
+
+\textit{Off-target} es a menudo la responsabilidad de los ingenieros que diseñan. El operador solo puede controlar si el proceso está centrado dentro de las especificaciones de ingeniería y de los límites de control.
+
+\section{Lean Tools for Process Control}
+
+\subsection{Total Productive Maintenance}
+
+\subsubsection{Loss Description}
+
+\subsubsection{Overall Equipment Effectiveness}
+
+\subsection{Visual Factory}
+
+\subsubsection{Visial Management}
+
+\subsubsection{Visual Workplace}
 
 %\pagebreak[4]
 %\part{Glosario}

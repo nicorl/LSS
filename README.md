@@ -22,17 +22,17 @@ Capítulos completos
 * Cap 15. Capacidad de actuación de proceso.
 * Cap 16. Exploración del análisis de datos.
 * Cap 17. Test de hipótesis.
+* Cap 18. Diseño de experimentos (DOE).
+* Cap 19. Análisis de la causa raíz.
 
 Capítulos pendientes de revisión
 -----
-* Cap 18. Diseño de experimentos (DOE).
-* Cap 19. Análisis de la causa raíz.
 * Cap 20. Herramientas Lean.
 * Cap 21. Control de proceso estadístico (SPC).
+* Cap 22. Plan de Control.
 
 Capítulos pendientes de ser resumidos
 -----
-* Cap 22. Plan de Control.
 * Cap 23. Herramientas Lean para el control de proceso.
 
 
@@ -58,3 +58,5 @@ Capítulo | Apartados | Sección
 **Cap 15** | `Cpk`, `SPC` | Medición
 **Cap 16** | `Regresiones`, `p-valor` , `MMCC` | Análisis
 **Cap 17** | `SPC`, `X&R`, `X&s`, `KPIV`, `KPOV`, `Charts`, `UCL`, `LCL` | Análisis
+**Cap 18** | `DoE`, `Factor`, `Level`, `Treatment`, `Block`, `Variables`, `Effects`, `2^3 Design` | Análisis
+**Cap 19** | `8D`, `RCA`, `CAPA`, `Cause-and-Effect`, `8M`, `8P`, `4S`, `5W's`, `Root Cause Tree`, `FMEA` | Análisis
