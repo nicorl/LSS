@@ -1575,7 +1575,7 @@ Además, hay parámetros que no tienen que atender a distribuciones normales, co
 \subsection{Estudios de multi-variable}
 
 Selección de los planes apropiados de muestreo para crear cartas para el estudio multivariable e interpretar los resultados para la variación de posición, la variación de ciclo y la variación temporal.
-
+\begin{center}
 \begin{tabular}{|c|c|c|}
 	\hline Tipos de variación & Piezas & Lote \\ 
 	\hline Posicional & Within-Part & Within-Lot \\ 
@@ -1583,6 +1583,12 @@ Selección de los planes apropiados de muestreo para crear cartas para el estudi
 	\hline Temporal & Over time (shift-to-shift) & Over time (shift-to-shift) \\ 
 	\hline 
 \end{tabular} 
+\end{center}
+
+\begin{center}
+	\line(1,0){250}
+\end{center}
+
 
 Multi-var chart es útil para analizar los tres tipos de variación, también ayuda a minimizar la variación identificando áreas en las cuales hay una excesiva variación.
 Posicional se refiere sobre las características en un mismo producto, cíclico es la variación sobre diferentes lotes y Temporal es la que ocurre con el paso del tiempo.
@@ -1721,7 +1727,7 @@ X_m \pm Z_{\alpha/2} \frac{\sigma}{\sqrt{n}}
 Ejemplo: Tenemos en cuenta un canal de compra. 32 clientes, con un pedido promedio en 78.25 euros, y la desviación 37.5 euros. ¿Cómo calculamos el intervalo de confianza al 95\% de la población? \newline
 \begin{center}$\mu = 78.25 \pm 1.96\frac{37.50}{\sqrt{32}} = 78.25 \pm 13$ \end{center} 
 \begin{center}$91.25 \geq \mu \geq 65.25 $ \end{center}
-
+\part{Mejora}
 \section{Design of Experiments (DOE)}
 
 Los DOE (\textit{Design of experiments}) pueden ser resumidos como un conjunto de experimentos planificados. Se ajustan el conjunto de variables bajo condiciones controladas.
@@ -1838,6 +1844,9 @@ Según la tabla \ref{fig:a23halfdesign}, la columna de la interacción A $\times
 Experimentos de un factor son aleatorios cuando no hay pruebas omitidas y el orden es completamente aleatorio. Los resultados son analizados y evaluados con ANOVA y los valores significantes exceden el F-statistic.
 \subsubsection{Diseño y análisis de Full Factorial Experiments}
 Buscan todas las posibilidades de combinación de factores para completar un estudio de interacciones. Pueden ser mantenidas y convertidas en diferentes diseños de experimentos. A través de un two-way ANOVA se comprueba si son estadísticamente significativos.
+\begin{center}
+	\line(1,0){250}
+\end{center}
 
 Ejemplo: Estas cocinando carne para 100 personas y el ratio de aceptabilidad es del 75\%. Quieres saber el efecto de diferentes métodos de cocinar y las aproximaciones para ver como afecta.
 Método: + es grill, - es frito. Carne: + es solomillo, - es costilla. Marinado: + es vino rojo, - es salsa de soja.
@@ -1919,6 +1928,11 @@ Aunque los resultados no son iguales que en el caso anterior, las conclusiones s
 \subsubsection{Two-Level Fractional Factorial Experiment Procedure}
 
 El procedimiento se resume en tres etapas: seleccionar un proceso, seleccionar un diseño y analizar los datos-dibujar las conclusiones.
+
+\begin{center}
+	\line(1,0){250}
+\end{center}
+
 
 Ejemplo:
 Selecciona un proceso e identifica inputs y outputs.
@@ -2131,7 +2145,7 @@ Es un grupo de actividades para reconocer y evaluar los fallos potenciales de un
 El propósito de un FMEA es entender la oportunidad para fallos y el impacto de los riesgos en un producto o proceso, priorizar riesgos, tomar acciones para eliminar o reducir el impacto de los riesgos.
 
 \section{Lean Tools}
-El objetivo es alcanzar mejoras en la actuación y la filosofía Lean Six Sigma abordará eficazmente las medidas clave de actuación, la identificación y actuación, los múltiples aspectos sobre la gestión de procesos, incluyendo diseño, mejora y control, así como las mejoras a través de múltiples áreas de manera transversal, incorporando metas financieras, presupuestos y revisiones en el \textit{Framework} de mejora.
+El objetivo es alcanzar mejoras en la actuación, y la filosofía Lean Six Sigma abordará eficazmente las medidas clave de actuación y la identificación de los múltiples aspectos sobre la gestión de procesos, incluyendo diseño, mejora y control, así como las mejoras a través de múltiples áreas de manera transversal, incorporando metas financieras, presupuestos y revisiones en el \textit{Framework} de mejora.
 
 \begin{figure}[H]
 	\centering
@@ -2160,9 +2174,9 @@ Lean es la aplicación de herramientas para quitar \textit{waste} y variación e
 
 \paragraph{Pull system}
 
-Se encarga de gestionar el calendario y el flujo de materiales para qu no exista sobre producción o exceso de inventario. Este sistema está conducido por la demanda del cliente e incorpora métricas del proceso (\textit{setup time, takt time, ...}) para determinar tiempos y cantidades. Operan con \textit{Little's law} que definen la relación entre \textit{Lead time, throughput} y \textit{work-in-process} (WIP). Reduciendo inventario WIP, se reducen \textit{Lead times}, resultando más rápida la entrega y la satisfacción de la demanda del cliente.
+Se encarga de gestionar el calendario y el flujo de materiales para que no exista sobre producción o exceso de inventario. Este sistema está conducido por la demanda del cliente e incorpora métricas del proceso (\textit{setup time, takt time, ...}) para determinar tiempos y cantidades. Operan con \textit{Little's law} que definen la relación entre \textit{Lead time, throughput} y \textit{work-in-process} (WIP). Reduciendo inventario WIP, se reducen \textit{Lead times}, resultando más rápida la entrega y la satisfacción de la demanda del cliente.
 
-Eficiencias: simplificación, centrado en minimizar tiempos para setups y cambios, reducción de pasos, eliminación de \textit{reworks}, gestión de cuellos de botella.
+Eficiencias: simplificación, centrado en minimizar tiempos para \textit{setups} y cambios, reducción de pasos, eliminación de \textit{reworks}, gestión de cuellos de botella.
 
 \paragraph{Visual Factory}
 
@@ -2172,13 +2186,13 @@ Se esfuerza en hacer los problemas visibles, notificar a los empleados las condi
 Es la mejora continua. El control de procesos puede ser mejorado a través de eventos \textit{Kaizen} y recomendaciones para evitar actividades que no dan valor añadido. El trabajo resultante es más productivo y permite centrarse en los procesos necesarios.
 
 \paragraph{Kanban}
-Un sistema \textit{Kanban} bien implementado, mejora el sistema de control asegurando los tiempos de movimientos, la información, asegurando los flujos de material dentro y fuera del proceso de manera suave. Si al proceso llegan los \textit{inputs} antes de necesitarlos o hay una confusión innecesaria, empiezan a haber costes. Si los \textit{outputs} no están sincronizados con los procesos siguientes, los resultados son retrasos, clientes cabreados, y costes asociados.
+Un sistema \textit{Kanban} bien implementado mejora el sistema de control asegurando los tiempos de movimientos, la información, asegurando los flujos de material dentro y fuera del proceso de manera suave. Si al proceso llegan los \textit{inputs} antes de necesitarlos o hay una confusión innecesaria, empiezan a haber costes. Si los \textit{outputs} no están sincronizados con los procesos siguientes, los resultados son retrasos, clientes cabreados, y costes asociados.
 
 \paragraph{Total Productive Maintenance}
 
 Conlleva las siguientes iniciativas: \begin{itemize}
 	\item Evitar reducir o parar la actuación por equipo roto.
-	\item Reducir y minimizar los tiempos por setups y cambios.
+	\item Reducir y minimizar los tiempos por \textit{setups} y cambios.
 	\item Evitar paradas por procesar productos o servicios inaceptables.
 	\item Asegurar que los equipos producen a la velocidad para la que fueron diseñados.
 	\item Incrementar el campo de materiales aceptables para reducir \textit{waste}, \textit{scrap}, \textit{rework}...
@@ -2190,28 +2204,28 @@ Es un término para describir de manera sistemática como las partes son procesa
 \subsection{Cycle-time Reduction}
 
 \paragraph{Standard Work}
-El \textit{Standar Work} establece la línea de base para realizar tareas y actividades para obtener el resultado deseado, enlazando con la calidad del producto y proceso, costo, programación, ejecución, tiempo de ciclo y satisfacción del cliente. Se pueden demostrar mejoras en la calidad y el tiempo de ciclo y las reducciones en los residuos (por ejemplo, eliminación del exceso de movimiento, chatarra y \textit{rework}) con respecto a la línea de base.
+El \textit{Standard Work} establece la línea de base para realizar tareas y actividades para obtener el resultado deseado, enlazando con la calidad del producto y proceso, costo, programación, ejecución, tiempo de ciclo y satisfacción del cliente. Se pueden demostrar mejoras en la calidad y el tiempo de ciclo y las reducciones en los residuos (por ejemplo, eliminación del exceso de movimiento, chatarra y \textit{rework}) con respecto a la línea de base.
 
-El \textit{Standar Work} se establece mediante el análisis, la observación y la participación de los empleados. Los empleados están involucrados porque las personas más cercanas a la obra lo entienden mejor. Cabe señalar que los empleados pueden ser resistentes al establecimiento de trabajos estándar. El uso de herramientas de calidad y de gestión ayuda a evaluar las posibles barreras mediante el análisis y / o la participación del equipo en la siguiente secuencia:
+El \textit{Standard Work} se establece mediante el análisis, la observación y la participación de los empleados. Los empleados están involucrados porque las personas más cercanas al proceso lo entienden mejor. Cabe señalar que los empleados pueden ser resistentes al establecimiento de trabajos estándar. El uso de herramientas de calidad y de gestión ayuda a evaluar las posibles barreras mediante el análisis y / o la participación del equipo en la siguiente secuencia:
 
 \begin{enumerate}
-	\item Comunicar el cambio
-	\item Identificar los beneficios
-	\item Identificar las barreras
-	\item Identificar como capitalizar los beneficios
-	\item Identificar los métodos para mitigar las barreras
-	\item Hacer un acuerdo entre los pasos 4 y 5
-	\item Implementar el cambio
-	\item Comunicar los resultados
-	\item Celebrar el éxito
+	\item Comunicar el cambio,
+	\item Identificar los beneficios,
+	\item Identificar las barreras,
+	\item Identificar como capitalizar los beneficios,
+	\item Identificar los métodos para mitigar las barreras,
+	\item Hacer un acuerdo entre los pasos 4 y 5,
+	\item Implementar el cambio,
+	\item Comunicar los resultados,
+	\item Celebrar el éxito.
 \end{enumerate}
 
 Beneficios: proceso estable, proceso claramente definido, aprendizaje organizacional, participación de los trabajadores, siembra la base para aplicar Lean (por ejemplo: poka-yoke).
 
 \begin{itemize}
-	\item Production Capacity Chart. Usado para determinar la capacidad de máquinas y humanos en un proceso. Su propósito es identificar cuellos de botellas dentro del proceso. La clave es: capacidad, tiempo de proceso, intervalo, setup, tiempo operacional por cambio.
-	\item Standarized Work Combination Table. Muestra los elementos de trabajo y su secuencia. La tabla debe incluir las interacciones entre operador y máquina, y máquinas entre sí. Se utiliza para detectar actividades que no dan valor añadido.
-	\item Standarized Work Analysis Chart. Usado como racionalización de un layout de proceso. Es una ayuda visual a un empleado que esté en proceso de aprendizaje. Incluye localización de las cosas, pasos, y tiempos. También recalca items de calidad y seguridad.
+	\item \textit{Production Capacity Chart}. Usado para determinar la capacidad de máquinas y humanos en un proceso. Su propósito es identificar cuellos de botellas dentro del proceso. La clave es: capacidad, tiempo de proceso, intervalo, \textit{setup}, tiempo operacional por cambio.
+	\item \textit{Standarized Work Combination Table}. Muestra los elementos de trabajo y su secuencia. La tabla debe incluir las interacciones entre operador y máquina, y máquinas entre sí. Se utiliza para detectar actividades que no dan valor añadido.
+	\item \textit{Standarized Work Analysis Chart}. Usado como racionalización de un \textit{layout} de proceso. Es una ayuda visual a un empleado que esté en proceso de aprendizaje. Incluye localización de las cosas, pasos, y tiempos. También recalca items de calidad y seguridad.
 \end{itemize}
 
 \paragraph{SIPOC}
@@ -2229,7 +2243,7 @@ Procesos estables tienen costes, calidad y ciclos precedibles. Alternativamente,
 \end{itemize}
 
 \paragraph{Process Capability}
-Es similar a \textit{voice of the customer} (VOC), serí como el \textit{voice of the process} (VOP).
+Es similar a \textit{voice of the customer} (VOC), sería como el \textit{voice of the process} (VOP).
 
 \paragraph{Process Capacity}
 Herramienta para calcular la capacidad de un equipo para un trabajo particular. Las variables a utilizar: tiempo de máquina por pieza, tiempo manual (de operador) por pieza, ciclo total por pieza, número de piezas antes de cambiar las herramientas (mantenimiento), tiempo requerido para realizar un cambio de herramienta, ...
@@ -2237,15 +2251,15 @@ Herramienta para calcular la capacidad de un equipo para un trabajo particular. 
 \paragraph{Work Flow Analysis}
 El \textit{Work Flow} es el ratio bajo el que el trabajo es procesado a través del sistema.
 
-\textit{Flowcharting} es la técnica para representar visualmente una secuencia ordenada de tareas. El \textit{flowchart} puede ser construido a partir de una lista de tareas e incluye todo lo relevante del proceso (inputs, outputs, puntso de decisión, tiempos, métricas, ...)
+\textit{Flowcharting} es la técnica para representar visualmente una secuencia ordenada de tareas. El \textit{flowchart} puede ser construido a partir de una lista de tareas e incluye todo lo relevante del proceso (\textit{inputs}, \textit{outputs}, puntos de decisión, tiempos, métricas, ...)
 
 Pasos para el análisis:
 \begin{enumerate}
-	\item Processing. Cambio físico en el material.
-	\item Inspection. Comparación con el estándar.
-	\item Transportation. Movimiento entre localizaciones.
-	\item Process delay. Tiempo desde que se empieza a producir hasta que el lote es procesado.
-	\item Lot delay. Utilizado para representar la situación donde una pieza es procesada mientras otras piezas del lote esperan ser inspeccionadas o transportadas.
+	\item \textit{Processing}. Cambio físico en el material.
+	\item \textit{Inspection}. Comparación con el estándar.
+	\item \textit{Transportation}. Movimiento entre localizaciones.
+	\item \textit{Process delay}. Tiempo desde que se empieza a producir hasta que el lote es procesado.
+	\item \textit{Lot delay}. Utilizado para representar la situación donde una pieza es procesada mientras otras piezas del lote esperan ser inspeccionadas o transportadas.
 \end{enumerate}
 
 \textbf{Value Stream Mapping} identifica las actividades que dan valor y las que crean desperdicios. Permite visualizar los flujos de productos, servicios e información, los desperdicios y sus fuentes, así como niveles y funciones. Su uso ayuda a tomar decisiones sobre flujo de procesos, a mejorar la estrategia y sobre las relaciones entre información y los flujos de producto.
@@ -2255,6 +2269,9 @@ Pasos para el análisis:
 \textit{Future State}. Brainstorming de ideas para mejorar el estado actual del \textit{VSM}.
 
 \textit{Establish and Implement a Plan}. Crear un plan de acción para alcanzar el plan futuro.
+\begin{center}
+	\line(1,0){250}
+\end{center}
 
 \textbf{Takt Time Analysis}. El tiempo existente entre completar unidades consecutivas.
 \begin{equation}
@@ -2272,9 +2289,9 @@ Ejemplo: Un turno de 8 horas tiene 480 minutos. Un proceso de pintura de una fá
 
 Es la innovación. Ya que las mejoras de \textit{Kaizen} son pequeñas y las modificaciones van estabilizando el proceso, \textit{kaizen} puede ser descrito como \textit{evolutionary}. 
 
-\textit{Kaikaku} se refiere a una acción Kkaizen centrada para resolver una actividad concreta en una semana, referida como \textit{kaizen blitz} o \textit{kaizen event}. Las mejoras \textit{kaikaku} pueden deteriorarse en el tiempo si no hay nadie que las controle constantemente y resuelva los pequeños problemas.
+\textit{Kaikaku} se refiere a una acción Kaizen centrada para resolver una actividad concreta en una semana, referida como \textit{kaizen blitz} o \textit{kaizen event}. Las mejoras \textit{kaikaku} pueden deteriorarse en el tiempo si no hay nadie que las controle constantemente y resuelva los pequeños problemas.
 
-\textit{Gemba} es definida como el lugar donde el trabajo ocurre. Los esfuerzos \textit{kaizen} son condizidos en el Gemba por estos operadores e individuos que conocen el proceso de mejor manera. Para llevar a cabo un \textit{gemba kaizen}, los miembros de equipos utilizan un checklist para economizar los movimientos que incluyen:
+\textit{Gemba} es definida como el lugar donde el trabajo ocurre. Los esfuerzos \textit{kaizen} son conducidos en el Gemba por estos operadores e individuos que conocen el proceso de mejor manera. Para llevar a cabo un \textit{gemba kaizen}, los miembros de equipos utilizan un checklist para economizar los movimientos que incluyen:
 
 \begin{enumerate}
 	\item Eliminar movimientos innecesarios.
@@ -2311,9 +2328,9 @@ Para el éxito del plan:
 
 Hay muchos niveles de mejora para actividades kaizen, con diferente alcance y profundidad.
 \begin{itemize}
-	\item Individual (point kaizen). A nivel individual de estacioon de trabajo, siempre hay oportunidades para reducir desechos, organización del trabajo, inventario, localización de herramientas, secuencia de trabajo, ergonomía, poka-yoke, ...
-	\item Work teams (mini kaizen). Equipos de trabajo toman proyectos de mejora afectando al area de trabajo colectivo. Work flow, balanceo de carga de trabajo, 5S, mejoras en calidad.
-	\item Flow kaizen. Dirigido por un Project Manager, a menudo asistido por un \textit{Champion}, y asesorado por consultores, el equipo es multidisciplinar. Los flujos de los proyectos kaizen tratan cuestiones de proceso, de sistema y organizativas. 
+	\item Individual (point kaizen). A nivel individual (de estación de trabajo), siempre hay oportunidades para reducir desechos, organización del trabajo, inventario, localización de herramientas, secuencia de trabajo, ergonomía, poka-yoke, ...
+	\item Work teams (mini kaizen). Equipos de trabajo toman proyectos de mejora afectando al área de trabajo colectivo. Work flow, balanceo de carga de trabajo, 5S, mejoras en calidad.
+	\item Flow kaizen. Dirigido por un \textit{Project Manager}, a menudo asistido por un \textit{Champion}, y asesorado por consultores, el equipo es multidisciplinar. Los flujos de los proyectos kaizen tratan cuestiones de proceso, de sistema y organizativas. 
 	\item Process kaizen. Centrado en la eliminación de \textit{waste}, focalizado en un proceso-subproceso específico.
 	\item Supply chain kaizen. Los equipos de proyectos de la cadena de suministro implican a las empresas participantes en el flujo de valor en centrarse en optimizar las mejoras de la cadena de suministro. Estos equipos suelen tener un gerente de proyecto, por lo general de la empresa fabricante de equipos originales (OEM), y son apoyados por los campeones y consultores.
 \end{itemize}
@@ -2321,23 +2338,23 @@ Hay muchos niveles de mejora para actividades kaizen, con diferente alcance y pr
 \paragraph{Kaizen Events}
 Mientras que \textit{blitz} se refiere a un equipo específico que intenta conseguir rápidamente optimizar y reconstruir procesos para funcionar de manera eficiente, kaizen se utiliza para todos los tipos de mejora. Principios kaizen para una perspectiva lean:
 \begin{itemize}
-	\item Definir el valor percibido por el cliente
-	\item Identificar el Value Stream
-	\item Eliminar waste
-	\item Crear flujo
-	\item Establecer donde el flujo no es posible
-	\item Perseguir la perfección
+	\item Definir el valor percibido por el cliente.
+	\item Identificar el \textit{Value Stream}.
+	\item Eliminar \textit{waste}.
+	\item Crear flujo.
+	\item Establecer donde el flujo no es posible.
+	\item Perseguir la perfección.
 \end{itemize}
 Enfoque:
 \begin{itemize}
-	\item Kaizen es trabajo de todos
-	\item "Ir al \textit{Gemba}", para observar y documentar la realidad
-	\item Enfasis en los problemas que preocupan
-	\item Usar herramientas problema-solución
-	\item Sesgar a la hora de actuar
-	\item Estandarizar una vez que la mejora se ha logrado
-	\item Focalizar en mejorar procesos y resultados a la vez
-	\item Aplicar a cualquier aspecto del trabajo
+	\item Kaizen es trabajo de todos,
+	\item ``Ir al \textit{Gemba}", para observar y documentar la realidad,
+	\item Énfasis en los problemas que preocupan,
+	\item Usar herramientas problema-solución,
+	\item Sesgar a la hora de actuar,
+	\item Estandarizar una vez que la mejora se ha logrado,
+	\item Focalizar en mejorar procesos y resultados a la vez,
+	\item Aplicar a cualquier aspecto del trabajo.
 \end{itemize}
 Aspectos para lograr el éxito:
 \begin{itemize}
@@ -2352,16 +2369,18 @@ Aspectos para lograr el éxito:
 	\item Comité de gestión. La dirección debe apoyar activamente y participar en las iniciativas kaizen. Debe asegurar que el equipo tiene todo lo que necesita.
 \end{itemize}
 
+
+\part{Control}
 \section{Statistical Process Control}
 
-Las bases del control es categorizado como SPC. El propósito no es crear cartas de control, sino aplicar la información para construir y adaptar procesos.
+Las bases del control son categorizadas como SPC. El propósito no es crear cartas/hojas de control, sino aplicar la información para construir y adaptar procesos.
 Definiciones útiles:
 \begin{itemize}
-	\item Statistical Process Control (SPC): Aplicación de técnicas estadísticas para medir y analizar la variación en los procesos.
-	\item Statistical Quality Control (SQC): Aplicación de técnicas estadísticas para medir y mejorar la calidad del proceso.
-	\item Statistical Process Display (SPD): La aplicación errónea de técnicas estadísticas para evitar que la información sea utilizada para correr un proceso, cuando es solo para mostrar al cliente. 
-	\item Assignable cause: El cambio observado es causado por el comportamiento del variable principal en el proceso.
-	\item Chance / unassignable cause: El cambio observado es causado por la interacción de múltiples variables menores en el proceso.
+	\item \textit{Statistical Process Control} (SPC): Aplicación de técnicas estadísticas para medir y analizar la variación en los procesos.
+	\item \textit{Statistical Quality Control} (SQC): Aplicación de técnicas estadísticas para medir y mejorar la calidad del proceso.
+	\item \textit{Statistical Process Display} (SPD): La aplicación errónea de técnicas estadísticas para evitar que la información sea utilizada para correr un proceso, cuando es solo para mostrar al cliente. 
+	\item \textit{Assignable cause}: El cambio observado es causado por el comportamiento del variable principal en el proceso.
+	\item \textit{Chance / unassignable cause}: El cambio observado es causado por la interacción de múltiples variables menores en el proceso.
 	\item X y R son las cartas mas comunes del control de comportamiento de proceso.
 \end{itemize}
 Objetivos y beneficios:
@@ -2385,9 +2404,9 @@ Objetivos y beneficios:
 
 Variables:
 \begin{itemize}
-	\item Key process input variables (KPIVs) pueden ser analizados para determinar su efecto en el proceso.
-	\item Key process output variables (KPOVs) determinar la capacidad de un proceso y monitorizar el proceso utilizando cartas de control.
-	\item Design of experiment (DOE) y análisis de varianza (ANOVA) pueden identificar variables significantes para controlar el proceso.
+	\item \textit{Key process input variables} (KPIVs) pueden ser analizados para determinar su efecto en el proceso.
+	\item \textit{Key process output variables} (KPOVs) determinar la capacidad de un proceso y monitorizar el proceso utilizando cartas de control.
+	\item \textit{Design of experiment} (DOE) y análisis de varianza (ANOVA) pueden identificar variables significantes para controlar el proceso.
 \end{itemize}
 
 \subsection{Enfoque racional de subgrupos}
@@ -2495,6 +2514,7 @@ p = \frac{\Sigma discrepances}{Num. samples}
 \end{equation}
 
 En este caso = $\frac{\Sigma sample sizes}{Num. samples} = 1496 / 12$ = 124.7, $\frac{\Sigma discr}{\Sigma n} = \frac{177}{1496} = $0.118;
+
 Por lo que UCL = 0.205 y LCL = 0.03.
 
 \begin{figure}[H]
@@ -2541,7 +2561,7 @@ siendo c el número de defectos promedio.
 \subsubsection{Control Chart Interpretation}
 
 \begin{itemize}
-	\item \textit{Specials} son puntos por encima del UCL y por debajo del LCL
+	\item \textit{Specials} son puntos por encima del UCL y por debajo del LCL.
 	\item \textit{Run violation} ocurre cuando siete o mas puntos consecutivos están en un mismo lado de la línea central.
 	\item \textit{1 in 20 violation} es mas de un punto de 20 fuera del 33\% del \textit{control chart}.
 	\item \textit{Tren violation} es un movimiento con tendencia hacia arriba o hacia abajo en mas de 5 puntos consecutivos.
@@ -2558,7 +2578,7 @@ siendo c el número de defectos promedio.
 
 \section{Control Plan}
 
-Los planes de control hacen al operario se consciente de los ítems del sistema para controlar partes y procesos durante una producción completa. Es un documento, actualizado con las necesidades que explica como controlar el flujo del trabajo en el proceso. La información básica que tiene que contener un plan de control es:
+Los planes de control hacen al operario ser consciente de los ítems del sistema para controlar partes y procesos durante una producción completa. Es un documento, actualizado con las necesidades que explica como controlar el flujo del trabajo en el proceso. La información básica que tiene que contener un plan de control es:
 \begin{itemize}
 	\item Representación gráfica del proceso con los resultados deseados mostrados.
 	\item Características especiales o seguras deben ser mostradas en el plan.
@@ -2572,14 +2592,14 @@ Los planes de control hacen al operario se consciente de los ítems del sistema 
 Para asegurar la correcta monitorización del proceso y mediciones de control:
 \begin{itemize}
 	\item Especificar variables con impacto directo e indirecto, el remedio y el impacto en el cliente.
-	\item Establecer límites de control y estandares para saber cuando \textit{entrar en acción}.
+	\item Establecer límites de control y estándares para saber cuando \textit{entrar en acción}.
 	\item Medir y fijar valores para las diferentes variables de control.
 	\item Especificar el tiempo y la localización de las medidas, y determinar cual es el mejor \textit{control chart} para ello.
 	\item Asignar y delegar aquello que se revisará cuando el proceso está fuera de control y la creación de los diagnósticos de las posibles causas.
 	\item Ejecutar planes de acciones correctivas para restaurar los procesos rápidamente, incorporando adaptaciones al plan de control como parte de la mejora.
 \end{itemize}
 
-El plan de control debe tener los pasos a seguir durante cada fase del proceso para asegurar que todos los \textit{outputs} del proceso están controlados. Los operadores necesitan sentir un trabajo cómodo con el formato de trabajo (\textit{paperwork}) en su área. elementos y atributos que pueden ser parte de un plan de control incluyen:
+El plan de control debe tener los pasos a seguir durante cada fase del proceso para asegurar que todos los \textit{outputs} del proceso están controlados. Los operadores necesitan sentir un trabajo cómodo con el formato de trabajo (\textit{paperwork}) en su área. Elementos y atributos que pueden ser parte de un plan de control incluyen:
 \begin{enumerate}
 	\item \textit{Control subject}. Características del producto o proceso que están bajo monitorización o medición como manera de seguir, identificar las condiciones donde el proceso puede estar fuera de control.
 	\item \textit{Performance standard}. Esto permite al operador del proceso evaluar la actuación actual relativa a los límites de control predeterminados.
@@ -2637,15 +2657,125 @@ La inestabilidad es la falta de estabilidad en el proceso. Las causas comunes y 
 
 \subsection{Total Productive Maintenance}
 
+Mejora las prácticas de mantenimiento para equipos e infraestructura. Permite la predicción y prevención de fallos de manera anticipada. Los principales puntos del TPM:
+\begin{itemize}
+	\item Evitar reducir o parar la actuación por roturas de equipos.
+	\item Reducir y minimizar el tiempo en setups y cambios de equipos.
+	\item Evitar paradas.
+	\item Asegurar que los procesos y equipos funcionan a la velocidad para la que han sido diseñados.
+	\item Incrementar el rendimiento de material aceptable para reducir gasto.
+\end{itemize}
+
+Los objetivos del TPM son remover deficiencias de máquinas y minimizar tiempos a través de personas, procesos, sistemas y entorno. TPM revela ideas sobre los problemas que pueden ser aplicadas en otras partes para mejorar el ciclo, además de ayudar a que los esfuerzos tomados en identificar el \textit{waste}, y el \textit{muda} permitan a los sistemas eliminarlos. Los desperdicios se pueden clasificar en: Transporte, Inventario, Movimiento, Esperas, Sobre-producción, Sobre-procesado y Defectos. El desglose del TPM:
+
+\begin{itemize}
+	\item \textit{Breakdown maintenance}. Reparar cuando se rompe.
+	\item \textit{Corrective maintenance}. Mejorar o modificar el equipo para prevenir breakdowns.
+	\item \textit{Preventive maintenance}. Planificar actividades de mantenimiento para evitar indeseables breakdowns.
+	\item \textit{Productive maintenance}. Combinación de preventivo+ingeniería.
+\end{itemize}
+
+El TPM depende de los datos de uptime, utilización y eficiencia.
+
+Un sistema TPM tiene: una estructura de mantenimiento con metas y objetivos, un sistema de recolección de datos, \textit{training}, \textit{workflow} y controles, y una operativa. La métrica del TPM es el \textit{overall equipment effectiveness} (OEE).
+
+\begin{equation}
+OEE = Availability \times Performance \ efficiency \times Quality \ rate
+\end{equation}
+
+\textit{Availability} es usada para controlar las perdidas por \textit{downtimes} no planificados. Es crítico saber que el \textit{run time} no está basado en el \textit{calendar time}.
+
+\textit{Performance efficiency} refleja si el equipo está trabajando a máxima capacidad (para productos individuales). Es utilizado para controlar las pérdidas de velocidad de la máquina. La medida más común es el \textit{downtime} y se divide en:
+\begin{itemize}
+	\item \textit{Mean time to repair} (MTTR). El tiempo promedio que lleva reparar un fallo de manera correcta.
+	\item \textit{Mean time between failures} (MTBF). El tiempo promedio entre diferentes fallos de máquina.
+\end{itemize}
+
 \subsubsection{Loss Description}
+
+\begin{itemize}
+	\item \textit{Breakdowns}. Fallo mecánico que para la producción.
+	\item \textit{Changeovers}. Cambio de herramientas.
+	\item \textit{Idling and minor stoppages}. Inactividad por falta de material, cosas que son corregidas en menos de un minuto y no suponen parar el sistema.
+	\item \textit{Reduced speed}. Lentitud por cualquier motivo.
+	\item \textit{Scrap and rework}. Fabricar producto que no es conforme frente al estándar del cliente.
+	\item \textit{Start-up losses}. La máquina funciona pero no está fabricando un producto vendible todavía.
+\end{itemize}
+
+\begin{center}
+	\line(1,0){250}
+\end{center}
+
+
+La organización:
+
+\textbf{Operadores}: previenen los deterioros con inspecciones, los corrigen con una limpieza regular de los equipos y miden el deterioro a lo largo del tiempo.
+
+\textbf{Personal de Mantenimiento}: realizan las actividades para reducir roturas en producción. Hacen el mantenimiento preventivo a través de calendarios de comprobación y ajustes. \textit{Root Cause Analysis} para investigar los downtimes.
+
+\textbf{Ingenieros}: Diseñan para un ciclo de vida y mantenimiento. Participan en los \textit{Root Cause Analysis} para conseguir estabilidades en procesos.
+
+\textbf{Managers y Supervisores}: \textit{Root Cause Analysis} para dar más perspectiva a las paradas y a los downtimes en general.
 
 \subsubsection{Overall Equipment Effectiveness}
 
+Existen tres principales factores: disponibilidad, actuación y calidad. En esta métrica se incluye el MTTR y el MTBF.
+\begin{itemize}
+	\item \textit{Potential available time} es el tiempo posible teórico que los equipos pueden estar haciendo un buen producto.
+	\item \textit{Planned downtime} incluyen todos los tiempos que deben ser quitados para calcular el OEE, ya que son tiempos que no están pensados para que la máquina produzca.
+	\item \textit{Planned available time} es el tiempo de un proceso y está planeado para hacer un buen producto.
+\end{itemize}
+
+El siguiente paso es analizar las ineficiencias y las perdidas de productividad atendiendo a tres grandes categorías
+
+\begin{itemize}
+	\item \textit{Unplanned downtime loss} es la suma de los tiempos perdidos por paradas inesperadas. 
+	\item \textit{Performance loss} es la suma de todas las perdidas durante las operaciones debido a cosas que reduzcan la eficiencia del proceso.
+	\item \textit{Quality loss}, es el porcentaje de producción buena.
+\end{itemize}
+
+En líneas de montaje manual, OEE se puede cambiar por \textit{overall labor effectiveness} (OLE).
+
 \subsection{Visual Factory}
 
-\subsubsection{Visial Management}
+Se esfuerza en hacer los problemas visibles, notificando a los empleados las condiciones de operativa y las metas del proceso.
+
+\subsubsection{Visual Management}
+
+Se emplea la utilización de códigos de colores, containers limpios para materiales y equipos, e indicadores de procesos en un lugar de trabajo con las 5S bien implementadas. Una forma de gestión visual es \textit{single-point lesson} usada para mostrar cómo una tarea puede llevarse a cabo, cómo un producto o servicio debe ser inspeccionado o qué mirar durante la inspección.
 
 \subsubsection{Visual Workplace}
+
+Debe ser desarrollada en conjunto con otras soluciones de mejora, por ejemplo:
+
+Reducción del tamaño de lote, nivel de carga, 3P (production, process, preparation), TPM, Standard work, Built-in feedback, alineación estratégica con el negocio, mejora continua en la metodología de procesos, sistemas de calidad, sistema de acciones correctivas, gestión de proyectos, diseño de procesos, sistema pull, transferencia de conocimiento.
+
+El \textit{visual workplace} se define porque: todo está en orden, se tiene información vital sobre qué hacer/qué no hacer, como y cuando hacerlo, es transparente y tiene capacidad de autorregularse y las unidades visuales proveen feedback constante.
+
+\begin{center}
+	\line(1,0){250}
+\end{center}
+
+
+\textbf{Visual Devices: The Voice of Your Operations} El resultado es la transformación a un espacio de trabajo que habla claro y preciso sobre como actuar.
+
+\textbf{The Problem: Information Deficits} La información del lugar de trabajo puede cambiar rápidamente y a menudo. Calcular el nivel de déficit de información es la manera más rápida para diagnosticar que información necesita un sistema de trabajo y cual información sobra.
+
+\textbf{Lean Tools in the Visual Factory} Mejora la efectividad de las herramientas Lean por:
+
+\begin{enumerate}
+\item Ubicar las herramientas, partes y las actividades de producción junto con los indicadores a vista de plano.
+\item Etiquetado y posteo frecuente de actividades llevadas acabo, estaciones de trabajo y fuentes de material.
+\item La racionalización y la estandarización del \textit{layout} del lugar de trabajo para que los miembros puedan obtener la información sin interrupciones o movimientos.
+\end{enumerate}
+
+\textbf{A Gigantic Adherence Mechanism}. La clave de un lugar de trabajo visual está en las unidades visuales que son utilizadas y fácilmente entendidas por y para todos. El uso de imágenes, colores, formas y la manera eficiente y rápida de comprender y actuar a los eventos.
+
+La herramienta más conocida es \textit{Toyota andoboard} que notifica al líder del grupo o supervisor (o mantenimiento) con una luz los pasos del proceso.
+
+Otra herramienta común es \textit{stack lights}. Verde es fabricación normal. Amarillo indica que el operador necesita ayuda. Rojo indica que la fabricación ha parado.
+
+La planificación también incluye varios controles visuales para los niveles de inventario. Y si es un sistema tipo \textit{pull}, las tarjetas KanBan son un indicador visual para la producción de partes y componentes en el proceso de montaje.
 
 %\pagebreak[4]
 %\part{Glosario}
