@@ -1,10 +1,14 @@
-\documentclass[]{article}
+\documentclass[oneside]{book}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage{vmargin}
 \usepackage{fancyhdr}
 \usepackage{float}
+\usepackage{titlesec} % para cambiar el /part de estilo
+
+
+
 
 %\cfoot{\textit{\thepage}} 
 
@@ -18,6 +22,34 @@
 {0pt}                             % altura del pie de página
 {2cm}                           % espacio entre el texto y el pie de página
 
+
+
+%encabezados y pies de página%
+%paginas pares e impares HEAD
+\lhead[x1]{x2}
+\chead[y1]{y2}
+\rhead[z1]{z2}
+\renewcommand{\headrulewidth}{0.5pt}
+
+%paginas pares e impares FOOT
+\lfoot[a1]{b2}
+\cfoot[c1]{d2}
+\rfoot[e1]{f2}
+\renewcommand{\footrulewidth}{0.5pt}
+
+%pagina inicial capitulo
+%\fancypagestyle{plain}{
+%	\fancyhead[L]{K1}
+%	\fancyhead[C]{K2}
+%	\fancyhead[R]{K3}
+%	\fancyfoot[L]{L1}
+%	\fancyfoot[C]{L2}
+%	\fancyfoot[R]{L3}
+%	\renewcommand{\headrulewidth}{0.5pt}
+%	\renewcommand{\footrulewidth}{0.5pt}
+%}
+%encabezados y pies de página% fin
+
 %opening
 \title{Apuntes para preparar \textsc{Green Belt}}
 \author{Nicolás Rodríguez Lucena}
@@ -26,9 +58,11 @@
 
 
 \maketitle
+\tableofcontents % indice de contenidos
+\newpage
 
 \part{Introducción}
-\section{Six Sigma y metas organizativas}
+\chapter{Six Sigma y metas organizativas}
 
 \begin{quote}
 	\textbf{Six Sigma busca reducir la variación y mejorar el control del proceso.}
@@ -65,15 +99,15 @@ Motorola le presentó el Six Sigma a Ford y lo evaluó contra Ford Q1 y Q-101 (p
 \end{center}
 
 \textbf{Philip Crosby}: Desarrolló sus 14 pasos. 
-\begin{itemize} \item 1) Gerencia comprometida con la calidad \item 2) Los equipos de mejora continua deben tener miembros de todos los departamentos \item 3) Determinar como medir donde están los problemas actuales \item 4) Evaluar el coste de calidad y explicar su uso como herramienta de gestión \item 5) Incrementar la conciencia de calidad en la organización \item 6) Tomar acciones formales para corregir problemas identificados en pasos anteriores \item 7) Poner un comité de 0-defectos \item 8) Formación para todos \item 9) Establecer el día 0-defectos \item 10) Alentar a que la gente establezca metas de mejora para ellos y para sus grupos \item 11) Alentar a la gente a que comente los problemas de gestión \item 12) Reconocer y apreciar la participación de la gente \item 13) Establecer ``Consejos de Calidad'' para comunicarse de manera regular. \item 14) Re-ejecutar el programa desde 0 una vez terminado, para que la gente vea que esto nunca se acaba. 
+\begin{itemize} \item 1) Gerencia comprometida con la calidad. \item 2) Los equipos de mejora continua deben tener miembros de todos los departamentos. \item 3) Determinar como medir donde están los problemas actuales. \item 4) Evaluar el coste de calidad y explicar su uso como herramienta de gestión. \item 5) Incrementar la conciencia de calidad en la organización. \item 6) Tomar acciones formales para corregir problemas identificados en pasos anteriores. \item 7) Poner un comité de 0-defectos. \item 8) Formación para todos. \item 9) Establecer el día 0-defectos. \item 10) Alentar a que la gente establezca metas de mejora para ellos y para sus grupos. \item 11) Alentar a la gente a que comente los problemas de gestión. \item 12) Reconocer y apreciar la participación de la gente. \item 13) Establecer ``Consejos de Calidad'' para comunicarse de manera regular. \item 14) Re-ejecutar el programa desde 0 una vez terminado, para que la gente vea que esto nunca se acaba. 
 	\end{itemize}
 \begin{center}
 	\line(1,0){250}
 \end{center}
 \textbf{W. Edwards Deming}: Otros 14 puntos. 
-\begin{itemize} \item 1) Constancia en la mejora \item  2) Nueva filosofía \item  3) No todo es inspección  \item 4) No todo es precio \item  5) Mejora constante para planificación, producción y servicio \item 6) Formación \item 7) Liderazgo \item 8) Evitar miedos \item 9) Quitar barreras entre el staff \item 10) Fuera el trabajo duro \item 11) Eliminar cuotas para cuantificar trabajo duro y metas numéricas para la gestión \item 12) Quitar barreras que roben a la gente el orgullo del trabajo. Fuera sistemas de méritos etc... \item 13) Plan de Formación y mejora personal \item 14) Todos en la organización para realizar el cambio. \end{itemize}  Y sus 7 enfermedades mortales: \begin{itemize} \item 1) Falta de constancia \item 2) El cortoplacismo \item 3) Evaluación por méritos \item 4) Movilidad de la gestión \item 5) El funcionamiento basado solo en 'figuras visibles' \item 6) Costes médicos excesivos \item 7) Costes excesivos de garantía, alimentados por abogados que trabajan por honorarios. \end{itemize}
+\begin{itemize} \item 1) Constancia en la mejora. \item  2) Nueva filosofía. \item  3) No todo es inspección.  \item 4) No todo es precio. \item  5) Mejora constante para planificación, producción y servicio. \item 6) Formación. \item 7) Liderazgo. \item 8) Evitar miedos. \item 9) Quitar barreras entre el staff. \item 10) Fuera el trabajo duro. \item 11) Eliminar cuotas para cuantificar trabajo duro y metas numéricas para la gestión. \item 12) Quitar barreras que roben a la gente el orgullo del trabajo. Fuera sistemas de méritos etc... \item 13) Plan de Formación y mejora personal \item 14) Todos en la organización para realizar el cambio. \end{itemize}  Y sus 7 enfermedades mortales: \begin{itemize} \item 1) Falta de constancia. \item 2) El cortoplacismo. \item 3) Evaluación por méritos. \item 4) Movilidad de la gestión. \item 5) El funcionamiento basado solo en ``figuras visibles''. \item 6) Costes médicos excesivos. \item 7) Costes excesivos de garantía, alimentados por abogados que trabajan por honorarios. \end{itemize}
 
-También preparó el \textit{Sistema del conocimiento profundo}: 1) Apreciación de un sistema (\textit{process aproach}) 2) Conocimiento de la variación (existe, cómo reconocerla). 3) Teoría del conocimiento (\textit{how to learn}) 4) Conocimiento de la psicología (Maslow, Regla de Platino...) 
+También preparó el \textit{Sistema del conocimiento profundo}: 1) Orientación al sistema (\textit{process aproach}) 2) Conocimiento de la variación (existe, cómo reconocerla). 3) Teoría del conocimiento (\textit{how to learn}) 4) Conocimiento de la psicología (Maslow, Regla de Platino...) 
 \begin{center}
 	\line(1,0){250}
 \end{center}
@@ -81,7 +115,7 @@ También preparó el \textit{Sistema del conocimiento profundo}: 1) Apreciación
 \begin{center}
 	\line(1,0){250}
 \end{center}
-\textbf{Kaoru Ishikawa}: Diagrama causa-efecto. Trabajó con Deming estrechamente. Sus puntos: Calidad primero, por delante de rentabilidad cortoplacista. Orientar hacia cliente, pensar desde su POV. Destaca la necesidad de que haya \textit{feedback} con cliente. La gestión de mejora debe basarse en hechos y datos, estadística. Respeto a la gente como filosofía de gestión. Gestión interfuncional. Sus contribuciones clave: los círculos de calidad japoneses, el diagrama \textit{fishbone}, el desarrollo de control de calidad amigable y el centrarse en los clientes internos.
+\textbf{Kaoru Ishikawa}: Diagrama causa-efecto. Trabajó con Deming estrechamente. Sus puntos: \begin{itemize} \item Calidad primero, por delante de rentabilidad cortoplacista. \item Orientar hacia cliente, pensar desde su POV. \item Destaca la necesidad de que haya \textit{feedback} con cliente. \item La gestión de mejora debe basarse en hechos y datos, estadística. \item  Respeto a la gente como filosofía de gestión. \item Gestión interfuncional. \end{itemize} Sus contribuciones clave: los círculos de calidad japoneses, el diagrama \textit{fishbone}, el desarrollo de control de calidad amigable y el centrarse en los clientes internos.
 \begin{center}
 	\line(1,0){250}
 \end{center}
@@ -105,40 +139,44 @@ También preparó el \textit{Sistema del conocimiento profundo}: 1) Apreciación
 \begin{center}
 	\line(1,0){250}
 \end{center}
-\textbf{Proceso}: serie de pasos diseñada para producir productos o servicios. A menudo representado como un diagrama de flujo con \textit{inputs} (materiales, recursos, info), \textit{steps}, y \textit{outputs}. 
+\textbf{Proceso}: serie de pasos diseñados para producir productos o servicios. A menudo representado como un diagrama de flujo con \textit{inputs} (materiales, recursos, info), \textit{steps}, y \textit{outputs}. 
 
-Six Sigma está incluido en el círculo DMAIC (\textit{define, measure, analyze, improve y control}), utilizado para gestionar problemas.
-
+Six Sigma está incluido en el círculo DMAIC (\textit{define, measure, analyze, improve y control}), siendo utilizado para gestionar problemas.
+\begin{center}
+	\line(1,0){250}
+\end{center}
 \textbf{Business Systems}: diseñados para implementar un conjunto de procesos. Se asegura de que todo esté en el lugar adecuado en el momento adecuado. Tiene como meta la mejora continua de procesos, productos y servicios. Se encarga de recoger y analizar la información de los procesos y de otras fuentes para la mejora continua. \newline
 Hay dos maneras de ver el método. Una, utilizando inputs / recursos para producir resultados de \textbf{calidad}: la gestión de procesos es recoger datos y analizarlo, aplicando el \textit{feedback} al proceso. Por otro lado se piensa que el proceso debe ser diseñado orientado hacia la \textbf{colección de datos}, análisis y el \textit{feedback} que se va a producir.
-
+\begin{center}
+	\line(1,0){250}
+\end{center}
 \textbf{Las 7M en Six Sigma}: \textit{Man, Machine, Methods, Mother Nature, Management, Materials, Measurement System} para Productos y/o Servicios. \newline Métodos alternativos al Six Sigma: Quality Operating System (QoS), mejora continua (CI), \textit{total quality management} (TQM), mejora de procesos (PI). Todos comparten el mismo reto: revisar procesos para mejoras: mantenimientos preventivos, limpieza, desgaste... \newline La línea general es: qué medir, cómo medirlo, saber si es fundamental el proceso, tener un consenso sobre defectos, exponer defectos latentes, observar la calidad estadística (cartas de comportamiento de proceso) y distinguir entre Calidad de Diseño y Calidad de Conformidad. 
 
-\subsection{Modelo DMAIC}
-Define: PDCA, SIPOC, 5W, Systems thinking, Process Identification, Flowchart, Project Management.
+\section{Modelo DMAIC}
+\textbf{Define}: PDCA, SIPOC, 5W, Systems thinking, Process Identification, Flowchart, Project Management.
 
-Measure: PDCA, Data Collection Plan, Measurement Systems Analysis (MSA), Collect Data (check sheets, Histograms, Pareto Charts, Scatter Diagrams), identificar variabilidad-instabilidad, Benchmark, Start Cost of Quality. 
+\textbf{Measure}: PDCA, Data Collection Plan, Measurement Systems Analysis (MSA), Collect Data (check sheets, Histograms, Pareto Charts, Scatter Diagrams), identificar variabilidad-instabilidad, Benchmark, Start Cost of Quality. 
 
-Analyze: PD\textbf{S}A, mejora continua, mantenimiento preventivo, limpieza, \textit{benchmark}, teorema del límite central, GD\&T, Shop Audit, experimentos. 
+\textbf{Analyze}: PD\textbf{S}A, mejora continua, mantenimiento preventivo, limpieza, \textit{benchmark}, teorema del límite central, GD\&T, Shop Audit, experimentos. 
 
-Improve: PD\textbf{S}A, mejora procesos, desarrollo organizacional, reducción de la variación, solución de problemas, \textit{brainstorming}, Flowchars \textit{should be}, FMEA, coste de calidad, diseño de experimentos. 
+\textbf{Improve}: PD\textbf{S}A, mejora procesos, desarrollo organizacional, reducción de la variación, solución de problemas, \textit{brainstorming}, Flowchars \textit{should be}, FMEA, coste de calidad, diseño de experimentos. 
 
-Control: SDCA, plan de control, \textit{dynamic control plan} (DCP), MSA largo plazo, mistake-proofing, process behavior charts.
+\textbf{Control}: SDCA, plan de control, \textit{dynamic control plan} (DCP), MSA largo plazo, mistake-proofing, process behavior charts.
 
-\subsection{Six Sigma Road Map}
+\section{Six Sigma Road Map}
 
 \begin{enumerate}
 	\item Existe la variación en todo. Hay que estandarizar el trabajo.
 	\item Identifica lo que el cliente quiere y necesita. Reduce variación.
-	\item Método problem-solving para mejorar los planes.
+	\item Método \textit{problem-solving} para mejorar los planes.
 	\item Seguir el DMAIC para desarrollar la mejora.
-	\item Monitorizar el proceso con Process Behavior Charts.
+	\item Monitorizar el proceso con \textit{Process Behavior Charts}.
 	\item Subir de nivel el estándar de los procedimientos y lecciones aprendidas.
-	\item Celebrar el éxito
+	\item Celebrar el éxito.
 	\item Empezar de nuevo con la mejora continua PDSA/SDCA.
 \end{enumerate}
 
-\subsection{Cost-Benefit Analysis}
+\section{Cost-Benefit Analysis}
 
 Las cosas que rigen el funcionamiento en una tienda se pueden clasificar en: \textit{prevention cost}, \textit{appraisal costs} (evaluación), costes de fallos internos y costes de fallos externos. 
 Cuando se calculan los costes de calidad en un negocio se dibuja una curva tal como Fig. \ref{fig:CurvaCostesdeCalidadInicio} .
@@ -158,18 +196,24 @@ En la primera ronda de medidas de costes nadie debe ser increpado, debe servir a
 	\label{fig:CurvaCostesdeCalidadFin}
 \end{figure}
 
-Una técnica para desarrollar estrategias es la planificación \textit{hoshin}. Desarrollar 4 visiones de lo que debería ser la compañía en 5 años.
+Una técnica para desarrollar estrategias es la planificación \textit{hoshin}, consistente en desarrollar hasta 4 visiones de lo que debería ser la compañía en 5 años.
 
 \begin{equation}
 Expected \, Profit  = \sum Profit \, \mathrm{x} \, Probability
 \end{equation}
 
-Cuando un sistema trabaja por debajo de su nivel óptimo es \textit{suboptimization}.
+Cuando un sistema trabaja por debajo de su nivel óptimo, existe una \textit{suboptimization}.
 
-\subsection{Conductores de la organización y métrica}
+\section{Conductores de la organización y métrica}
 Factores clave: hay que sacar datos e información de clientes, productos, servicios, operaciones, mercado, competitividad, proveedores, sindicatos, costes, gobiernos y cumplimiento del rendimiento mediante indicadores.
 
-\textbf{Voice of the Customer (VoC)}: donde factor clave es el cliente y el conocimiento del mercado: las relaciones con clientes y la habilidad de determinar cómo adquirir un nuevo cliente, satisfacerlo, conseguir su lealtad para retenerlo y expandir el mercado. \textit{VoC} es el proceso para capturar información relacionada con los clientes. La intención es anticiparse a los requerimientos de cliente, necesidades y deseos. La meta es conseguir la lealtad para construir relaciones entre-con clientes. VoC puede incluir reunir e integrar datos de encuestas, datos de la web, datos de garantías, registros de quejas y toda aquella información que afecta a la compra y a las decisiones que toma un cliente.
+\textbf{Voice of the Customer (VoC)}: donde factor clave es el cliente y el conocimiento del mercado: las relaciones con clientes y la habilidad de determinar cómo adquirir un nuevo cliente, satisfacerlo, conseguir su lealtad para retenerlo y expandir el mercado. 
+\begin{quote} \textit{VoC} es el proceso para capturar información relacionada con los clientes. \end{quote} 
+		La intención es anticiparse a los requerimientos de cliente, necesidades y deseos. La meta es conseguir la lealtad para construir relaciones entre-con clientes. \textit{VoC} puede incluir acciones como reunir e integrar datos de encuestas, datos de la web, datos de garantías, registros de quejas y toda aquella información que afecta a la compra y a las decisiones que toma un cliente.
+
+\begin{center}
+	\line(1,0){250}
+\end{center}
 
 \textbf{Balanced Scorecard (BS)} (tarjetas de puntuación equilibradas): Sistema que permite a las organizaciones centrarse en su visión y estrategia, y afinar con las acciones a desarrollar. Provee \textit{feedback} en procesos internos y externos. Una vez completamente integrado, el \textit{BS} convierte el plan estratégico en el centro nervioso de la empresa.
 
@@ -184,9 +228,9 @@ Factores clave: hay que sacar datos e información de clientes, productos, servi
 
 \textbf{Key Performance/Process Indicator (KPI)} (indicador clave de rendimiento): Medida cuantificable que acordada de ante mano, refleja el éxito de los factores críticos. Hay que saber elegir que medidas necesitas para controlar o perseguir en tus proyectos. 
 
-\section{Principios Lean en la organización}
+\chapter{Principios Lean en la organización}
 
-\textbf{¿Qué es Lean?}: añadir o mantener valor en lo que se hace, reducir \textit{waste} y el proceso de crear valor sin \textit{waste}. Ceoncepto: Añadir valor sin reducir nada más. Toyota Production System es el origen y la clave del Lean. 
+\begin{quote} \textbf{¿Qué es Lean?}: añadir o mantener valor en lo que se hace, reducir \textit{waste} y el proceso de crear valor sin \textit{waste}. Ceoncepto: Añadir valor sin reducir nada más. Toyota Production System es el origen y la clave del Lean. \end{quote}
 
 \begin{figure}[ht!]
 	\centering
@@ -195,7 +239,7 @@ Factores clave: hay que sacar datos e información de clientes, productos, servi
 	\label{fig:TPS House}
 \end{figure}
 
-\subsection{Value}
+\section{Value}
 
 El concepto que mas preocupa a los negocios en los años recientes es el \textit{valor}. La percepción de la utilidad y necesidad de un producto o servicio. 
 
@@ -204,12 +248,14 @@ La gente coge coches japoneses por calidad, confianza y eficiencia. La gente cog
 Un paso tiene valor añadido dentro de un proceso si: \begin{itemize} \item el cliente reconoce el valor del producto/servicio. \item puede transformar el producto. \item el producto está bien hecho a la primera. \end{itemize}
 
 \textit{Non-value-added} o \textit{rework}, son actividades por las que el cliente no está dispuesto a pagar. El cliente está dispuesto a pagar por la impresión de un documento pero no por las correcciones del proveedor. Hay que cuestionarlo todo para identificar las actividades \textit{non-value-added}. Siempre hay zonas grises entre valor añadido y no valor añadido. Esto ocurre con inspección y testeo. El cliente no quiere problemas, por lo que inspección es valor añadido, pero la solución es mejorar el proceso hasta el punto de que no tenga que ser inspeccionado. Por otro lado, el sello de la IFS da categoría, así que hacer lo que el sello pida es lo propio, ya que tenerlo da un valor añadido.
+\begin{center}
+	\line(1,0){250}
+\end{center}
+Los 14 principios del \textbf{Camino Toyota}: \begin{enumerate} \item Decisiones de gestión en una filosofía de largo plazo. \item Proceso continuo que lleve los problemas a la superficie. \item Sistema \textit{Pull} para evitar sobreproducción. \item Nivelación de carga de trabajo. \item Construir cultura de parar a arreglar problemas para tener calidad desde el primer momento. \item Estandarizar tareas y procesos. \item Controles visuales. \item Utilizar tecnología fiable y probada. \item Crecer líderes que entienden el trabajo a fondo, vivan la filosofía y enseñen a otros. \item Desarrolla gente y equipos que sigan la filosofía de la compañía. \item Respeta la red de compañeros y proveedores retándolos y ayudándolos a mejorar. \item Ve y mira por ti mismo para entender la situación. \item Toma decisiones en consenso y teniendo en cuenta todas las opiniones \item Empieza una organización que aprenda la mejora continua. \end{enumerate}
 
-Los 14 principios del \textbf{Camino Toyota}: \begin{enumerate} \item Decisiones de gestión en una filosofía de largo plazo. \item Proceso continuo que lleve los problemas a la superficie. \item Sistema \textit{Pull} para evitar sobreproducción \item Nivelación de carga de trabajo \item Construir cultura de parar a arreglar problemas para tener calidad desde el primer momento \item Estandarizar tareas y procesos \item Controles visuales \item Utilizar tecnología fiable y probada \item Crecer líderes que entienden el trabajo a fondo, vivan la filosofía y enseñen a otros \item Desarrolla gente y equipos que sigan la filosofía de la compañía \item Respeta la red de compañeros y proveedores retándolos y ayudándolos a mejorar \item Ve y mira por ti mismo para entender la situación \item Toma decisiones en consenso y teniendo en cuenta todas las opiniones \item Empieza una organización que aprenda la mejora continua. \end{enumerate}
+\section{Herramientas Top Lean}
 
-\subsection{Herramientas Top Lean}
-
-\textbf{5S (o 6S, o 7S)}. Método de organización del lugar de trabajo para mejorar la eficiencia. El orden: \textit{Sort}: Lo que no hace falta o rara vez hace falta, fuera. Muchas cosas da lugar a desorden y desorden da lugar a pérdida de tiempo. \textit{Set in order}: Colocación de las cosas necesarias en el sitio necesario: instrucciones, herramientas, gafas de seguridad. \textit{Shine}: la limpieza es importante. Una vez resuelto (si es un ejercicio intelectual) hay que dejarlo bien organizado y limpio para que se entienda, esa es la filosofía de la limpieza. \textit{Standarize}: desarrollar checklist, starndarts e instrucciones de trabajo para tener un orden. \textit{Sustain}: mantener las otras 4 S. Las 5S mejoran la productividad y la eficiencia, reduce los accidentes. La gestión debe dar poder a los empleados para que ellos puedan tener propiedad sobre sus áreas de trabajo. Las otras dos son: \textit{Safey}-seguridad y \textit{Oversight}-asegurar a la primera.
+\textbf{5S (o 6S, o 7S)}. Método de organización del lugar de trabajo para mejorar la eficiencia. \begin{itemize} \item \textit{Sort}: Lo que no hace falta o rara vez hace falta, fuera. Muchas cosas da lugar a desorden y desorden da lugar a pérdida de tiempo. \item \textit{Set in order}: Colocación de las cosas necesarias en el sitio necesario: instrucciones, herramientas, gafas de seguridad. \item \textit{Shine}: La limpieza es importante. Una vez resuelto (si es un ejercicio intelectual) hay que dejarlo bien organizado y limpio para que se entienda, esa es la filosofía de la limpieza. \item \textit{Standarize}: Desarrollar \textit{checklist}, estándares e instrucciones de trabajo para tener un orden. \item \textit{Sustain}: Mantener las otras 4 S. Las 5S mejoran la productividad y la eficiencia, reduce los accidentes. La gestión debe dar poder a los empleados para que ellos puedan tener propiedad sobre sus áreas de trabajo. \end{itemize} Las otras dos son: \textit{Safey}-seguridad y \textit{Oversight}-asegurar a la primera. 
 
 \begin{figure}[ht!]
 	\centering
@@ -218,6 +264,9 @@ Los 14 principios del \textbf{Camino Toyota}: \begin{enumerate} \item Decisiones
 	\label{fig:Las7S}
 \end{figure}
 
+\begin{center}
+	\line(1,0){250}
+\end{center}
 
 \textbf{Andon}. Sistema de \textit{feedback} visual (semáforo) para advertir del nivel de calidad de producto.
 
@@ -239,13 +288,13 @@ Los 14 principios del \textbf{Camino Toyota}: \begin{enumerate} \item Decisiones
 
 \textbf{Single Minute Exchange of Die (SMED)}. Rápido y efectivo camino para convertir un proceso operativo en un producto hacia el siguiente. Los grandes cambios son la clave para reducir lotes de producción.
 
-\textbf{Standar Work}: 9001, con su mapa de procesos, procedimientos, ...
+\textbf{Standar Work}: 9001, con mapa de procesos, procedimientos, ...
 
 \textbf{Takt Time} del alemán \textit{taktzeit}. La batuta de una orquesta. Metas, velocidad, tiempos. Ajustar producción con demanda.
 
 \textbf{Theory of Constraints}. Metodología de problema-solución que busca el enlace más debil de la cadena. Normalmente es el mas lento. Identificar, Explotar (mejorar), Subordinar (el resto a este), Elevar (revisiones, inversiones, mejora de la debilidad) y Repetir.
 
-\subsection{Muda}
+\section{Muda}
 
 El \textit{waste} (muda) viene de varias fuentes:
 
@@ -257,23 +306,23 @@ El \textit{waste} (muda) viene de varias fuentes:
 
 \textbf{Inventory}. ¿Tienes inventario? El control sobre él, es un gasto. Equilibrio entre el control de stock vs ciclo económico, el retorno de la inversión. Estudio de equilibrado de costes.
 
-\textbf{Excess Movement of Material/Transportation}. Los movimientos de handling y storing matan. Un plant layout bien puesto sirve para evitar esto. Departamentos orientados a la función propia necesitan de muchos movimientos.
+\textbf{Excess Movement of Material/Transportation}. Los movimientos de \textit{handling} y \textit{storing} matan. Un \textit{plant layout} bien puesto sirve para evitar esto. Departamentos orientados a la función propia necesitan de muchos movimientos.
 
-\textbf{Defect Correction}. Corregir defectos. Actividad non-value added. Tipicas causas: mal  mantenimiento, mal sistema de calidad, malas instrucciones de trabajo y/o mal diseño. 
+\textbf{Defect Correction}. Corregir defectos. Actividad non-value added. Típicas causas: mal mantenimiento, mal sistema de calidad, malas instrucciones de trabajo y/o mal diseño. 
 
 \textbf{Excess Processing/Overprocessing}. Difíciles de reconocer. Demasiados procesos. 
 
-\subsubsection{Otros}
+\subsection{Otros}
 
 \textbf{Falta de creatividad}. Empleados tienen que tener ideas para mejorar los procesos.
 
 \textbf{Perfección}. Evitar la perfección exacta. 
 
-\subsection{Value Stream Mapping} 
+\section{Value Stream Mapping} 
 
-\textit{Value Stream} es una serie de actividades que hace una empresa: pedir, diseñar, producir, entregar productos/servicios. Un value stream empieza por los proveedores de los proveedores y acaba con los clientes de los clientes. Componentes: \begin{enumerate} \item \textit{Flow materials} desde proveedor hasta entrega a cliente (los pedidos entran semanalmente en camión, los materiales se mueven hasta la zona de producción y al almacén de producto terminado, producto terminado se entrega a cliente), \item \textit{Transformation of raw materials} (pasos de producción rollo cortar, moldear, forjar...), \item El flujo de información requerido para ayudar al flujo de material y a la transformación (órdenes de compra a proveedores, órdenes internas de trabajo, shipping notice...). \end{enumerate}
+\textit{Value Stream} es una serie de actividades que hace una empresa: pedir, diseñar, producir, entregar productos/servicios. Un \textit{value stream} empieza por los proveedores de los proveedores y acaba con los clientes de los clientes. Componentes: \begin{enumerate} \item \textit{Flow materials} desde proveedor hasta entrega a cliente (los pedidos entran semanalmente en camión, los materiales se mueven hasta la zona de producción y al almacén de producto terminado, producto terminado se entrega a cliente), \item \textit{Transformation of raw materials} (pasos de producción rollo cortar, moldear, forjar...), \item El flujo de información requerido para ayudar al flujo de material y a la transformación (órdenes de compra a proveedores, órdenes internas de trabajo, \textit{shipping notice}...). \end{enumerate}
 
-Value Stream Map usa gráficos con iconos simples para ilustrar el movimiento del material, inventario, work-in-progress, operadores... Un Value Stream Analysis es el que descubre \textit{wastes} ocultos en la organización. Aplicar \textit{Lean Thinking} para dividir un camino-\textit-{path} en diferentes pasos: \begin{enumerate} \item Producir un \textit{value stream map (value chain diagram)}. \item Analizar las notas de inventario pensando en reducirlo o eliminarlo (inventario = coste del espacio, perdida de calidad, diferentes versiones (v2 v3 v4...), el dinero se puede invertir en otras cosas), \item Analizar los non-value steps para eliminarlos, \item Determinar como es conducido el flujo (p.e.: en función de pedidos del cliente), 5. Extender el Value Stream Map hasta los proveedores (compatibilidad entre sistemas-codigos de barras). \end{enumerate}
+Value Stream Map usa gráficos con iconos simples para ilustrar el movimiento del material, inventario, work-in-progress, operadores... Un Value Stream Analysis es el que descubre \textit{wastes} ocultos en la organización. Aplicar \textit{Lean Thinking} para dividir un camino-\textit-{path} en diferentes pasos: \begin{enumerate} \item Producir un \textit{value stream map (value chain diagram)}. \item Analizar las notas de inventario pensando en reducirlo o eliminarlo (inventario = coste del espacio, perdida de calidad, diferentes versiones (v2 v3 v4...), el dinero se puede invertir en otras cosas), \item Analizar los non-value steps para eliminarlos, \item Determinar como es conducido el flujo (p.e.: en función de pedidos del cliente), 5. Extender el Value Stream Map hasta los proveedores (compatibilidad entre sistemas-códigos de barras). \end{enumerate}
 
 \begin{figure}[ht!]
 	\centering
@@ -282,15 +331,15 @@ Value Stream Map usa gráficos con iconos simples para ilustrar el movimiento de
 	\label{fig:ValueStreamMapping}
 \end{figure}
 
-\section{Diseño para metodologías Six Sigma (DFSS)}
+\chapter{Diseño para metodologías Six Sigma (DFSS)}
 
-DFSS se apoya proceso estratégico de negocio/ingeniería y en procesos capaces de reducir y gestionar variaciones: con DMADV (define, measure, analyze, design, verify) y con IDOV (identify, design, optimice, verify). Hay batiburrillo de sigmas DFSS, DCOV, ICOV, DMEDI, IDDOV, GD. Se use el que se use, pero hay que recordar: robustez del sistema usado, no abrir mil proyectos, uno para cada síntoma, evitar perder el tiempo alimentando el sistema de datos y ratings, alcance vago o pequeño. Lo que no puedes controlar se llama \textit{noise}-ruido. \textit{noise strategy} para mejorar el proceso.
+DFSS se apoya en el proceso estratégico de negocio/ingeniería y en procesos capaces de reducir y gestionar variaciones: con DMADV (define, measure, analyze, design, verify) y con IDOV (identify, design, optimice, verify). Hay batiburrillo de sigmas DFSS, DCOV, ICOV, DMEDI, IDDOV, GD. Se use el que se use, hay que recordar: robustez del sistema usado, no abrir mil proyectos, uno para cada síntoma, evitar perder el tiempo alimentando el sistema de datos y \textit{ratings}, o tener un alcance vago o pequeño. Lo que no puedes controlar se llama \textit{noise}-ruido. Se puede aplicar una \textit{Noise Strategy} para mejorar el proceso.
 
 Usamos DFSS para aumentar la satisfacción de cliente, reducir variaciones, tener un diseño robusto, bajar costes de garantía, mejorar durabilidad, incrementar facturación-ganancias y producción (ésta última a través de reducir el número de \textit{downtimes} debidos a defectos).
 
-\subsection{IDOV} \textit{Identify} - \textit{Design} - \textit{Optimize} - \textit{Verify} similar al MAIC del Six Sigma (\textit{measure, analyze, improve, control}).
+\section{IDOV} \textit{Identify} - \textit{Design} - \textit{Optimize} - \textit{Verify} similar al MAIC del Six Sigma (\textit{measure, analyze, improve, control}).
 
-\textit{Identify Phase}: identificar requisitos de producto y cliente, establecer caso de negocio, identificar aspectos técnicos, variables critical to quality (CTQ), límites de especificaciones, roles y responsabilidades e hitos.
+\textit{Identify Phase}: identificar requisitos de producto y cliente, establecer caso de negocio, identificar aspectos técnicos, variables \textit{critical to quality} (CTQ), límites de especificaciones, roles y responsabilidades e hitos.
 
 \textit{Design Phase}: Formular el concepto, identificar posibles riesgos usando FMEA \textit{(failure mode and effects analysis)}, para cada detalle técnico, identificar parámetros diseño, usar DOE \textit{(design of experiments)} y otras herramientas de análisis para determinar CTQs y su influencia en los requisitos técnicos.
 
@@ -298,19 +347,19 @@ Usamos DFSS para aumentar la satisfacción de cliente, reducir variaciones, tene
 
 \textit{Validate Phase}: Prototipado, evaluar actuación, fallos, confianza y riesgo, reiteración en el diseño y revisión final de producto.
 
-\subsection{DMADV} Para cuando el producto no existe y ha de ser desarrollado, o sí que existe pero no se conocen las necesidades del negocio o del cliente. 
+\section{DMADV} Para cuando el producto no existe y ha de ser desarrollado, o sí que existe pero no se conocen las necesidades del negocio o del cliente. 
 
-\textit{Define}: Targeting prioridades.
+\textit{Define}: Seleccionar prioridades.
 
 \textit{Measure}: Combinación de análisis técnico y competitivo del producto. 
 
 \textit{Analyze}: Aproximaciones de estadística e investigación, para establecer prioridades y confianza.
 
-\textit{Design}: \newline Design for/to Cost: búsqueda de alternativas en procesos, materiales, métodos... \newline Design for Manofacturing/productibility/assembly: pequeños cambios que hacen que sea mucho mas barato fabricarlo. \newline Design for test: donde testing es crítico, lo mejor es hacer test tempranos en el ciclo de producción. \newline Design for maintability: aplicable si se necesitan muchos \textit{downtimes} y reparaciones. \newline Design for Robustness: test en todos los ciclos de vida, y partes, ensamblajes y subensamblajes. \newline Design for usability: Validación! puede ser medido y mejorado. Extended for functionality: otras características desde el punto de vista del diseño. \newline Design for efficiency: consumo mínimo de recursos. \newline Design for Performance: la mejora de los microchips es un ejemplo. \newline Design for security: preserva la integridad del producto. Design for scalability.
+\textit{Design}: \newline Design for/to Cost: búsqueda de alternativas en procesos, materiales, métodos... \newline Design for Manufacturing/productibility/assembly: pequeños cambios que hacen que sea mucho mas barato fabricarlo. \newline Design for test: donde testing es crítico, lo mejor es hacer test tempranos en el ciclo de producción. \newline Design for maintability: aplicable si se necesitan muchos \textit{downtimes} y reparaciones. \newline Design for Robustness: test en todos los ciclos de vida, y partes, ensamblajes y subensamblajes. \newline Design for usability: Validación! puede ser medido y mejorado. Extended for functionality: otras características desde el punto de vista del diseño. \newline Design for efficiency: consumo mínimo de recursos. \newline Design for Performance: la mejora de los microchips es un ejemplo. \newline Design for security: preserva la integridad del producto. Design for scalability.
 
 \textit{Verify}: Es necesario asegurar los resultados del diseño de los objetivos. 
 
-\subsection{FMEA} Se utiliza FMEA para evaluar el proceso o el producto y determinar \textbf{qué} causa el fallo y los \textbf{efectos} que pueden tener. 
+\section{FMEA} Se utiliza FMEA para evaluar el proceso o el producto y determinar \textbf{qué} causa el fallo y los \textbf{efectos} que pueden tener. 
 Identifica y usa escala, calcula el Risk Priority Number (RPN) y analiza los resultados.
 
 La esencia del \textit{failure mode and effects analysis} es el estudio del riesgo. Riesgo es lo incierto de un evento. Riesgo es la posible influencia buena o mala de un producto en un entorno. El riesgo se puede definir como impact (severity), probability (ocurrence) y event (detection). Segun Risk Road Map ISO 31000:2009 gestión del Plan risk / herramientas del risk identification / analizar y evaluar riesgos / plan risk response / monitor y control del risk.
@@ -338,11 +387,11 @@ FMEA es una herramienta front-end. Un producto/proceso de éxito requiere antici
 	\label{fig:FMAFlowchart}
 \end{figure}
 
-Pasos del FMEA: \begin{enumerate} \item Lista los pasos claves de un proceso \item \textit{Brainstorm} de porque puede fallar cada paso \item Lista de efectos de los fallos \item Ranking de severidad para los efectos \item Causa y frecuencia de los fallos \item Controles para la detección \item Cálculo RPN \item Ordenar por críticos los RPN. \item Desarrollar plan de acción, asignando persona-responsabilidad \item Re-Calcular el RPN una vez implantado. \end{enumerate}
+Pasos del FMEA: \begin{enumerate} \item Lista los pasos claves de un proceso. \item \textit{Brainstorm} de porque puede fallar cada paso. \item Lista de efectos de los fallos. \item Ranking de severidad para los efectos. \item Causa y frecuencia de los fallos. \item Controles para la detección. \item Cálculo RPN. \item Ordenar por críticos los RPN. \item Desarrollar plan de acción, asignando persona-responsabilidad. \item Re-Calcular el RPN una vez implantado. \end{enumerate}
 
-\subsubsection{Do's} 1. Da formacion de FMEA antes de asignar equipos 2. Enfoque de equipo 3. Pregunta a expertos si es necesario 4. Habla con el cliente de como va a utilizar el producto 5. brainstorm de los posibles fallos. 6. Si dos riesgos tienen la misma RPN, se queda encima el que tenga mas severidad. 7. completa la acción y reasigna la severidad. 8. Actualiza el FMEA con los nuevos riesgos aprendidos.
+\subsection{Do's} 1. Da formacion de FMEA antes de asignar equipos. 2. Enfoque de equipo. 3. Pregunta a expertos si es necesario. 4. Habla con el cliente de como va a utilizar el producto. 5. Brainstorm de los posibles fallos. 6. Si dos riesgos tienen la misma RPN, se queda encima el que tenga mas severidad. 7. completa la acción y reasigna la severidad. 8. Actualiza el FMEA con los nuevos riesgos aprendidos.
 
-\subsubsection{Don'ts} 1. No copies el S-O-D de una industria a otra. 2. Intenta no usar una escala de 1-10, mejor de 1-5. 3. No hagas escalas especializadas sino es completamente necesario. 4. No manipules los datos.
+\subsection{Don'ts} 1. No copies el S-O-D de una industria a otra. 2. Intenta no usar una escala de 1-10, mejor de 1-5. 3. No hagas escalas especializadas sino es completamente necesario. 4. No manipules los datos.
 
 \begin{figure}[ht!]
 	\centering
@@ -353,63 +402,64 @@ Pasos del FMEA: \begin{enumerate} \item Lista los pasos claves de un proceso \it
 \pagebreak[4]
 \part{Definición}
 
+
+
+\chapter{Identificación del proyecto}
 Preguntas críticas de la fase de definición: ¿dónde estamos? ¿cuál es el problema? ¿dónde queremos estar? ¿cómo vamos a llegar allí? ¿cómo sabremos que hemos llegado a ese punto? \newline Antes de empezar, comprobar que la gestión y la economía del proyecto están alineadas. Mas tiempo frente a una buena planificación, mayor será el éxito. 
+\section{Project Selection}
 
-\section{Identificación del proyecto}
-\subsection{Project Selection}
-
-Describir el proceso de selección de proyecto y que factores deben ser incluidos para considerar si usar DMAIC u otro tipo de proceso problema-solución. Lo suyo es que haya un departamento o comité para decidir qué proyectos se pueden llevar a cabo y cuales no, ya que todas las ideas a la vez son imposibles. Cada propuesta debe tener medidas sobre el problema que plantean resolver y el impacto de éstas sobre la organización. Managers suelen coger la solución que ahorre más dinero a la compañía. \newline
+Describir el proceso de selección de proyecto y que factores deben ser incluidos para considerar si usar DMAIC u otro tipo de proceso problema-solución. Lo suyo es que haya un departamento o comité para decidir qué proyectos se pueden llevar a cabo y cuales no, ya que todas las ideas a la vez son imposibles. Cada propuesta debe tener medidas sobre el problema que plantean resolver y el impacto de éstas sobre la organización. Managers suelen coger la solución que ahorra más dinero a la compañía. \newline
 Proyectos que tengan que ver con el análisis de datos, para el equipo de Six Sigma. Los que tengan que ver con mejora de procesos, con el equipo de Lean Manufacturing.
 
-\subsection{Process Elements}
+\section{Process Elements}
 
 Definir y describir los componentes del proceso	y límites (boundaries). Reconocer como los procesos cruzan varias areas funcionales y los retos que resultan de los esfuerzos de mejora de procesos. Los procesos se pueden subdividir en subprocesos.
 Por ejemplo, el proceso de \textit{payroll} tiene subprocesos: reunir la información del reloj de fichar, aplicar deducciones, ...
 
 Para definir bien un proceso hay que marcar donde empieza y donde acaba: los límites (\textit{boundaries}). Los procesos transversales pueden tener subprocesos límite, definidos por la estructura del negocio, geografía...
 
-\subsection{Benchmarking}
+\section{Benchmarking}
 
 Entender que hay varios tipos de benchmarking, incluyendo la competitividad, la colaboración y las buenas prácticas.
 Pueden ser comparativas internas, contra otros procesos internos o externas. Las fuentes de información del Benchmarking vienen de publicaciones, reuniones profesionales, investigaciones universitarias, \textit{feedback} de clientes, visitas, análisis de productos de competidores...
+\begin{itemize}
+\item Operaciones de Benchmarking: analizar la operativa, conocer los líderes del mercado, incorporar lo mejor de lo mejor, ganar superioridad. 
 
-Operaciones de Benchmarking: analizar la operativa, conocer los líderes del mercado, incorporar lo mejor de lo mejor, ganar superioridad. 
+\item Internal benchmarking: fácil acceso a otros dptos. sin embargo, el límite de mejora está reducido al estilo de la compañía.
 
-Internal benchmarking: fácil acceso a otros dptos. sin embargo, el límite de mejora está reducido al estilo de la compañía.
+\item Competitive benchmarking: fuerza a la compañía a tener una perspectiva externa. Sin embargo, fijarse en las prácticas de las industrias puede limitar el alcance de altos niveles de actuación.
 
-Competitive benchmarking: fuerza a la compañía a tener una perspectiva externa. Sin embargo, fijarse en las prácticas de las industrias puede limitar el alcance de altos niveles de actuación.
+\item Funcional benchmarking: comparas funciones similares, normalmente se busca fuera de la empresa y permite conseguir más partners de benchmarking.
 
-Funcional benchmarking: comparas funciones similares, normalmente se busca fuera de la empresa y permite conseguir más partners de benchmarking.
-
-Collaborative benchmarking: cooperación entre varias organizaciones para lograr resultados de benchmarking. Esta práctica permite el acceso a benchmarking partners  mas específicos.  
-
-\subsection{Inputs y outputs de procesos}
+\item Collaborative benchmarking: cooperación entre varias organizaciones para lograr resultados de benchmarking. Esta práctica permite el acceso a benchmarking partners  mas específicos.  
+\end{itemize}
+\section{Inputs y outputs de procesos}
 
 Identificar las variables del \textit{input} y las del \textit{output} y evaluar sus relaciones usando \textit{Supplier, Inputs, Process, Output, Customer} (modelo \textit{SIPOC}).
 
 Es clave definir los límites del proyecto, o comienza el fracaso de la mejora de procesos.
 
-Dividir los procesos por functional areas (dptos) y organizations (suppliers, intercompany, teammate company, ...), esto se puede identificar con diagrama SIPOC y con un flowchart estilo swim-lane y un mapa de procesos podemos reconocer las interacciones entre ellos. Retos que te encuentras cuando defines esto: quien es el dueño del proceso, quienes comparten información, medidas (¿en qué mides? camiones/horas, euros/día), conocimiento del proceso (supply chain no sabe como funciona manufacturing).
+Dividir los procesos por \textit{functional areas} (dptos) y \textit{organizations} (suppliers, intercompany, teammate company, ...), esto se puede identificar con diagrama SIPOC y con un \textit{flowchart} estilo swim-lane y un mapa de procesos podemos reconocer las interacciones entre ellos. Retos que te encuentras cuando defines esto: quien es el dueño del proceso, quienes comparten información, medidas (¿En qué mides? camiones/horas, euros/día), conocimiento del proceso (supply chain no sabe como funciona manufacturing).
 
 Si los retos tienen riesgos potenciales asociados, hay que asociar actividades para minimizarlos.
 
-\subsubsection{Systems Thinking}
+\subsection{Systems Thinking}
 
 La identificación y consideración de todos los diferentes elementos individuales que interaccionan con un propósito común a hacia una gran función se considera \textit{System Thinking}. \textit{ST} es sobre usar herramientas y métodos disponibles para saber que se está haciendo en una operación específica y cómo esa actividad afecta tareas y productos posteriores. También, el cómo priorizar tareas. \newline \textit{ST} sirve para entender mejor los procesos y como influyen los parámetros. \newline Ejemplo: proveedor envía X producto con algo mas de humedad de la cuenta, \textit{ST} especificaría como hay que modificar el proceso para que se ajuste. 
 
-\subsection{Dueños y Stakeholders}
+\section{Dueños y Stakeholders}
 
 Identifica los dueños de los procesos y los diferentes grupos de interés (stakeholders) en un proyecto.
 Los dueños de los procesos son los que tienen la responsabilidad de ejecutar e implementar procesos específicos. Los mejores métodos para mejorar los procesos usan equipos de dueños y de todos los stakeholders ya que éstos últimos tienen mejor conocimiento sobre el proceso, sobre las ideas para mejorar, se preocupan por las consecuencias del cambio en un proceso. Por lo tanto stakeholders en un proceso son: operadores, managers, clientes, proveedores, ...
 
-\section{Voice of the Customer (VOC)}
+\chapter{Voice of the Customer (VOC)}
 
-\subsection{Identificar al customer}
+\section{Identificar al customer}
 \textit{Customers} puede haber de dos tipos: internos, que trabajan en el proceso, externos. Pasa identificar customers internos los mejores métodos a utilizar: brainstorming, SIPOC, análisis de márketing, perseguir un producto por todos los pasos hasta la entrega.
 
 Al igual, se pueden dividir los \textit{customers} por grupos: Internos/Externos, por edad, por localización, clima, lengua, por industria.
 
-\subsection{Datos del customer}
+\section{Datos del customer}
 
 Hace falta conseguir datos: encuestas, observar grupos, entrevistas, ... Identificar los elementos clave para hacer efectivas estas herramientas. Revisar colecciones de datos para eliminar indeterminaciones.
 ¿Cómo saber lo que el cliente quiere? preguntándole. El cliente es experto en lo que hace, sabrá lo que necesita. 
@@ -420,7 +470,7 @@ Para capturar datos del \textit{customer} podemos utilizar: VoC, surveys, QFD (Q
 
 Lo suyo es seleccionar aleatoriamente un gran grupo de clientes y aplicar un método de manera estadísticamente válido ya que la información debe ser objetiva, con precisión y consistencia, evitando la ambigüedad. 
 
-\subsection{Requisitos del cliente}
+\section{Requisitos del cliente}
 
 Usamos QFD (\textit{Quality Functions Deployment}) para traducir los requisitos del cliente en características del producto y oportunidades de mejora. Una de las aplicaciones mas importantes de Six Sigma es diseñar y rediseñar procesos y productos, para conseguir el menor coste posible.
 
@@ -435,9 +485,9 @@ QFD (o \textit{House of Quality}) tiene de input VoC. La matriz QFD muestra el e
 
 QFD puede ser aplicado para mejorar calidad. En la matriz, los \textbf{What's}, se traducen por \textit{must have} o por \textit{expected to have}. QFD ayuda a conducir los procesos mediante la calidad hasta el cliente.
 
-\section{Project Management Basics}
+\chapter{Project Management Basics}
 
-\subsection{Project Charter}
+\section{Project Charter}
 
 \begin{quote}
 Describir y definir elementos de un Project Charter, desarrollar el problema que incluya datos base o el estado actual para ser mejorado y las metas del proyecto.
@@ -456,27 +506,27 @@ Permite tener a los equipos de desarrollo alineados con la dirección de la empr
 
 La \textit{Project Planning} nos acerca a la monitorización del cómo y cuándo un proyecto será llevado a cabo. Será necesario tener información de los procesos, comunicación, negociación de recursos, \textit{incremental planning} y planificación modular, asegurar que los hitos sean medibles y faciliten una gestión enredada correctamente.
 
-\subsection{Project Scope}
+\section{Project Scope}
 
 Usando SIPOC, brainstorming, diagrama de Pareto, podemos definir y documentar el alcance del proyecto. Lo habitual es que el alcance está basado en el \textit{Problem Statement}.
 
-\subsection{Project Metrics}
+\section{Project Metrics}
 
 Una planificación de proyecto sin la actuación de medición es poco menos que una actuación absurda. Las mediciones clave (\textit{key metrics}) enlazan directamente con las metas, habitualmente como: \textit{Percentage of work accomplished on time}, \textit{Percentage of work accomplished on budget}, \textit{disponibilidad de recursos}...
 
 KPI (Key process indicators) es un valor medible que demuestra la efectividad de una compañía consiguiendo sus objetivos claves de negocio.
 
-\subsection{Project Planning Tools}
+\section{Project Planning Tools}
 
 Las herramientas para planificar proyectos más habituales son: Gannt, CPM (Critical Path Method) y PERT. Difieren según el tamaño y alcance del proyecto. La documentación se mantiene viva durante el desarrollo de todo el proyecto.
 
-\subsection{Project Documentation}
+\section{Project Documentation}
 
 Metas y objetivos. Sponsors y accionistas. Planificación y calendario. Hitos. Presupuesto. Límites. Roles y responsabilidades. Métricas para evaluar el proyecto.
 
 Además del \textit{Project Charter} y el \textit{Project Management Plan} planes adicionales pueden ser utilizados para cada actividad.
 
-\subsection{Project Risk Analysis}
+\section{Project Risk Analysis}
 
 El análisis de riesgo de un proyecto se incluye durante la fase de planificación. Identificar riesgos, asociar impacto y posibles planes para minimizar el riesgo. El análisis de riesgo hay que revisarlo y actualizarlo utilizando SWOT (\textit{strengths-weaknesses-opportunities-threats}), RPN, FMEA, \textit{formula for expected profit}.
 Un buen análisis de riesgos necesita que los grupos apropiados estén presentes.
@@ -495,7 +545,7 @@ A través de cosas que ya han pasado antes, riesgos, brainstorming se determinan
 \underline{Ejemplo de riesgo existente}: proveedor clave que no entrega a tiempo, la \textit{mitigation activity} es buscar un nuevo proveedor.
 \underline{Otro ejemplo de riesgo existente}: un cajero automático, la \textit{mitigation activity} es: código de 6-10 cifras, bloqueo a los 3 intentos.
 
-\subsection{Project Closure}
+\section{Project Closure}
 
 Revisar con los miembros y sponsors los objetivos logrados con el proyecto, asegurar que la documentación está completa y guardada apropiadamente. Identificar lecciones aprendidas e informar a otras partes de la organización sobre oportunidades de mejora.
 
@@ -503,9 +553,9 @@ Revisar con los miembros y sponsors los objetivos logrados con el proyecto, aseg
 
 \textit{Project Charter} es una excelente herramienta para medir el progreso de un proyecto, con su alcance, metas, objetivos y una cronología.
 
-\section{Management and Planning Tools}
+\chapter{Management and Planning Tools}
 
-\subsection{Activity Network Diagram}
+\section{Activity Network Diagram}
 Es como el PERT, muestra dependencias entre tareas y caminos (en serie o en paralelo). Al igual que PERT o \textit{Critical Path Analysis}, provee una visión global con nivel de detalle adecuado a la necesidad del proyecto.
 
 \begin{figure}[ht!]
@@ -515,12 +565,12 @@ Es como el PERT, muestra dependencias entre tareas y caminos (en serie o en para
 	\label{fig:ANDDiagram}
 \end{figure}
 
-\subsection{Advanced Quality Planning} 
+\section{Advanced Quality Planning} 
 
 Se basa en la idea de que las planificaciones solidas previenen sorpresas y salvan recursos útiles de ser malgastados. AQP es un proceso donde primero buscamos los parámetros sobre lo que vamos a hacer. ¿tenemos suficiente material disponible? ¿tenemos la gente necesaria para hacer el trabajo?¿tenemos las herramientas necesarias para el trabajo? También se llama APQP. 
 Es el primer paso del PDSA (Plan Do Study Act). Esto ayuda a que tengamos todos los \textit{inputs} para obtener el \textit{output} deseado. 
 
-\subsection{Affinity Diagram}
+\section{Affinity Diagram}
 
 Son usados para producir muchas respuestas a preguntas abiertas. Por ejemplo:¿qué maneras hay de reducir ciclo al proceso? Luego intentar asociar entre sí, en diferentes grandes grupos, dichas respuestas. Posteriormente, le damos nombre a la agrupación.
 
@@ -531,7 +581,7 @@ Son usados para producir muchas respuestas a preguntas abiertas. Por ejemplo:¿q
 	\label{fig:AffinityDiagram}
 \end{figure}
 
-\subsection{Auditing}
+\section{Auditing}
 
 Evaluación de procesos o proyectos contra planes y metas. Esta comprobación de auditoría de calidad es comúnmente establecida en organizaciones a través de sistemas de gestión de la calidad (AS9001, ISO 9001, ISO/TS 16949).
 
@@ -551,11 +601,11 @@ Habitualmente están basadas en productos, sistemas, proveedores, cumplimiento n
 Be pleasant, you are not a cop. Be prepared. Be factual in what you observe, hiding things doesn't help to improve. Ask questions for clarity. Record your observations. 
 \end{quote}
 
-\subsection{Benchmarking}
+\section{Benchmarking}
 
 Consiste en mirar un sistema y aplicar los conceptos de ese, sobre otro. La idea es hacer un win/win entre organizaciones. Pasos básicos: Flowchart del proceso actual. Identificar areas de mejora. Ideas-brainstorm. Investigar como otros hacen el proceso. Desarrollar planes de aplicación de ideas. Prueba piloto. Iniciar el nuevo proceso. Evaluar el nuevo proceso.
 
-\subsection{FishBone Ishikawa}
+\section{FishBone Ishikawa}
 
 Muestra factores envueltos en una situación. Crearlo a partir del 5W's (What, Why, When, Where, Who), 1H (How) y 6M's (Man, Machine, Methods, Materials, Measurement, Mother Nature, Money, Management).
 
@@ -566,7 +616,7 @@ Muestra factores envueltos en una situación. Crearlo a partir del 5W's (What, W
 	\label{fig:FishBone}
 \end{figure}
 
-\subsection{Check Sheets}
+\section{Check Sheets}
 
 Usadas para observar o revisar un proceso durante su ejecución. Pasos básicos en hacer un \textit{check sheet}: Identificar y agregar las causas o condiciones que han de ser recogidas. Decidir quien recoge la información, sobre cuantos periodos, y de que manera se recoge. Crear un \textit{check sheet} que ayuda a la mejora continua y puede fomentar cambios, solo por el hecho de utilizarla. La importancia de recoger datos es para asegurar consistencia y precisión de la información.
 
@@ -577,11 +627,11 @@ Usadas para observar o revisar un proceso durante su ejecución. Pasos básicos 
 	\label{fig:CheckSheet}
 \end{figure}
 
-\subsection{Customer Feedback}
+\section{Customer Feedback}
 
 Encuestas, información vía emails, entrevistas dirigidas. Importante conseguir muestras representativas.
 
-\subsection{Flowchart}
+\section{Flowchart}
 
 \begin{figure}[H]
 	\centering
@@ -592,7 +642,7 @@ Encuestas, información vía emails, entrevistas dirigidas. Importante conseguir
 
 Pasos: definir el proceso que va a ser diagramado. Decidir los límites del proceso. Averiguar cuales son las actividades que se dan lugar en él. Ordenar las actividades en secuencia. Crear un flujo de pasos con flechas. Que revise el \textit{flowchart} diferentes miembros de toda la organización.
 
-\subsection{Focus Groups}
+\section{Focus Groups}
 
 Identificar las metas de la sesión. Desarrollar productos actuales o prototipo. Determinar como las sesiones deben ser conducidas (\textit{brainstorming, survey, cause-and-effect, question-response}).
 
@@ -603,17 +653,17 @@ Identificar las metas de la sesión. Desarrollar productos actuales o prototipo.
 	\label{fig:DetailedFlowchart}
 \end{figure}
 
-\subsection{Force-Field Analysis}
+\section{Force-Field Analysis}
 
 Se pone un \textit{Future State} y se hacen dos columnas: \textit{Driving forces} y \textit{Restraining forces}. Cosas que suman/restan para conseguir el objetivo. A través del NTG (Nominal Group Technique) se hace un ranking con ellas. Y entonces se determina cómo proceder.
 
-\subsection{Gantt Chart}
+\section{Gantt Chart}
 
 Gantt provee de un vistazo rápido las actividades planificadas y el calendario, permitiendo evaluar los recursos claves contra el plan, y también permite la evaluación de la actuación del proyecto frente al plan.
 
-\subsection{Graphical, control and statistical tools}
+\section{Graphical, control and statistical tools}
 
-\subsubsection{Variables Charts}
+\subsection{Variables Charts}
 
 \begin{itemize}
 	\item Averages and range chart.
@@ -626,7 +676,7 @@ Gantt provee de un vistazo rápido las actividades planificadas y el calendario,
 	\item Hotelling T2
 \end{itemize}
 
-\subsubsection{Attributes Charts}
+\subsection{Attributes Charts}
 
 \begin{itemize}
 	\item p-chart (proportion chart)
@@ -637,7 +687,7 @@ Gantt provee de un vistazo rápido las actividades planificadas y el calendario,
 	\item U-chart 8average weighted deficientes per unit)
 \end{itemize}
 
-\subsubsection{Other Kinds of Data}
+\subsection{Other Kinds of Data}
 
 \begin{itemize}
 	\item Short-run charts (Z-charts)
@@ -645,7 +695,7 @@ Gantt provee de un vistazo rápido las actividades planificadas y el calendario,
 	\item Paynter charts
 \end{itemize}
 
-\subsection{Interrelationship Diagram (DIGRAPH)}
+\section{Interrelationship Diagram (DIGRAPH)}
 
 Sirve para identificar relaciones causa-efecto. Normalmente se empieza listando media docena o una docena entera de preocupaciones, se ordenan y mediante flechas se dirige cual es mas importante que la anterior. Si no se dibuja flecha, es que no tiene importancia sobre otras.
 
@@ -658,7 +708,7 @@ Se compara cada una contra todas las que tiene relación.
 	\label{fig:interrelationshipdiagram}
 \end{figure}
 
-\subsection{Matrix Diagram}
+\section{Matrix Diagram}
 
 Para descubrir relaciones entre dos grupos de items. 
 
@@ -669,17 +719,17 @@ Para descubrir relaciones entre dos grupos de items.
 	\label{fig:MatrixDiagram}
 \end{figure}
 
-\subsection{Nominal Group Technique}
+\section{Nominal Group Technique}
 
 Es un \textit{brainstorming} con una interacción limitada por grupos. Esto es para que no haya gente que diga mucho y otros no digan nada. El \textit{facilitator} explica las reglas, el \textit{team leader} presenta el tema y el equipo tienen como 10-15 minutos para sentarse, pensar y generar ideas.
 
 No se permiten interacciones verbales, las ideas son recolectadas y puestas en un sitio donde todos puedan verlas. Los miembros deben leer las ideas en alto, una a una. A los miembros se les permite expandir las ideas, darles claridad, eliminar redundancia. El \textit{team leader} debe recoger las ideas y ponerlas en el \textit{board}, y mantener el anonimato de los contribuyentes.
 
-\subsection{PDCA, PDSA y SDCA}
+\section{PDCA, PDSA y SDCA}
 
 PDCA: Plan Do Check Act. PD\textit{S}A: Study. \textit{S}DCA: Standarize.
 
-\subsection{Priorization Matrix}
+\section{Priorization Matrix}
 
 Es una ayuda para decidir entre diferentes opciones. Para conseguir el criterio adecuado, se ponen los atributos de cada una de las opciones y se ponderan.
 
@@ -690,7 +740,7 @@ Es una ayuda para decidir entre diferentes opciones. Para conseguir el criterio 
 	\label{fig:Prioritizationmatrixexample}
 \end{figure}
 
-\subsection{Problem Solving}
+\section{Problem Solving}
 
 \textit{Eight Discipline Approach, 8D}. 
 
@@ -705,7 +755,7 @@ Es una ayuda para decidir entre diferentes opciones. Para conseguir el criterio 
 	\item Agradece al equipo. Mejoras solo ocurren cuando la gente trabaja junta.
 \end{enumerate}
 
-\subsection{Process Decision Program Chart, PDPC}
+\section{Process Decision Program Chart, PDPC}
 
 \begin{figure}[ht!]
 	\centering
@@ -716,21 +766,21 @@ Es una ayuda para decidir entre diferentes opciones. Para conseguir el criterio 
 
 Diagrama de árbol para ilustrar problemas, anticiparse a ellos y listar soluciones posibles.
 
-\subsection{Risk Priority Number}
+\section{Risk Priority Number}
 
 Calculado de los datos FMEA: severidad, ocurrencia y detección. RPN = S x D x O. RPN ayuda a determinar el potencial riesgo y a ayudar al \textit{project team} para priorizar los items sobre los que trabajar primero.
 
-\subsection{Sampling Plan}
+\section{Sampling Plan}
 
 Hacer muestreos en base a factores: velocidad de la linea, tecnología disponible, numero de personas disponible, expectativa del consumidor, ... 
 Consiste en coger un numero de muestras aleatorio que representen al conjunto del lote de fabricación.
 Juran dijo que la inspección 100\% es solo el 80\% de efectiva.
 
-\subsection{Diagrama SIPOC}
+\section{Diagrama SIPOC}
 
 Definir procesos y sus limites. Identificar los outputs de los procesos, incluyendo datos, servicios, productos, información, registros... Ve a la columna de customers, para saber quien recibe qué output. Vuelve a la columna de Suppliers para identificar cuales son los internos y cuales los externos y cuales son sus inputs.
 
-\subsection{Tree Diagram}
+\section{Tree Diagram}
 
 Ayuda a romper el topic general en un numero de actividades que contribuyen entre sí. El \textit{team project} debe dar entre 2 y 5 topics que contribuyan con el topic general, y la idea es ponerlos en línea horizontal. Se continua la rama del árbol hasta que no sea práctico. Se revisa el árbol consiguiendo seguridad de que trabajar cada item puede mejorar el topic. Por lo que el árbol resultante provee actividades específicas que contribuyen al topic general.
 
@@ -741,11 +791,11 @@ Ayuda a romper el topic general en un numero de actividades que contribuyen entr
 	\label{fig:TreeDiagram}
 \end{figure}
 
-\subsection{Tool Review}
+\section{Tool Review}
 
 La fase de definición se centra en determinar el alcance de las mejoras del proyecto y de los recursos y calendario necesitado para ejecutar el proyecto. Hay mucha herramientas para ayudar en la definición y gestión del proyecto, incluyendo Gantt. Las herramientas y el nivel de detalle debe ser basado en el tamaño del proyecto.
 
-\section{Resultados de negocios por proyectos}
+\chapter{Resultados de negocios por proyectos}
 
 Los resultados de negocios pueden ser mostrados de muchas maneras y en muchos niveles de detalle. Las medidas de los resultados de los proyectos deben ser identificadas durante la fase inicial y redefinidas mientras el proyecto avance. Las \textit{performance measures (medidas de desempeño)} están relacionadas con el negocio, proyectos o procesos y son expresadas a través de \textit{balanced scorecard} o \textit{rendimiento de metas establecidas}.
 
@@ -755,7 +805,7 @@ Por otro lado, el rendimiento de las metas establecidas consiste en establecer m
 
 Para medir, se utiliza \textit{Cost performance index (CPI)}, que consiste en establecer un ratio entre el coste/beneficio entre los escenarios actual/futuro. \textit{Schedule performance index (SPI)} mide la eficiencia del calendario también por ratio: objetivos logrados vs planificados.
 	
-\subsection{Process Performance}
+\section{Process Performance}
 
 Calcular las métricas \textit{de rendimiento del proceso} como: Defectos por Unidad (DPU), Rolled Throughput Yield (RTY), coste de mala calidad (COPQ), defectos por millón de oportunidades (DPMO), niveles sigma, indices de capacidad de proceso. A través de estas métricas, conduce la toma de decisiones de los proyectos.
 
@@ -774,7 +824,7 @@ La palabra defecto no está permitida ser utilizada en relación con productos y
 	\end{itemize}
 \end{itemize}
 
-\subsection{Communication}
+\section{Communication}
 
 Define y describe técnicas de comunicación usadas en la organización: top-down, bottom-up, horizontal.
 
@@ -786,8 +836,8 @@ La transmisión de información implica un cambio del comportamiento, al menos e
 	\item Horizontal: la mas útil para conseguir resultados rápidos y efectivos. Puede ocurrir que los escalones jerárquicos superiores sientan han sido saltados ya que las decisiones se están arreglando un nivel más abajo entre varios.
 \end{itemize}
 
-\section{Team Dynamics and Performance}
-\subsection{Team Basics}
+\chapter{Team Dynamics and Performance}
+\section{Team Basics}
 
 \begin{quote}
 There is no ``I" \ in ``team".
@@ -795,7 +845,7 @@ There is no ``I" \ in ``team".
 
 En todas las reuniones hay que tener las metas, objetivos y alcance/límites visibles para no perderse.
 
-\subsection{Team Formation}
+\section{Team Formation}
 
 De 5 a 9 miembros, 7 es el tamaño perfecto, con habilidades complementarias para conseguir metas y objetivos para el equipo. Debe ser conducido por el tamaño y alcance del proyecto. Si se puede, se hacen subdivisiones de proyectos.
 
@@ -803,11 +853,11 @@ El equipo debe incluir expertos y a los grupos de interés. Un proyecto no puede
 
 La interacción es buena, pero puede ser perjudicial. Si hay gran diversidad entre los perfiles, producen mejores interacciones. Los externos suelen hacer preguntas a los que están cerca del proceso. Estas reuniones deben ser moderadas para no machacar haciendo demasiadas preguntas.
 
-\subsection{Virtual teams}
+\section{Virtual teams}
 
 Innovación debido a las nuevas tecnologías. A través de internet se comparten datos virtualmente y hacemos entrevistas vía videoconferencia. Reduce costos.
 
-\subsection{Team Stages and Dynamics}
+\section{Team Stages and Dynamics}
 
 Definir y describir las etapas de la evolución del equipo: forming, storming, norming, performin, adjourning y recognition. Identificar y ayudar a resolver dinámicas negativas: overbearing, dominante, reluctant participant, la aceptación incuestionable de las opiniones como un hecho, pensamiento grupal, feuding, floundering, the rush to accomplishment, attibution, discounts, digresions y tangents.
 
@@ -822,7 +872,7 @@ Los proyectos fallan por falta de trabajo en equipo. Según B.W. Tuckman's las e
 	\item Recognition: reconocer la labor: notas de agradecimiento, e-mail, newsletter, una reunión con todos los empleados, certificados, bonus o un extra económico.
 \end{enumerate}
 
-\subsubsection{El liderazgo por etapas: Team Leadership}
+\subsection{El liderazgo por etapas: Team Leadership}
 
 \begin{enumerate}
 	\item Forming (directing): supervisor directa, exhibe comportamiento de director. Da instrucciones de que hacer cuándo, dónde y cómo. Escucha el \textit{feedback}, anima al equipo, explica los roles y responsabilidades, identifica las oportunidades para desarrollar habilidades.
@@ -831,7 +881,7 @@ Los proyectos fallan por falta de trabajo en equipo. Según B.W. Tuckman's las e
 	\item Performing (delegating): desde que el equipo es maduro, se reduce el nivel de dirección y de soporte en las funciones del día a día. Todavía monitoriza las metas y las actuaciones del equipo. Observa cualquier cambio en la dinámica debido a cambios importantes. 
 \end{enumerate}
 
-\subsubsection{Negative Team Dynamics}
+\subsection{Negative Team Dynamics}
 
 \begin{itemize}
 	\item Overbearing member(s). Pocos hablan, muchos escuchan. Causas: miembros demasiado influyentes. Medidas: round-robin desde el miembro influyente hacia el resto.
@@ -847,7 +897,7 @@ Los proyectos fallan por falta de trabajo en equipo. Según B.W. Tuckman's las e
 	\item Disgressions and tangents. Discusión fuera del alcance. Distracciones. Causas: Cuestiones culturales, falta de liderazgo. Medidas: Hacer cumplir la agenda. 
 \end{itemize}
 
-\subsection{Team Roles and Responsibilities}
+\section{Team Roles and Responsibilities}
 
 \begin{tabular}{p{1.5cm}|p{3cm}|p{4cm}|p{7cm}}
 	\hline Rol & Candidato & Training/Background & Responsabilidades principales \\ 
@@ -862,9 +912,9 @@ Los proyectos fallan por falta de trabajo en equipo. Según B.W. Tuckman's las e
 	\hline 
 \end{tabular} 
 
-\subsection{Team Tools}
+\section{Team Tools}
 
-\subsubsection{Brainstorming}
+\subsection{Brainstorming}
 Se compone de dos fases: creativa para generar ideas y de evaluación para ver la utilidad y aplicabilidad de las tareas. Al menos 10 minutos de descanso entre las dos fases.
 
 Durante la fase creativa: no distracciones o críticas, mente abierta a cualquier posibilidad aunque sea idea loca. La meta es conseguir el mayor número de ideas posibles.
@@ -881,24 +931,24 @@ Se pueden desarrollar ideas citadas por miembros.
 
 Después de un par de rondas, se deben disolver los equipos, aunque permitir a los ex-miembros que vengan a seguir apuntando ideas (ya de manera mas individual). Tampoco hay que alargar esto, puede ser contraproducente.
 
-\subsubsection{Nominal Group Technique}
+\subsection{Nominal Group Technique}
 
 Cuando algunos miembros hablan mas que otros, el tema es complicado o genera controversia se utiliza NGT para aliviar presión. 
 Similar a Brainstorming, facilitator explica las normas, team leader presenta el tema. 10 - 15 minutos para sentarse, pensar y generar ideas. No deben haber interacciones entre ellos. Las ideas se escriben donde todos las puedan leer. No se aprueba juicios sobre las ideas o criticas. Buscar claridad y eliminar redundancia.
 
-\subsubsection{Multivoting}
+\subsection{Multivoting}
 
 Esta herramienta complementa NGT. Las ideas consolidadas son numeradas por letras alfabéticamente ordenadas y se votan cuales son el TOP 5 que tienen más influencia sobre el problema. Se priorizan las más importantes de todas.
 
-\subsection{Team Communication}
+\section{Team Communication}
 
 Identifica y usa métodos apropiados de comunicación.
 \pagebreak[4]
 \part{Medición}
  
-\section{Process Analysis and Documentation}
+\chapter{Process Analysis and Documentation}
 
-\subsection{Process Maps and Flowcharts}
+\section{Process Maps and Flowcharts}
 
 ISO 9001 define un proceso como un conjunto de actividades interrelacionadas que transforman \textit{inputs} en \textit{outputs}.
 
@@ -926,7 +976,7 @@ Los \textit{flowcharts} muestran pasos redundantes, que no añaden valor e innec
 
 Errores comunes en el diseño de \textit{flowcharts}: representación del equipo para el proceso es inadecuada o inapropiada. Alcance borroso, falta de coordinación con otros procesos. La gente que sigue el proceso. Se pierde mucho tiempo creando el flujo perfecto.
 
-\subsection{Written procedures and Work Instructions} 
+\section{Written procedures and Work Instructions} 
 
 Los procedimientos son escritos para describir: que ocurre durante el proceso, porqué se hace (razón de negocio), dónde se hace (localización) y cuando es realizado (disparador).
 
@@ -947,7 +997,7 @@ Para determinar cuales procesos han de ser documentados, la organización debe c
 
 Las instrucciones de trabajo pueden ser documentadas como: Instrucciones escritas, \textit{checklists}, \textit{flowcharts}, fotografías, dibujos, videos, pantallas electrónicas.
 
-\subsection{Process Inputs and Outputs}
+\section{Process Inputs and Outputs}
 
 Cada proceso tiene \textit{inputs}, \textit{outputs} y loops de feedbacks. El feedback hace falta para mejorar el proceso. \textbf{Ejemplos de \textbf{inputs}}: necesidades, ideas, expectativas, requerimientos, información, datos, documentos, recursos. \textbf{Ejemplos de \textbf{outputs}}: diseños, decisiones, resultados, medidas, productos, servicios, propuestas, soluciones, autorizaciones, actuaciones.
 
@@ -993,7 +1043,7 @@ Si ploteamos Pareto en relación 80:20 tenemos:
 
 \textit{Measles charts} son útiles para productos largos, como automóviles, y donde las oportunidades de defectos son altas.
 
-\subsection{Relationship Diagram}
+\section{Relationship Diagram}
 
 El diagrama de relaciones es utilizado para mostrar el grado de relación entre variables, causas y efectos. Consiste en poner diferentes defectos y ver acciones que se pueden controlar o no, como afectan a ello.
 
@@ -1004,9 +1054,9 @@ El diagrama de relaciones es utilizado para mostrar el grado de relación entre 
 	\label{fig:RelationshipMatrix}
 \end{figure}
 
-\section{Probability and Statistics}
+\chapter{Probability and Statistics}
 
-\subsection{Basic Probability Concepts}
+\section{Basic Probability Concepts}
 
 \textbf{Complementation Rule}: La probabilidad de que el evento A no ocurra es: 1 - la probabilidad de que ocurra. 
 
@@ -1047,7 +1097,7 @@ El número distinto de combinaciones de \textit{n} objetos tomados \textit{r} ca
 nCr = $\frac{n!}{r!(n-r)!}$
 Este caso vale para: Tienes 10 personas y quieres enviar a 3 a formarse para un puesto. ¿cuántas combinaciones posibles hay? 10C3. $\frac{10!}{(10-3)!3!} = 120$
 
-\subsection{Teoría del límite central}
+\section{Teoría del límite central}
 
 CLT no es más que el error medio cuadrático. Se basa en
 
@@ -1067,7 +1117,7 @@ Es aplicable para SPC control charts, X, R.
 	\hline 
 \end{tabular} 
 
-\section{Statistical Distributions}
+\chapter{Statistical Distributions}
 
 \begin{tabular}{|c|c|c|c|}
 	\hline Nombre & Fórmula & Media & Varianza \\ 
@@ -1079,7 +1129,7 @@ Es aplicable para SPC control charts, X, R.
 	\hline 
 \end{tabular} 
 
-\subsection{Binomial}
+\section{Binomial}
 
 Se aplica para distribuciones que tienen dos estados: Bueno/malo, aceptado/rechazado, conformidad/no conformidad, éxito/fallo.
 
@@ -1096,7 +1146,7 @@ Se sustituye en \ref{fig:BinomialDistribution}, x = 5, n = 1, p = 0.1. BINOMIDST
 
 Tirar una moneda vale para esto. Tirar una moneda 60 veces, ¿cual es la desviación estándar? $\sigma = \sqrt{np(1-p)} = 3.872$ 
 
-\subsection{Poisson}
+\section{Poisson}
 
 Representa la distribución de una probabilidad discreta: número de defectos en una unidad de ensamblaje. Numero de defectos en una superficie pintada, Número de bugs en código de software.
 
@@ -1130,7 +1180,7 @@ Un un proceso de una máquina de ensambles tiene un ratio de defecto del 10\%. C
 P(x) = \frac{e^{-\lambda}\lambda^x}{x!} = \frac{e^{-5}5^5}{5!} = 0.175 \approx 18\%
 \end{equation} 
 
-\subsection{Distribuciones normales}
+\section{Distribuciones normales}
 
 Distribuciones continuas, estilo: peso, masa, tiempo. 
 
@@ -1151,7 +1201,7 @@ Z = \frac{x - \mu}{\sigma} \longrightarrow Z(35) = \frac{(35-30)}{5} = 1
 Diferencia entre ambos= 0.8186 $\longrightarrow$ 82\% de los pedidos son procesados entre los 20 y los 35 minutos.
 
 
-\subsection{Distribución Chi-cuadrado}
+\section{Distribución Chi-cuadrado}
 
 Si $w, x, y$ y $z$ son variables aleatorias de distribución normal standar la variable $f = w^2 + x^2 + y^2 + z^2$ tiene una distribución $\chi^2$
 La distribución $\chi^2$ se aplica para test de proporcionalidad, conforme los grados de libertad de $\chi^2$ aumentan, se aproxima a una distribución normal. Propiedades:
@@ -1164,11 +1214,11 @@ La distribución $\chi^2$ se aplica para test de proporcionalidad, conforme los 
 \end{itemize}
 
 
-\subsubsection{Grados de libertad}
+\subsection{Grados de libertad}
 
 La cantidad de información que los datos pueden proveerte y que tu puedes aplicar para estimar valores de parámetros desconocidos y calcular sus variaciones.
 
-\subsubsection{t-Distribution}
+\subsection{t-Distribution}
 
 Si $x$ es una variable aleatoria con una distribucion normal y $y$ es una variable con una distribución $\chi^2$, entonces la variable definida es:
 
@@ -1193,7 +1243,7 @@ Doce paquetes seleccionados aleatoriamente pesan: 7.3, 7.9, 7.1, 7.3, 7.4, 7.3, 
 
 Media: 7.375, EMC (desviación estándar) $\sigma^2 = 0.2832$
 
-\subsection{F-Distribution}
+\section{F-Distribution}
 
 F-Distribution es el ratio de dos distribuciones $\chi^2$ con grados de libertad $v_1$ y $v_2$ respectivamente, comúnmente se usa para ANOVA.
 
@@ -1204,9 +1254,9 @@ F-Distribution es el ratio de dos distribuciones $\chi^2$ con grados de libertad
 	\label{fig:F-Distribution}
 \end{figure}
 
-\section{Collecting and Summarizing Data}
+\chapter{Collecting and Summarizing Data}
 
-\subsection{Tipos de datos y escalas de medida}
+\section{Tipos de datos y escalas de medida}
 
 \begin{itemize}
 	\item Nominal: los valores de la escala no son numéricos. Ej: color de ojos.
@@ -1215,11 +1265,11 @@ F-Distribution es el ratio de dos distribuciones $\chi^2$ con grados de libertad
 	\item Ratio: Relación entre dos valores. Ej: 10/5 = 64/32.
 \end{itemize}
 
-\subsection{Muestreo y recolección de datos}
+\section{Muestreo y recolección de datos}
 
 Métodos: entrevistas cara a cara, encuestas, grupos de interés, mystery shopping, feedback del cliente, captación automática/manual de datos.
 
-\subsubsection{Técnicas para asegurar la precisión de los datos y la integridad}
+\subsection{Técnicas para asegurar la precisión de los datos y la integridad}
 
 Causas comunes de errores de las técnicas: unidades de medida no definidas, ilegibilidad de caracteres escritos a mano, inadecuados sistemas de medida-discriminación, pérdida de precisión, sesgo emocional que distorsiona datos, inadecuado uso de técnicas de validación de datos, múltiples puntos de entrada de datos (inconsistencia), pobres instrucciones que generan entrada errónea de datos, terminología ambigua.
 
@@ -1231,7 +1281,7 @@ Random y stratified sampling son aplicables a muchos sectores.
 
 Cuando los datos se meten a mano, lo suyo es generar una codificación-decodificación para evitar errores humanos.
 
-\subsubsection{Check Sheets}
+\subsection{Check Sheets}
 
 Se usan para revisar un proceso durante su ejecución. En ellas se precategoriza los potenciales resultados que se pueden obtener.
 
@@ -1250,7 +1300,7 @@ Cómo elaborar una Check Sheet:
 	\item Recoge los datos como diseño de asegurar consistencia y precisión de la información.
 \end{enumerate}
 
-\subsection{Estadísticas descriptivas}
+\section{Estadísticas descriptivas}
 
 \textit{Descriptiva}: presentar datos para facilitar el entendimiento.
 
@@ -1266,11 +1316,11 @@ Desviación estándar:
 \sigma = \sqrt{\frac{\Sigma(x-\mu)^2}{N}}
 \end{equation}
 
-\subsubsection{Cumulative Frequency Distribution}
+\subsection{Cumulative Frequency Distribution}
 
 Representar la frecuencia y la frecuencia acumulada.
 
-\subsection{Métodos gráficos}
+\section{Métodos gráficos}
 
 \begin{tabular}{p{2cm}|p{2.5cm}|p{3cm}|p{5cm}|p{2.5cm}}
 	\hline Nombre & Propósito & Aplicación & Interpretación & Facilidad de uso \\ 
@@ -1283,7 +1333,7 @@ Representar la frecuencia y la frecuencia acumulada.
 	\hline 
 \end{tabular} 
 
-\subsubsection{Stem-and-Leaf Plot}
+\subsection{Stem-and-Leaf Plot}
 
 Utilizado cuando los datos están agrupados.
 
@@ -1296,7 +1346,7 @@ Utilizado cuando los datos están agrupados.
 
 Tres columnas: \textit{the leaves}: cada valor representa un dígito de una observación. Según la figura \ref{fig:Histogramaystemandleafplot}, el número leaf para cada observación sería: 1,3,7,4,3,2. \textit{the stem}: representa el dígito inmediatamente a la izquierda del dígito leaf en \ref{fig:Histogramaystemandleafplot}, según el rango, acumula los valores a representar. \textit{Counts} Si el valor mediano de la muestra está incluido en una columna, el valor se encierra entre paréntesis. 
 
-\subsubsection{Box Plots}
+\subsection{Box Plots}
 
 \begin{figure}[H]
 	\centering
@@ -1305,7 +1355,7 @@ Tres columnas: \textit{the leaves}: cada valor representa un dígito de una obse
 	\label{fig:Box-plot}
 \end{figure}
 
-\subsubsection{The Run Chart}
+\subsection{The Run Chart}
 
 Es utilizada para identificar patrones en procesos. Todas las observaciones individuales se plotean en orden. Se pueden utilizar tendencias, oscilaciones, agrupaciones, ... 
 
@@ -1320,7 +1370,7 @@ La falta de firmeza en un proceso puede causar oscilación, el \textit{p-value} 
 
 El Run Chart es herramienta potente para enseñar como de estable está siendo un proceso.
 
-\subsubsection{Scatter Diagrams}
+\subsection{Scatter Diagrams}
 
 Herramienta visual para ver relaciones entre dos variables, causa efecto y demás. 
 
@@ -1338,7 +1388,7 @@ Herramienta visual para ver relaciones entre dos variables, causa efecto y demá
 	\label{fig:ScatterDiagramsExamples}
 \end{figure}
 
-\subsubsection{Normal Probability Plots}
+\subsection{Normal Probability Plots}
 
 Sirve para comprobar si los datos vienen de una distribución normal. Hay varios tests para comprobar la normalidad:
 
@@ -1349,7 +1399,7 @@ Sirve para comprobar si los datos vienen de una distribución normal. Hay varios
 	\item El test Kolmogorov-Smirnov, basado en ECDF.
 \end{itemize}
 
-\subsubsection{Weibull Plots}
+\subsection{Weibull Plots}
 
 Es utilizada para la confianza de los datos cuando la distribución es desconocida. Puede ser utilizada para estimar la forma $\beta$ y el \textit{mean time between failures (MTBF)} o ratio de fallo.
 
@@ -1361,7 +1411,7 @@ Siendo $\alpha$ parámetro de escala, $\beta$ parámetro de forma y $\gamma$ par
 
 Las distribuciones Weibull con $\beta < 1$ tienen ratio decreciente con el tiempo, por ejemplo, mortalidad infantil. Los que tienen 1 o cercano a uno, la vida útil o fallo aleatorio, y con $\beta > 1$ tiene ratios de fallo que se incrementan con el tiempo.
 
-\section{Measurement System Analysis}
+\chapter{Measurement System Analysis}
 
 El MSA es un area de estudios estadísticos que explora la variación de los datos en función de la \textit{Calibración}, \textit{Estabilidad}, \textit{Repetitividad}, \textit{Reproducibilidad}, \textit{Linealidad}, \textit{Sesgo}, \textit{Precisión} y \textit{Accuracy}.
 
@@ -1413,9 +1463,9 @@ Errores comunes durante la actuación del GR\&R:
 
 
 \pagebreak
-\section{Process and Performance Capability}
+\chapter{Process and Performance Capability}
 
-\subsection{Process Performance Vs Process Specifitacions}
+\section{Process Performance Vs Process Specifitacions}
 
 Define y distingue entre límites naturales de proceso y límites de especificación, calcula la metrología de la actuación del proceso.
 
@@ -1447,7 +1497,7 @@ Sacando de la tabla los valores correspondientes a $Z_U$ = 1.46 y $Z_L$ = 2.7, t
 
 La definición natural de límites de proceso es 3$\sigma$, en este caso 1.065 $\pm$ 3(0.024), [0.993 - 1.137].
 
-\subsection{Process Capability Studies}
+\section{Process Capability Studies}
 
 Define, describe y conduce las capacidades de un proceso, incluyendo la identificación de sus características, especificaciones, tolerancias y verificando la estabilidad y normalidad.
 
@@ -1457,7 +1507,7 @@ En la práctica la gente con experiencia en proceso normalmente puede identifica
 
 En ocasiones, muchas veces se anuncian cosas tales como: Envío al día siguiente. Si la pizza tarda mas de 15 minutos, es gratis. 
 
-\subsubsection{Steps for Process Capability Studies}
+\subsection{Steps for Process Capability Studies}
 
 \begin{itemize}
 	\item Verificación de sistemas de medición: una variación en el sistema de medición puede reducir la estabilidad de la monitorización del proceso. 
@@ -1469,7 +1519,7 @@ En ocasiones, muchas veces se anuncian cosas tales como: Envío al día siguient
 
 El objetivo general del estudio de capacidad del proceso es monitorear si un proceso está en control estadístico y el proceso es capaz de cumplir con las especificaciones. Buscando que el proceso sea capaz, reducir la variación. Una posibilidad es revisar los límites entre Diseño, Ingeniería y Cliente. A veces los límites son reactualizables.
 
-\subsubsection{Sampling with Respect to Statistical Process Control}
+\subsection{Sampling with Respect to Statistical Process Control}
 
 \begin{figure}[H]
 	\centering
@@ -1479,7 +1529,7 @@ El objetivo general del estudio de capacidad del proceso es monitorear si un pro
 \end{figure}
 
 
-\subsection{Process Capability and Process Performance Indices}
+\section{Process Capability and Process Performance Indices}
 
 \begin{equation}
 C_{pk} = \frac{Min(Z_u,Z_L)}{3}
@@ -1493,7 +1543,7 @@ C_p = \frac{Tolerance zone}{6\sigma}
 
 La diferencia contra $C_pk$, es que $C_p$ no tiene en consideración si el proceso está centrado en la especificación. Muestra lo bueno que es un $C_pk$ si está centrado. La inversa de $C_p$ es $C_r$ y da en porcentaje la variación del proceso.
 
-\subsubsection{Process Capability Calculations}
+\subsection{Process Capability Calculations}
 
 Dos cálculos son los que controlan e identifican lo capaz que es un proceso. Estos dos índices calculados son $C_p$ (índice de capacidad) y $C_{pk}$ (actuación del proceso).
 
@@ -1515,7 +1565,7 @@ Interpretaciones sobre $C_p$ y $C_{pk}$:
 	\item Si $C_{pk}$ pasa a ser negativo, la media del proceso está fuera de alguna especificación de ingeniería.
 \end{itemize}
 
-\subsection{Short-Term vs Long-Term Capability and Sigma Shift}
+\section{Short-Term vs Long-Term Capability and Sigma Shift}
 
 Una línea de ensamblaje que envía unidades completas semanalmente muestrea aleatoriamente parámetros críticos en sus unidades. El ingeniero de calidad usa estos datos para medir índices de actuación para estos parámetros críticos. Desde que los datos incluyen variaciones a largo plazo y cambios, el ingeniero no debe utilizar las métricas $C_p$ y $C_{pk}$. Las medidas $C_p$ y $C_{pk}$ son usadas cuando la estabilidad del proceso es monitorizada a través de SPC y la desviación estandar se sale del rango principal. El ingeniero mide una desviación de 0,004 y una media de 10,014. Los límites de especificación son 9,99 y 10,03.
 
@@ -1552,7 +1602,7 @@ Dado que los datos del proceso pueden contener causas especiales, siempre que lo
 También es improbable que los proveedores implementados por el SPC estén dispuestos a compartir sus datos de proceso en secuencia temporal con sus clientes. Por lo tanto, $P_p$,
 y $P_{pk}$ pueden servir de indicador para estas situaciones.
 
-\subsubsection{Short-Term vs Long-Term Capability}
+\subsection{Short-Term vs Long-Term Capability}
 
 La \textit{Short-Term Capability} se calcula con datos recogidos de 20-30 subgrupos. La variabilidad es relativamente pequeña.
 
@@ -1570,9 +1620,9 @@ Además, hay parámetros que no tienen que atender a distribuciones normales, co
 \pagebreak[4]
 \part{Análisis}
 
-\section{Exploratory Data Analysis}
+\chapter{Exploratory Data Analysis}
 
-\subsection{Estudios de multi-variable}
+\section{Estudios de multi-variable}
 
 Selección de los planes apropiados de muestreo para crear cartas para el estudio multivariable e interpretar los resultados para la variación de posición, la variación de ciclo y la variación temporal.
 \begin{center}
@@ -1607,7 +1657,7 @@ Procedimiento para un plan de muestreo multivariable:
 	\item Hacer mejoras de procesos y repetir estudios multivariable para confirmar los resultados.
 \end{enumerate}
 
-\subsection{Correlación y regresión lineal}
+\section{Correlación y regresión lineal}
 
 Correlación es encontrar la relación entre dos o más conjuntos de datos. Para encontrar correlación, tenemos que hablar de que hay una variable dependiente ($y$) y una independiente ($x$). Ejemplos. Horas estudiadas - Examen, Horas de ejercicio físico - Pérdida de peso, Cantidad de publicidad - Volumen de ventas.
 
@@ -1633,7 +1683,7 @@ Procedimiento para calcular el coeficiente de correlación
 	\item Dividir los resultados del paso anterior por $n-1$, siendo $n$ el número de parejas de datos (x,y)
 \end{enumerate}
 
-\subsubsection{p-valor}
+\subsection{p-valor}
 
 P-valor es utilizado en el test de hipótesis para decidir cuando rechazar una hipótesis nula o no rechazarla. Es común utilizar 0.05 como p-valor. 
 
@@ -1641,7 +1691,7 @@ P-valor es utilizado en el test de hipótesis para decidir cuando rechazar una h
 r = \frac{n*\Sigma xy - (x*y)}{\sqrt{(n*[\Sigma x^2- (\Sigma x)^2])(n*[\Sigma y^2- (\Sigma y)^2])}}
 \end{equation}
 
-\subsection{Regresión simple}
+\section{Regresión simple}
 
 \begin{equation}
 y = a + bx
@@ -1649,7 +1699,7 @@ y = a + bx
 
 Siendo $y$ el valor previsto, dado un valor de $x$. Siendo $x$ la variable independiente.
 
-\subsubsection{Procedimiento para Mínimos Cuadrados}
+\subsection{Procedimiento para Mínimos Cuadrados}
 
 \begin{enumerate}
 	\item Calcular $xy$, $x^2$ e $y^2$,
@@ -1663,9 +1713,9 @@ Siendo $y$ el valor previsto, dado un valor de $x$. Siendo $x$ la variable indep
 	\end{equation}
 \end{enumerate}
 
-\section{Hypotesis Testing}
+\chapter{Hypotesis Testing}
 
-\subsection{Términos básicos}
+\section{Términos básicos}
 
 Una hipótesis es asumir un parámetro poblacional: el adulto promedio bebe 1.7 cafés al día.
 
@@ -1683,13 +1733,13 @@ La hipótesis alternativa $H_1$ representa lo contrario a la $H_0$:
 H_1 : \mu \neq 6 \ , \ H_1 : \mu < 6 \ , \ H_1 : \mu > 6
 \end{equation}
 
-\subsubsection{Tipos de Error}
+\subsection{Tipos de Error}
 
 \textit{Type I error}: resulta cuando la hipótesis nula es rechazada, siendo real. 
 
 \textit{Type II error}: resulta cuando la hipótesis nula no es rechazada, debiendo serlo.
 
-\subsubsection{One-Tail Test}
+\subsection{One-Tail Test}
 
 Cuando hay algún riesgo asociado a él, y es asociado a $\alpha$ risk (type I error). El nivel del riesgo $\alpha$ determina el nivel de confianza que tenemos en la conclusión. Se utiliza para determinar el valor crítico del test estadístico.
 
@@ -1707,19 +1757,19 @@ N: 10 ; Media: 19.7 ; StDev: 1.775 ; SE Mean: 0.561 ; 95\% Lower Bound: 18.644 ;
 
 p-value $>$ 0.05. La distancia adicional afirmada por la compañía no es estadísticamente válida.
 
-\subsection{Test for Means, Variances and Proportions}
+\section{Test for Means, Variances and Proportions}
 
 Para medias debe ser utilizado t-distribution:
 \begin{equation}
 X_m \pm t_{\alpha/2}\frac{s}{\sqrt{n}}
 \end{equation}
 
-\subsection{Student's t-Test}
+\section{Student's t-Test}
 \begin{equation}
 t = \frac{X_m-\mu_0}{s/\sqrt{n}}
 \end{equation}
 
-\subsection{Intervalos de confianza para medias}
+\section{Intervalos de confianza para medias}
 \begin{equation}
 X_m \pm Z_{\alpha/2} \frac{\sigma}{\sqrt{n}}
 \end{equation}
@@ -1728,7 +1778,7 @@ Ejemplo: Tenemos en cuenta un canal de compra. 32 clientes, con un pedido promed
 \begin{center}$\mu = 78.25 \pm 1.96\frac{37.50}{\sqrt{32}} = 78.25 \pm 13$ \end{center} 
 \begin{center}$91.25 \geq \mu \geq 65.25 $ \end{center}
 \part{Mejora}
-\section{Design of Experiments (DOE)}
+\chapter{Design of Experiments (DOE)}
 
 Los DOE (\textit{Design of experiments}) pueden ser resumidos como un conjunto de experimentos planificados. Se ajustan el conjunto de variables bajo condiciones controladas.
 
@@ -1756,7 +1806,7 @@ Los DOE (\textit{Design of experiments}) pueden ser resumidos como un conjunto d
 
 \textbf{Effects}: \textit{Main effects} e \textit{Interactions}. Los efectos principales se definen como una estimación del efecto de un factor independiente de cualquier otro medio. Las interacciones ocurren cuando el efecto de un factor de entrada sobre el de salida depende del nivel de otro factor de entrada.
 
-\subsubsection{DOE Overview}
+\subsection{DOE Overview}
 
 \textbf{History of DOE}: Diseñar experimentos es un método estructurado y organizado que determina la relación entre factores (X's) que afectan a un proceso y el resultado del proceso (Y).
 
@@ -1780,7 +1830,7 @@ Los DOE (\textit{Design of experiments}) pueden ser resumidos como un conjunto d
 \end{itemize}
 En cualquier caso, el objetivo debe ser medible, estar relacionado con metas y objetivos de la empresa y el sistema de medida que lo controle sea sencillo de manejar.
 
-\subsubsection{DOE Design Principles}
+\subsection{DOE Design Principles}
 
 \textit{Randomization}: Es un método de diseño y organización experimental que intenta disminuir los efectos de las variaciones por causas especiales. Ejemplo: 8 tratamientos diferentes, y se hacen 5 réplicas por tratamiento. El propósito de hacer los 40 tests es reducir la variación causada por \textit{variables ruido}.
 
@@ -1811,11 +1861,11 @@ Tener en cuenta que para que el experimento sea válido hace falta que el sistem
 	\item Analizar e interpretar los datos, verificar las significancias estadísticas.
 \end{itemize}
 
-\subsection{Doe Graphs and Plots}
-\subsubsection{Main Effects}
+\section{Doe Graphs and Plots}
+\subsection{Main Effects}
 Son definidos como una estimación del efecto de un factor independiente de cualquier otro medio. El primer paso es calcular efectos principales, y son llamados \textit{average main effects}.
 
-\subsubsection{Interaction Effects}
+\subsection{Interaction Effects}
 Las interacciones ocurren cuando el efecto de un factor de entrada sobre un factor de salida, depende del nivel de otro factor de entrada.
 
 \begin{figure}[H]
@@ -1825,7 +1875,7 @@ Las interacciones ocurren cuando el efecto de un factor de entrada sobre un fact
 	\label{fig:A23design}
 \end{figure}
 
-\subsubsection{Balanced Designs}
+\subsection{Balanced Designs}
 Se llama \textit{Balanced} cuando cada configuración de factores aparece el mismo numero de veces que cada configuración de cada uno de los otros valores. \textbf{Es la mitad de un diseño $2^3$}.
 
 \begin{figure}[H]
@@ -1835,14 +1885,14 @@ Se llama \textit{Balanced} cuando cada configuración de factores aparece el mis
 	\label{fig:a23halfdesign}
 \end{figure}
 
-\subsubsection{Effects and Confounding}
+\subsection{Effects and Confounding}
 
 Un DOE utiliza los efectos para determinar si la configuración de un factor o no tiene impacto significativo en un proceso. 
 Según la tabla \ref{fig:a23halfdesign}, la columna de la interacción A $\times$ B tiene la misma configuración que C. Esto significa que cuando el efecto C es calculado, no está claro si es debido al factor C o a la interacción A $\times$ B, o la combinación de ambas. Esto significa que el efecto de C está \textit{confounded} con la interacción A $\times$ B.
 
-\subsubsection{Diseño y análisis de experimentos de un factor}
+\subsection{Diseño y análisis de experimentos de un factor}
 Experimentos de un factor son aleatorios cuando no hay pruebas omitidas y el orden es completamente aleatorio. Los resultados son analizados y evaluados con ANOVA y los valores significantes exceden el F-statistic.
-\subsubsection{Diseño y análisis de Full Factorial Experiments}
+\subsection{Diseño y análisis de Full Factorial Experiments}
 Buscan todas las posibilidades de combinación de factores para completar un estudio de interacciones. Pueden ser mantenidas y convertidas en diferentes diseños de experimentos. A través de un two-way ANOVA se comprueba si son estadísticamente significativos.
 \begin{center}
 	\line(1,0){250}
@@ -1899,7 +1949,7 @@ Método, Carne y Marinado [(88+58+67+84)-(66+84+91+63)] = -1.75
 
 Las interacciones tiene mínimos efectos en cuanto a la aprobación o retirada. La conclusión es que el método (grill o frito) tiene mayor efecto que el resto.
 
-\subsubsection{Diseño y análisis de experimentos de Two-Level Fractional Factorial}
+\subsection{Diseño y análisis de experimentos de Two-Level Fractional Factorial}
 \begin{equation}
 Number \ of \ runs = L^F
 \end{equation}
@@ -1925,7 +1975,7 @@ Marinado: [(67+84)-(88+58)]/2 = 2.5
 
 Aunque los resultados no son iguales que en el caso anterior, las conclusiones son similares.
 
-\subsubsection{Two-Level Fractional Factorial Experiment Procedure}
+\subsection{Two-Level Fractional Factorial Experiment Procedure}
 
 El procedimiento se resume en tres etapas: seleccionar un proceso, seleccionar un diseño y analizar los datos-dibujar las conclusiones.
 
@@ -1999,7 +2049,7 @@ Experimento: Siete factores se evaluan a dos niveles. \textit{Pass} es que no ti
 
 Los grandes contribuidores son C (arquitectura) y G (aseguramiento de la calidad).
 
-\subsection{DOE Considerations}
+\section{DOE Considerations}
 
 \begin{itemize}
 	\item Trabajar con expertos en la materia para determinar que factores deben ser incluidos en el experimento.
@@ -2008,7 +2058,7 @@ Los grandes contribuidores son C (arquitectura) y G (aseguramiento de la calidad
 	\item Usar registros históricos para revisar datos existentes y determinar cuantos más datos adicionales deben ser recogidos para obtener confianza estadística.
 \end{itemize}
 
-\section{Root Cause Analysis}
+\chapter{Root Cause Analysis}
 
 El enfoque de las ocho disciplinas (8D): \begin{enumerate}
 	\item Utilizar enfoque de equipo. Junta a quien conoce el proceso y tiene habilidades técnicas para resolver el problema. Asigna un campeón que conduzca al equipo.
@@ -2021,7 +2071,7 @@ El enfoque de las ocho disciplinas (8D): \begin{enumerate}
 	\item Felicitar al equipo. Dar reconocimiento.
 \end{enumerate}
 
-\subsection{Fase 1: Identificar la oportunidad (Problem Identification)}
+\section{Fase 1: Identificar la oportunidad (Problem Identification)}
 Las oportunidades para la mejora deben ser identificadas y priorizadas atendiendo al equipo y el alcance. Métodos para identificar los problemas: 
 \begin{itemize}
 	\item Análisis Pareto: campos de fallo, quejas, retornos, basura, \textit{reworks}, ...
@@ -2044,7 +2094,7 @@ Criterios para seleccionar:
 	\item ¿Puede el problema ser definido usando mediciones objetivas?
 \end{itemize}
 
-\subsection{Fase 2: Analizar el proceso actual}
+\section{Fase 2: Analizar el proceso actual}
 En esta fase los límites del proceso son definidos especificando los \textit{outputs} y clientes, los \textit{inputs} y proveedores y el flujo de proceso. Los niveles de satisfacción de cliente y medidas necesidades para permitir la recolección de datos y la identificación de la causa raíz. Hay que desarrollar los procesos atendiendo a: 
 \begin{itemize}
 	\item Líneas de actuación de acuerdo a los requisitos del cliente,
@@ -2066,23 +2116,23 @@ Procedimiento:
 	\item Confirmar con datos durante los pasos de verificación.
 \end{enumerate}
 
-\subsection{Fase 3: Desarrollar las soluciones óptimas (correcciones)}
+\section{Fase 3: Desarrollar las soluciones óptimas (correcciones)}
 Al obtener la información, el equipo del proyecto comienza su búsqueda de posibles soluciones. La creatividad y la lluvia de ideas sobre posibles soluciones requieren la creación, combinación o modificación de prácticas existentes. La combinación de dos o más procesos es una actividad de síntesis que depende en gran medida del \textit{benchmarking}.
 Una vez que se han determinado las soluciones posibles, la evaluación o la prueba de las soluciones viene a continuación. Los criterios de aceptación incluyen cosas tales como costo, factibilidad, efecto, resistencia al cambio, consecuencias y entrenamiento. Las soluciones deben evitar la recurrencia y resolver el problema.
 
-\subsection{Fase 4: Implementar cambios}
+\section{Fase 4: Implementar cambios}
 Los cambios se implementan usando un plan que describa las 5W1H: \textit{who, what, when, where, why, how}. Incluye responsabilidades, horarios, hitos y la monitarización de actividades. Herramientas de medida como \textit{run charts, control charts, Pareto, histogramas, ...}
 
-\subsection{Fase 5: Estudiar los resultados}
+\section{Fase 5: Estudiar los resultados}
 A través de los datos recogidos, se puede conocer cuán significativo es el cambio y la mejora puede ser lograda. Evaluando los resultados el equipo puede verificar y validar que el problema ha sido resuelto o determinar si hay otros problemas que han surgido a través del desarrollo de la solución.
 
-\subsection{Fase 6: Estandarizar la solución}
+\section{Fase 6: Estandarizar la solución}
 \textit{Positrol} (control positivo) asegura que las variables importantes están bajo control, especifica las 5W1H del proceso y es una actualización de la solución. Estandarizarla evita el que la solución retroceda. Los operadores necesitan claras instrucciones para los procesos particulares, \textit{training} para asegurar el proceso y conocimiento sobre el proceso que le sigue, por lo que un conocimiento completo del producto es deseable.
 
-\subsection{Fase 7: Plan para el futuro}
+\section{Fase 7: Plan para el futuro}
 Habitualmente hay que planificar revisiones del progreso para identificar las mejoras futuras. Se tiene que ir controlando los cambios en las necesidades del cliente
 
-\subsection{Root Cause Analysis Methodology}
+\section{Root Cause Analysis Methodology}
 El \textit{Root Cause Analysis} (RCA) es la metodología para analizar un problema y poner la solución para que el problema no vuelva a repetirse nunca más. Problem-solving y RCA es el corazón del proceso \textit{corrective and preventive action} (CAPA).
 Metodología de actuación RCA:
 \begin{enumerate}
@@ -2096,7 +2146,7 @@ Metodología de actuación RCA:
 \end{enumerate}
 Para encontrar las causas: análisis de valor añadido, comparación de procesos \textit{as-is} vs \textit{should-be}, FMEA, análisis de cambio-evaluación, de errores en prevención o de predicción.
 
-\subsection{Identificando la causa raíz}
+\section{Identificando la causa raíz}
 
 El diagrama Cause-and-Effect o Ishikawa/Fishbone diagram identifica todas las causas probables y las selecciona para investigar. La construcción del diagrama CE:
 \begin{enumerate}
@@ -2115,10 +2165,10 @@ Maneras de agrupar: \begin{itemize}
 \end{itemize}
 El diagrama \textit{fishbone} se utiliza junto con los \textbf{5 why's} para conseguir llegar a la raíz de los problemas.
 
-\subsubsection{5 Whys}
+\subsection{5 Whys}
 Consiste en preguntar 5 veces ¿por qué? consiguiendo entrar en detalle cada vez más para conocer cual es la raíz de un problema.
 
-\subsubsection{Cause-and-Effect Relational Matrix}
+\subsection{Cause-and-Effect Relational Matrix}
 Es una matriz para cuantificar y priorizar los impactos de causas (X) en efectos (Y) a través de un ranking numérico. 
 
 \begin{figure}[H]
@@ -2129,7 +2179,7 @@ Es una matriz para cuantificar y priorizar los impactos de causas (X) en efectos
 \end{figure}
 
 
-\subsubsection{Root Cause tree}
+\subsection{Root Cause tree}
 Diagrama para ver visualmente la conexión entre efectos por fallos y la causa potencial y problemas centrales.
 
 \begin{figure}[H]
@@ -2139,12 +2189,12 @@ Diagrama para ver visualmente la conexión entre efectos por fallos y la causa p
 	\label{fig:Rootcausetreeexample}
 \end{figure}
 
-\subsection{Failure Mode and Effects Analysis}
+\section{Failure Mode and Effects Analysis}
 Es un grupo de actividades para reconocer y evaluar los fallos potenciales de un producto o proceso e identificar los efectos de tal fallo, identificar las acciones para eliminar o reducir la posibilidad de que ocurran, documentar el proceso entero.
 
 El propósito de un FMEA es entender la oportunidad para fallos y el impacto de los riesgos en un producto o proceso, priorizar riesgos, tomar acciones para eliminar o reducir el impacto de los riesgos.
 
-\section{Lean Tools}
+\chapter{Lean Tools}
 El objetivo es alcanzar mejoras en la actuación, y la filosofía Lean Six Sigma abordará eficazmente las medidas clave de actuación y la identificación de los múltiples aspectos sobre la gestión de procesos, incluyendo diseño, mejora y control, así como las mejoras a través de múltiples áreas de manera transversal, incorporando metas financieras, presupuestos y revisiones en el \textit{Framework} de mejora.
 
 \begin{figure}[H]
@@ -2161,13 +2211,13 @@ El objetivo es alcanzar mejoras en la actuación, y la filosofía Lean Six Sigma
 	\label{fig:ProjectFramework}
 \end{figure}
 
-\subsubsection{Lean vs sistema tradicionales}
+\subsection{Lean vs sistema tradicionales}
 
 \begin{center}
 \textit{Diseño del producto o servicio} - \textit{Capacidad} - \textit{System Layout} - \textit{Workforce} - \textit{Scheduling} - \textit{Inventarios} - \textit{Suppliers} - \textit{Operaciones}
 \end{center}
-\subsection{Waste Elimination}
-\subsubsection{Ejemplos de herramientas Lean}
+\section{Waste Elimination}
+\subsection{Ejemplos de herramientas Lean}
 Uno de los problemas principales en todas las organizaciones es el control de los procesos. Además de las técnicas \textit{statistical process control} (SPC), un GB debe utilizar las herramientas que están catalogadas como \textit{Lean Thinking}. Hay que identificar el valor en términos de cada producto específico atendiendo a su \textit{value stream}, hacer un \textit{value flow} sin interrupción o retrasos, permitir al cliente añadir valor a través de los pasos del proceso, perseguir la perfección y evitar el \textit{rework}.
 
 Lean es la aplicación de herramientas para quitar \textit{waste} y variación en un proceso, en el ámbito de herramientas de control: 5S, \textit{Visual factory}, \textit{Kaizen}, \textit{Kanban}, \textit{Poka-yoke}, \textit{Total productive maintenance}, \textit{Standard work}, \textit{Pull systems}.
@@ -2201,7 +2251,7 @@ Conlleva las siguientes iniciativas: \begin{itemize}
 \paragraph{Standard Work}
 Es un término para describir de manera sistemática como las partes son procesas e incluye las interacciones hombre-máquina. Encontrar la mejor manera de producir un producto cada vez más consistente es la esencia del control del proceso.
 
-\subsection{Cycle-time Reduction}
+\section{Cycle-time Reduction}
 
 \paragraph{Standard Work}
 El \textit{Standard Work} establece la línea de base para realizar tareas y actividades para obtener el resultado deseado, enlazando con la calidad del producto y proceso, costo, programación, ejecución, tiempo de ciclo y satisfacción del cliente. Se pueden demostrar mejoras en la calidad y el tiempo de ciclo y las reducciones en los residuos (por ejemplo, eliminación del exceso de movimiento, chatarra y \textit{rework}) con respecto a la línea de base.
@@ -2279,7 +2329,7 @@ Takt \ time = \frac{Tiempo \ disponible \ de \ trabajo}{Demanda \ de \ cliente} 
 \end{equation}
 Ejemplo: Un turno de 8 horas tiene 480 minutos. Un proceso de pintura de una fábrica necesita pintar 160 piezas al día para cumplir con la demanda del cliente. El \textit{takt time} promedio es 3 minutos por unidad. Por lo tanto, el \textit{flow rate} por paso debe ser menor o igual a 3 minutos por proceso.
 
-\subsection{Kaizen and Kaizen Blitz}
+\section{Kaizen and Kaizen Blitz}
 
 \textit{Kaizen} es mejora continua. Permite progreso a través de generación de ideas, pruebas y fases de evaluación. 
 
@@ -2371,7 +2421,7 @@ Aspectos para lograr el éxito:
 
 
 \part{Control}
-\section{Statistical Process Control}
+\chapter{Statistical Process Control}
 
 Las bases del control son categorizadas como SPC. El propósito no es crear cartas/hojas de control, sino aplicar la información para construir y adaptar procesos.
 Definiciones útiles:
@@ -2409,7 +2459,7 @@ Variables:
 	\item \textit{Design of experiment} (DOE) y análisis de varianza (ANOVA) pueden identificar variables significantes para controlar el proceso.
 \end{itemize}
 
-\subsection{Enfoque racional de subgrupos}
+\section{Enfoque racional de subgrupos}
 
 \begin{itemize}
 	\item Seleccionar el tamaño, frecuencia y numero de subgrupos.
@@ -2418,11 +2468,11 @@ Variables:
 	\item Mayores fuentes de variación deben tener la oportunidad de aparecer en los subgrupos de inspección.
 \end{itemize}
 
-\subsection{Cartas de control}
+\section{Cartas de control}
 
 \textbf{Variables Charts}. Para variables de escala continua. Este tipo de medida ocurre cuando cada par de valores son infinitos números de valores posibles entre ellos. X y R, y X y s, son los más importantes.
 
-\subsubsection{X y R Control Charts}
+\subsection{X y R Control Charts}
 
 Muestra como cambia la media de un proceso a lo largo de las variaciones del proceso. Ambas variaciones deben ser controladas. Para construir un chart de este tipo:
 \begin{itemize}
@@ -2455,7 +2505,7 @@ LCL_R = D_3R
 	\label{fig:XandRControlEjemplo}
 \end{figure}
 
-\subsubsection{X y s Control Charts}
+\subsection{X y s Control Charts}
 
 Esta \textit{chart} muestra la media y el sigma de los valores de proceso. Similar a X y R excepto porque cada valor de la columna del rango es remplazado por la desviación estándar \textit{s}.
  Límite superior para la media,
@@ -2482,7 +2532,7 @@ Esta \textit{chart} muestra la media y el sigma de los valores de proceso. Simil
 	\label{fig:XandSControlEjemplo}
 \end{figure}
 
-\subsubsection{Medias y Rangos Móviles}
+\subsection{Medias y Rangos Móviles}
 Si el tamaño de muestra es uno, un rango individual o móvil (ImR / XmR) es apropiado. Los límites vienen dados por
 \begin{equation}
 UCL_X = X + E_2R
@@ -2492,7 +2542,7 @@ LCL_X = X - E_2R
 \end{equation}
 
 
-\subsubsection{p-control Charts}
+\subsection{p-control Charts}
 Mide la cantidad de partes defectuosas o piezas en un grupo bajo revisión. Puede ser una simple característica o múltiples características. 
 Las piezas son conformes o rechazadas. 
 
@@ -2524,7 +2574,7 @@ Por lo que UCL = 0.205 y LCL = 0.03.
 	\label{fig:pChartEjemplo}
 \end{figure}
 
-\subsubsection{np-Chart}
+\subsection{np-Chart}
 El gráfico np mide el número de elementos rechazados en una muestra con un número entero en lugar de una proporción. El gráfico np es más útil cuando los tamaños de muestra son constantes y el número entero es más significativo y relevante que la cantidad decimal proporcional.
 Si se están contando los defectuosos y el tamaño de la muestra permanece constante, se puede usar el gráfico np en lugar de la p-chart.
 
@@ -2539,7 +2589,7 @@ LCL_{np} = np - 3 \sqrt{np*(1-\frac{np}{n})}
 
 siendo $np$ la media de defectuosos, y $n$ el tamaño de la muestra.
 
-\subsubsection{c Control Chart}
+\subsection{c Control Chart}
 
 Miden el numero de defectos en una muestra. Cuando los defectos son contados y el numero de muestra es constante, el $c-chart$ es usado en vez del $u-chart$. Es relevante para procesos de flujo continuo o donde hay muchas posibles fuentes de variación o deficiencias.
 
@@ -2558,7 +2608,7 @@ siendo c el número de defectos promedio.
 	\label{fig:cChartEjemplo}
 \end{figure}
 
-\subsubsection{Control Chart Interpretation}
+\subsection{Control Chart Interpretation}
 
 \begin{itemize}
 	\item \textit{Specials} son puntos por encima del UCL y por debajo del LCL.
@@ -2567,7 +2617,7 @@ siendo c el número de defectos promedio.
 	\item \textit{Tren violation} es un movimiento con tendencia hacia arriba o hacia abajo en mas de 5 puntos consecutivos.
 \end{itemize}
 
-\subsubsection{Process Control}
+\subsection{Process Control}
 \begin{itemize}
 	\item Un proceso está bajo control cuando media y variación es estable.
 	\item La tendencia puede ser corregida con equipos de reparación, rotación o reemplazo.
@@ -2576,7 +2626,7 @@ siendo c el número de defectos promedio.
 	\item Falta de variabilidad sugiere que los límites de control son demasiado ligeros.
 \end{itemize}
 
-\section{Control Plan}
+\chapter{Control Plan}
 
 Los planes de control hacen al operario ser consciente de los ítems del sistema para controlar partes y procesos durante una producción completa. Es un documento, actualizado con las necesidades que explica como controlar el flujo del trabajo en el proceso. La información básica que tiene que contener un plan de control es:
 \begin{itemize}
@@ -2611,7 +2661,7 @@ El plan de control debe tener los pasos a seguir durante cada fase del proceso p
 	\item \textit{Version}. Importante para saber si el plan de control con el que se está trabajado está en la última y más nueva versión en uso.
 \end{enumerate}
 
-\subsection{Dynamic Control Planning}
+\section{Dynamic Control Planning}
 El \textit{Dynamic Control Plan} (DCP) combina la información necesaria en un documento para ayudar a planificar, monitorizar, controlar, estudiar y mantener los procesos. Muchos de estos documentos incluyen: \textit{Standard Operating Procedures} (SOP), planes de control, FMEA, \textit{Quality Planning Sheets} (QPS), ...
 
 El DCP a menudo es llamado \textit{documento vivo} ya que los operarios tienen el derecho y responsabilidad de actualizarlo cada vez que las cosas cambian, los documentos deben ser actualizados para comunicar a otros que ellos saben que algo está siendo diferente en el proceso.
@@ -2633,19 +2683,19 @@ La dirección debe estar comprometida con ayudar a estos esfuerzos. Es necesario
 
 Los planes de control dinámico ayudan a los planes de control con ilustraciones e instrucciones, además de procedimientos para la implementación y el mantenimiento.
 
-\subsection{Gage Control Plan}
+\section{Gage Control Plan}
 
 \textit{Gage R\&R} (repetitividad y reproducibilidad) es utilizado para medir la precisión de los sistemas de medida. Los parámetros tienen que incluir el almacenamiento y cuidado de los equipos, los requisitos de calibración, e indicar que partes del proceso se miden y con qué equipo y/o método.
 
-\subsection{Standard Operating Procedures}
+\section{Standard Operating Procedures}
 
 Cuando un proceso está actualizado, confirmado y validado, los \textit{Standard Operating Procedures} (SOP) son desarrollados, en ellos se incluye una descripción paso a paso de como completar tareas. 
 
-\subsection{Continual Improvement}
+\section{Continual Improvement}
 
 \textit{Continual Improvement} (CI) es un proceso que hace que las cosas se hagan mejor, mas baratas o más rápidas. 
 
-\subsection{Process Improvement}
+\section{Process Improvement}
 
 Es la acción de hacer funcionar al sistema mejor para satisfacer al cliente en cuanto a necesidades y requisitos. Buscamos reducir la variabilidad completa, y está compuesta por: inestabilidad, variación y \textit{off-target}.
 
@@ -2653,9 +2703,9 @@ La inestabilidad es la falta de estabilidad en el proceso. Las causas comunes y 
 
 \textit{Off-target} es a menudo la responsabilidad de los ingenieros que diseñan. El operador solo puede controlar si el proceso está centrado dentro de las especificaciones de ingeniería y de los límites de control.
 
-\section{Lean Tools for Process Control}
+\chapter{Lean Tools for Process Control}
 
-\subsection{Total Productive Maintenance}
+\section{Total Productive Maintenance}
 
 Mejora las prácticas de mantenimiento para equipos e infraestructura. Permite la predicción y prevención de fallos de manera anticipada. Los principales puntos del TPM:
 \begin{itemize}
@@ -2691,7 +2741,7 @@ OEE = Availability \times Performance \ efficiency \times Quality \ rate
 	\item \textit{Mean time between failures} (MTBF). El tiempo promedio entre diferentes fallos de máquina.
 \end{itemize}
 
-\subsubsection{Loss Description}
+\subsection{Loss Description}
 
 \begin{itemize}
 	\item \textit{Breakdowns}. Fallo mecánico que para la producción.
@@ -2717,7 +2767,7 @@ La organización:
 
 \textbf{Managers y Supervisores}: \textit{Root Cause Analysis} para dar más perspectiva a las paradas y a los downtimes en general.
 
-\subsubsection{Overall Equipment Effectiveness}
+\subsection{Overall Equipment Effectiveness}
 
 Existen tres principales factores: disponibilidad, actuación y calidad. En esta métrica se incluye el MTTR y el MTBF.
 \begin{itemize}
@@ -2736,15 +2786,15 @@ El siguiente paso es analizar las ineficiencias y las perdidas de productividad 
 
 En líneas de montaje manual, OEE se puede cambiar por \textit{overall labor effectiveness} (OLE).
 
-\subsection{Visual Factory}
+\section{Visual Factory}
 
 Se esfuerza en hacer los problemas visibles, notificando a los empleados las condiciones de operativa y las metas del proceso.
 
-\subsubsection{Visual Management}
+\subsection{Visual Management}
 
 Se emplea la utilización de códigos de colores, containers limpios para materiales y equipos, e indicadores de procesos en un lugar de trabajo con las 5S bien implementadas. Una forma de gestión visual es \textit{single-point lesson} usada para mostrar cómo una tarea puede llevarse a cabo, cómo un producto o servicio debe ser inspeccionado o qué mirar durante la inspección.
 
-\subsubsection{Visual Workplace}
+\subsection{Visual Workplace}
 
 Debe ser desarrollada en conjunto con otras soluciones de mejora, por ejemplo:
 
@@ -2777,13 +2827,79 @@ Otra herramienta común es \textit{stack lights}. Verde es fabricación normal. 
 
 La planificación también incluye varios controles visuales para los niveles de inventario. Y si es un sistema tipo \textit{pull}, las tarjetas KanBan son un indicador visual para la producción de partes y componentes en el proceso de montaje.
 
-%\pagebreak[4]
-%\part{Glosario}
+\pagebreak[4]
+\section*{Glosario}
 
-%Una relación de palabras y traducciones Español - Inglés de cara al examen:
+\paragraph{Advanced Product Quality Planning}
+\begin{quote}
+	Método estructurado para definir y establecer los pasos necesarios para asegurarse de que un producto satisface a cliente.
+\end{quote}
 
-%Skills - Habilidades. Relativas al conocimiento o técnica.
-%Reliability - Confianza/Confiabilidad. Relativo a los datos.
-%Appraiser - Medidor/Tasador. Relativo a personas.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=80mm]{imagenes/APQP.png}
+	\caption{Esquema APQP.}
+	\label{fig:APQP}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=130mm]{imagenes/APQPFlowChart.png}
+	\caption{Esquema Ejemplo de flujo de un APQP.}
+	\label{fig:APQPFlowChart}
+\end{figure}
+
+Los objetivos del APQP son: tener comunicaciones eficaces con todos los implicados, terminar metas de manera concreta y en tiempo y cero problemas de calidad.
+
+\paragraph{SIPOC}
+\begin{quote}
+	Provee de una vista macro del flujo del proceso o producto y sus interrelaciones dentro del negocio, así como los límites del proceso y los puntos de inicio y final del mismo.
+\end{quote}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=130mm]{imagenes/EjemploSIPOC.png}
+	\caption{Esquema Ejemplo de un diagrama SIPOC.}
+	\label{fig:EjemploSIPOC}
+\end{figure}
+
+\paragraph{FMEA}
+\begin{quote}
+	Otorga una prioridad a los fallos dependiendo de cuan serias sean sus consecuencias, la frecuencia con la que ocurren y con qué dificultad pueden ser localizadas. Documenta el conocimiento existente y las acciones sobre riesgos o fallos que deben ser utilizadas para lograr una mejora continua. 
+\end{quote}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=180mm]{imagenes/EjemploFMEA.png}
+	\caption{Ejemplo de una tabla FMEA.}
+	\label{fig:EjemploFMEA}
+\end{figure}
+
+\paragraph{Hoshin}
+
+\begin{quote}
+	Método o sistema de trabajo basado en la cooperación de toda la empresa para alcanzar los objetivos estratégicos a largo plazo y el plan de gestión a corto plazo.
+\end{quote}
+\textbf{Fundamentos}:
+\begin{enumerate}
+	\item En toda empresa se dan tareas que combinan dos elementos: la rutina y la innovación. Es decir, hay tareas rutinarias y repetitivas pero necesarias y las hay disruptivas, innovadoras, que cambian el curso de acción. Ambas tienen un elemento común: se basan en el trabajo en equipo. El \textit{Hoshin Kanri} integra todas las tareas, rutinarias o de mejora, en función de los objetivos clave de la empresa.
+	
+	\item El \textit{Hoshin Kanri} abarca dos dimensiones: dirección estratégica y gestión operativa. Es un método de planificación estratégica y táctica. En definitiva, permite alinear los objetivos generales de la empresa, los planes estratégicos a largo plazo y procesos del día a día.
+	
+	\item  Establece un sistema para formular objetivos, planes y metas en cascada para toda la organización, basada en modelos de mejora continua. De forma complementaria, establece indicadores que permitan valorar la consecución de objetivos y la efectividad de los planes. En consecuencia, permite la asignación clara de responsabilidades en relación con las metas y los procesos, como medio de implicación de las personas.
+	
+	\item  Se basa en las revisiones periódicas para asegurar el progreso: semanales, mensuales y anuales.
+	
+	\item  Se concentra en pocos objetivos críticos para el éxito. Los recursos son limitados y no todo puede hacerse (descarta por tanto la deseabilidad u optimismo patológico que se da en muchas empresas). Es un modelo que se desarrolla en 7 pasos:
+	\begin{itemize}
+		\item Identificar las claves del negocio.
+		\item Establecer objetivos cuantificados de negocio.
+		\item Definir la visión global y las metas.
+		\item Determinar las estrategias para alcanzar las metas.
+		\item Determinar los planes de acción para cada estrategia.
+		\item Establecer indicadores que midan el rendimiento de cada proceso.
+		\item Revisión.
+	\end{itemize}
+\end{enumerate}
 
 \end{document}
